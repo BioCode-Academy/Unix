@@ -40,18 +40,6 @@
 
 > ***NO SE REQUIERE CONOCIMIENTO PREVIO EN PROGRAMACIÓN***
 
-## 👤 Instructores
-
-**David Alberto García Estrada**
-
--   Candidato a Doctor en Biología Integrativa, UGA, Cinvestav.
--   Co-fundador de [BioCode Academy](https://github.com/BioCode-Academy)
--   Contacto
-    -   🔗 [Github](https://github.com/DavidAlberto)
-    -   📨 [albert_dge\@hotmail.com](albert_dge@hotmail.com)
-    -   📨 [david.garcia.e\@cinvestav.mx](david.garcia.e@cinvestav.mx)
-    -   📨 [biocodeacademy\@gmail.com](biocodeacademy@gmail.com)
-
 ## 📅 Agenda
 
 ### 📅 Día 1
@@ -163,4 +151,16 @@
 -   🏆 **Demo & retroalimentación**
 
     -   Presentaciones exprés - Feedback colectivo
+
+## 👤 Instructores
+
+**David Alberto García Estrada**
+
+-   Candidato a Doctor en Biología Integrativa, UGA, Cinvestav.
+-   Co-fundador de [BioCode Academy](https://github.com/BioCode-Academy)
+-   Contacto
+    -   🔗 [Github](https://github.com/DavidAlberto)
+    -   📨 [albert_dge\@hotmail.com](albert_dge@hotmail.com)
+    -   📨 [david.garcia.e\@cinvestav.mx](david.garcia.e@cinvestav.mx)
+    -   📨 [biocodeacademy\@gmail.com](biocodeacademy@gmail.com)
 :::
