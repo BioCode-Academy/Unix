@@ -4,29 +4,581 @@
     "href": "index.html",
     "title": "Introducción a Unix para Bioinformática",
     "section": "",
-    "text": "BioCode Academy\n\n\n\n\n\n\nInformación general\n\n📋 Descripción del curso📌 Sobre el curso📅 Agenda👤 Instructores\n\n\n¡Bienvenido al punto de partida de tu viaje bioinformático! 🌟 Este curso te introduce al poderoso mundo de Unix, la columna vertebral de casi todas las herramientas bioinformáticas modernas.\n🔍 ¿Qué aprenderás?\n\n📁 Navegación eficiente por el sistema de archivos\n⌨️ Dominio de comandos esenciales para el análisis de datos\n📝 Creación de scripts para automatizar tareas repetitivas\n🧩 Manipulación de archivos de secuencias biológicas\n🔄 Pipelines básicos de procesamiento de datos\n\n\n\n\n⌛ Duración: 8 horas (2 horas diarias)\n💬 Idioma: Español\n📍 Ubicación: Virtual (Teams)\n📝 Modalidad: Práctico (20%) + Teórico (80%)\nRequerimientos:\n\n💻 Laptop\n🌐 Conexión a internet\n🐧 Ambiente Unix/WSL (no obligatorio)\n\n\n\nNO SE REQUIERE CONOCIMIENTO PREVIO EN PROGRAMACIÓN\n\n\n\n\n📅 Día 1\nMódulo 1: Introducción & Configuración\nObjetivo: Al finalizar, tendrás un ambiente Unix para posteriores análisis.\nActividades:\n\n🔥 Bienvenida & dinámicas\n\nPresentación del curso\nCódigo de conducta\nRonda exprés de presentaciones\n\n💻 Instalación de software\n\n🐧 WSL (Windows)\n🐳 Docker\n🐳 Imagen docker Unix\n🔗 Git\n💻 VisualStudioCode\n\n🌐 Filosofía Unix & Bash\n\n¿Por qué “Unix” y por qué “shell”?\nPrincipios básicos y ventajas\n\n💻 Datos biológicos\n\nSecuencias biológicas: ADN, ARN y proteínas\n\n\n\n\n📅 Día 2\nMódulo 2: Navegación y Gestión de Archivos\nObjetivo: Gestionarás archivos y carpetas, y procesarás texto desde la terminal.\nActividades:\n\n📁 Explora tu sistema de archivos\n\nComandos básicos ls, cd, tree\nAtajos (~, ., .., $PWD)\n\n🗂 Crear y mover archivos\n\ntouch, mkdir, cp, mv, rm\n\n📄 Procesamiento de texto\n\ncat, head, tail, less\nRedireccionamiento (&gt;, &gt;&gt;, |)\nEditor de texto (nano)\n\n🔍 Búsqueda avanzada\n\ngrep, find, wc\n\n\n\n\n📅 Día 3\nMódulo 3: Fundamentos de Scripting Shell\nObjetivo: Automatizarás tareas creando y depurando tus propios scripts.\nActividades:\n\n🚀 Introducción al scripting\n\nShebang (#!/bin/bash)\nPermisos (chmod +x)\n\n🔣 Variables & parámetros\n\nDefinir variables, comillas\nArgumentos posicionales ($1, $@)\n\n🤔 Control de flujo\n\nif…then…else, case\nBucles for, while, until\n\n🐞 Depuración y logging\n\nset -e, set -u, set -x\n\n\n\n\n📅 Día 4\nMódulo 4: Buenas Prácticas & Proyecto Final\nObjetivo: Aplicarás estándares profesionales y entregarás un mini-proyecto.\nActividades:\n\n📏 Estilo y mantenimiento\n\nNomenclatura - Comentarios y funciones modulares\n\n🎯 Inicio de proyecto\n\nDefinición de alcance (e.g. pipeline de texto)\n\n💻 Hackathon guiado\n\nTrabajo en parejas/grupos\nMentoría en vivo\n\n🏆 Demo & retroalimentación\n\nPresentaciones exprés - Feedback colectivo\n\n\n\n\n\nDavid Alberto García Estrada\n\nCandidato a Doctor en Biología Integrativa, UGA, Cinvestav.\nCo-fundador de BioCode Academy\nContacto\n\n🔗 Github\n📨 albert_dge@hotmail.com\n📨 david.garcia.e@cinvestav.mx\n📨 biocodeacademy@gmail.com",
+    "text": "BioCode Academy\n\n\n\n\n\n\nInformación general\n\n📋 Descripción del curso📌 Sobre el curso📅 Agenda👤 Instructores\n\n\n¡Bienvenido al punto de partida de tu viaje bioinformático! 🌟 Este curso te introduce al poderoso mundo de Unix, la columna vertebral de casi todas las herramientas bioinformáticas modernas.\n🔍 ¿Qué aprenderás?\n\n📁 Navegación eficiente por el sistema de archivos\n⌨️ Dominio de comandos esenciales para el análisis de datos\n📝 Creación de scripts para automatizar tareas repetitivas\n🧩 Manipulación de archivos de secuencias biológicas\n🔄 Pipelines básicos de procesamiento de datos\n\n\n\n\n⌛ Duración: 8 horas (2 horas diarias)\n💬 Idioma: Español\n📍 Ubicación: Virtual (Teams)\n📝 Modalidad: Práctico (20%) + Teórico (80%)\nRequerimientos:\n\n💻 Laptop\n🌐 Conexión a internet\n🐧 Ambiente Unix/WSL (no obligatorio)\n\n\n\nNO SE REQUIERE CONOCIMIENTO PREVIO EN PROGRAMACIÓN\n\n\n\n\n📅 Día 1\nMódulo 1: Introducción & Configuración\nObjetivo: Al finalizar, tendrás un ambiente Unix para posteriores análisis.\nActividades:\n\n🔥 Bienvenida & dinámicas\n\nPresentación del curso\nCódigo de conducta\nRonda exprés de presentaciones\n\n💻 Instalación de software\n\n🐧 WSL (Windows)\n🐳 Docker\n🐳 Imagen docker Unix\n🔗 Git\n💻 VisualStudioCode\n\n🌐 Filosofía Unix & Bash\n\n¿Por qué “Unix” y por qué “shell”?\nPrincipios básicos y ventajas\n\n💻 Datos biológicos\n\nSecuencias biológicas: ADN, ARN y proteínas\n\n\n\n\n📅 Día 2\nMódulo 2: Navegación y Gestión de Archivos\nObjetivo: Gestionarás archivos y carpetas, y procesarás texto desde la terminal.\nActividades:\n\n📁 Exploración del Sistema de Archivos\n\nComandos básicos ls, cd, tree\nAtajos (~, ., .., $PWD)\n\n🗂 Gestión de Archivos y Directorios\n\ntouch, mkdir, cp, mv, rm\n\n📄 Procesamiento de texto\n\ncat, head, tail, less\nRedireccionamiento (&gt;, &gt;&gt;, |)\nEditor de texto (nano)\n\n🔍 Búsqueda avanzada\n\ngrep, find, wc\n\n\n\n\n📅 Día 3\nMódulo 3: Fundamentos de Scripting Shell\nObjetivo: Automatizarás tareas creando y depurando tus propios scripts.\nActividades:\n\n🚀 Introducción al scripting\n\nShebang (#!/bin/bash)\nPermisos (chmod +x)\n\n🔣 Variables & parámetros\n\nDefinir variables, comillas\nArgumentos posicionales ($1, $@)\n\n🤔 Control de flujo\n\nif…then…else, case\nBucles for, while, until\n\n🐞 Depuración y logging\n\nset -e, set -u, set -x\n\n\n\n\n📅 Día 4\nMódulo 4: Buenas Prácticas & Proyecto Final\nObjetivo: Aplicarás estándares profesionales y entregarás un mini-proyecto.\nActividades:\n\n📏 Estilo y mantenimiento\n\nNomenclatura - Comentarios y funciones modulares\n\n🎯 Inicio de proyecto\n\nDefinición de alcance (e.g. pipeline de texto)\n\n💻 Hackathon guiado\n\nTrabajo en parejas/grupos\nMentoría en vivo\n\n🏆 Demo & retroalimentación\n\nPresentaciones exprés - Feedback colectivo\n\n\n\n\n\nDavid Alberto García Estrada\n\nCandidato a Doctor en Biología Integrativa, UGA, Cinvestav.\nCo-fundador de BioCode Academy\nContacto\n\n🔗 Github\n📨 albert_dge@hotmail.com\n📨 david.garcia.e@cinvestav.mx\n📨 biocodeacademy@gmail.com",
     "crumbs": [
       "Información general"
     ]
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
+    "objectID": "S2_04_busqueda_avanzada.html",
+    "href": "S2_04_busqueda_avanzada.html",
+    "title": "8  Búsqueda Avanzada en Archivos y Directorios",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "8.1 grep - Búsqueda de Patrones en Texto\nLa capacidad de buscar información específica en archivos y directorios es crucial en bioinformática. Ya sea buscando secuencias específicas, genes de interés, patrones en datos experimentales, o archivos perdidos en el sistema, estas herramientas te permitirán encontrar exactamente lo que necesitas de manera eficiente.\ngrep (Global Regular Expression Print) es una herramienta fundamental para buscar patrones en texto.\n# Búsqueda simple\ngrep \"patrón\" archivo.txt\n\n# Búsqueda insensible a mayúsculas/minúsculas\ngrep -i \"patrón\" archivo.txt\n\n# Mostrar número de línea donde aparece el patrón\ngrep -n \"patrón\" archivo.txt\n\n# Contar ocurrencias\ngrep -c \"patrón\" archivo.txt\n\n# Invertir búsqueda (líneas que NO contienen el patrón)\ngrep -v \"patrón\" archivo.txt\nEjemplo:\n# Buscar secuencias específicas\ngrep \"ATCGATCG\" example_sequences.fasta \n\n# Contar número de secuencias en archivo FASTA\ngrep -c \"^&gt;\" example_sequences.fasta \n\n# Buscar muestras control\ngrep -i \"control\" sample_metadata.tsv\nResultado esperado:\n# ATCGATCGATCGATCGATCGATCGATCGATCGATCGATCG\n\n# 3\n\n# sample_001      control 1       2.5     8.2\n# sample_003      control 2       2.8     8.5\n# sample_005      control 1       2.3     7.8",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Búsqueda Avanzada en Archivos y Directorios</span>"
     ]
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Summary",
+    "objectID": "S2_04_busqueda_avanzada.html#grep---búsqueda-de-patrones-en-texto",
+    "href": "S2_04_busqueda_avanzada.html#grep---búsqueda-de-patrones-en-texto",
+    "title": "8  Búsqueda Avanzada en Archivos y Directorios",
     "section": "",
-    "text": "In summary, this book has no content whatsoever.",
+    "text": "8.1.1 Opciones Avanzadas de grep\n\n# Buscar en múltiples archivos\ngrep \"patrón\" *.txt\n\n# Buscar recursivamente en directorios\ngrep -r \"patrón\" directorio/\n\n# Mostrar contexto (líneas antes y después)\ngrep -A 3 -B 2 \"patrón\" archivo.txt  # 3 después, 2 antes\ngrep -C 5 \"patrón\" archivo.txt       # 5 líneas de contexto\n\n# Buscar palabras completas solamente\ngrep -w \"gen\" archivo.txt  # No coincidirá con \"genoma\"\n\n# Buscar múltiples patrones\ngrep -E \"patrón1|patrón2\" archivo.txt\n\n# Listar solo nombres de archivos que contienen el patrón\ngrep -l \"patrón\" *.txt\n\n# Buscar secuencias que empiecen con ATG (codón de inicio)\ngrep \"^ATG\" coding_sequences.fasta\n\n# Buscar anotaciones de genes en cromosoma específico\ngrep -w \"chr1\" annotations.gff\n\n# Buscar errores en logs de análisis\ngrep -i -E \"error|fail|exception\" analysis.log\n\n# Buscar muestras con alta calidad\ngrep -E \"quality.*[8-9]\\.[0-9]\" sample_metadata.txt\n\n\n\n8.1.2 Expresiones Regulares con grep\n\n# Usar expresiones regulares extendidas\ngrep -E \"patrón_complejo\" archivo.txt\n\n# Ejemplos de patrones útiles en bioinformática:\n\n# Buscar secuencias que terminen en TAA, TAG, o TGA (codones de parada)\ngrep -E \"(TAA|TAG|TGA)$\" sequences.fasta\n\n# Buscar IDs de muestra con formato específico (sample_001, sample_002, etc.)\ngrep -E \"^sample_[0-9]{3}\" sample_list.txt\n\n# Buscar coordenadas genómicas (formato chr:inicio-fin)\ngrep -E \"chr[0-9XY]+:[0-9]+-[0-9]+\" coordinates.txt\n\n# Buscar direcciones de email en metadatos\ngrep -E \"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}\" contacts.txt\n\n# Buscar fechas en formato YYYY-MM-DD\ngrep -E \"[0-9]{4}-[0-9]{2}-[0-9]{2}\" experiment_log.txt\n\n# Buscar números de acceso de GenBank\ngrep -E \"[A-Z]{1,2}[0-9]{5,}\" accession_numbers.txt\n\n\n\n8.1.3 Casos Prácticos con grep\n\n# Crear archivo de ejemplo para práctica\ncat &gt; sample_data.txt &lt;&lt; EOF\n&gt;sequence_001 Escherichia coli K12 complete genome\nATGAAACGCATTAGCACCACCATTACCACCACCATCACCATTACCACAGGTAACGGTGCGGGCTGA\n&gt;sequence_002 Salmonella enterica serovar Typhimurium\nATGAGCAAACAGGAAAAAACCGTGTATATGGATTTACCCAGATGCATACGGCTTCTTGA\n&gt;sequence_003 Bacillus subtilis strain 168\nATGAAAAACATTCTGACGGACTGGCGTGAACGTCCGAAAGTGCTTCTTGAAGATGGA\nQuality scores: sample_001=8.5, sample_002=7.2, sample_003=9.1\nDate: 2024-03-15\nContact: researcher@university.edu\nEOF\n\n# Análisis con grep:\n\necho \"=== Análisis con grep ===\"\n\n# 1. Contar secuencias\necho \"Número de secuencias: $(grep -c '^&gt;' sample_data.txt)\"\n\n# 2. Extraer nombres de organismos\necho \"Organismos encontrados:\"\ngrep '^&gt;' sample_data.txt | cut -d' ' -f2-4\n\n# 3. Buscar codones de inicio\necho \"Secuencias que empiezan con ATG:\"\ngrep -c '^ATG' sample_data.txt\n\n# 4. Buscar muestras de alta calidad (&gt;8.0)\necho \"Muestras de alta calidad:\"\ngrep -E \"sample_[0-9]+=[89]\\.[0-9]\" sample_data.txt\n\n# 5. Extraer información de contacto\necho \"Contacto encontrado:\"\ngrep -E \"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}\" sample_data.txt",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Búsqueda Avanzada en Archivos y Directorios</span>"
+    ]
+  },
+  {
+    "objectID": "S2_04_busqueda_avanzada.html#find---búsqueda-de-archivos-y-directorios",
+    "href": "S2_04_busqueda_avanzada.html#find---búsqueda-de-archivos-y-directorios",
+    "title": "8  Búsqueda Avanzada en Archivos y Directorios",
+    "section": "8.2 find - Búsqueda de Archivos y Directorios",
+    "text": "8.2 find - Búsqueda de Archivos y Directorios\nfind es una herramienta poderosa para localizar (finder) archivos y directorios basándose en diversos criterios.\n\n# Buscar por nombre\nfind /ruta/directorio -name \"archivo.txt\"\n\n# Buscar insensible a mayúsculas\nfind /ruta/directorio -iname \"*.fasta\"\n\n# Buscar por tipo\nfind /ruta/directorio -type f  # solo archivos\nfind /ruta/directorio -type d  # solo directorios\n\n# Buscar en directorio actual\nfind . -name \"*.fastq\"\n\n# Buscar todos los archivos FASTA\nfind ~/proyectos/ -name \"*.fasta\" -o -name \"*.fa\" -o -name \"*.fna\"\n\n# Buscar archivos de secuenciación\nfind /datos/ -name \"*.fastq.gz\"\n\n# Buscar directorios de resultados\nfind ~/análisis/ -type d -name \"*results*\"\n\n# Buscar scripts de Python\nfind . -name \"*.py\" -type f\n\n\n8.2.1 Búsqueda por Atributos\n\n# Buscar por tamaño\nfind . -size +100M          # archivos mayores a 100MB\nfind . -size -1K           # archivos menores a 1KB\nfind . -size 50M           # archivos de exactamente 50MB\n\n# Buscar por fecha de modificación\nfind . -mtime -7           # modificados en últimos 7 días\nfind . -mtime +30          # modificados hace más de 30 días\nfind . -newer archivo_ref  # más nuevos que archivo_ref\n\n# Buscar por permisos\nfind . -perm 755          # permisos específicos\nfind . -executable        # archivos ejecutables",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Búsqueda Avanzada en Archivos y Directorios</span>"
+    ]
+  },
+  {
+    "objectID": "S2_04_busqueda_avanzada.html#wc---contar-líneas-palabras-y-caracteres",
+    "href": "S2_04_busqueda_avanzada.html#wc---contar-líneas-palabras-y-caracteres",
+    "title": "8  Búsqueda Avanzada en Archivos y Directorios",
+    "section": "8.3 wc - Contar Líneas, Palabras y Caracteres",
+    "text": "8.3 wc - Contar Líneas, Palabras y Caracteres\nwc (word count) es una herramienta simple pero muy útil para obtener estadísticas básicas de archivos.\n\n# Contar líneas\nwc -l archivo.txt\n\n# Contar palabras\nwc -w archivo.txt\n\n# Contar caracteres\nwc -c archivo.txt\n\n# Información completa (líneas, palabras, caracteres)\nwc archivo.txt\n\n# Múltiples archivos\nwc -l *.txt\n\n# Ejemplos en bioinformática:\n\n# Contar secuencias en archivo FASTA\nwc -l sequences.fasta  # Líneas totales\ngrep -c \"^&gt;\" sequences.fasta  # Número de secuencias\n\n# Contar lecturas en archivo FASTQ\necho \"Número de lecturas: $(($(wc -l &lt; reads.fastq) / 4))\"\n\n# Tamaño de archivos de secuencias\nwc -c *.fasta | sort -n\n\n# Contar genes anotados\nwc -l annotations.gff\n\n\n8.3.1 Análisis de Archivos FASTA\n\nEjemplo 1: Análisis de archivo FASTA\n\n# Crear archivo de ejemplo\ncat &gt; sequences_example.fasta &lt;&lt; 'EOF'\n&gt;seq_001|Escherichia_coli_K12|complete_genome|4641652_bp\nATGAAACGCATTAGCACCACCATTACCACCACCATCACCATTACCACAGGTAACGGTGCGGGCTGAACGGGTGAACGTACGTAATTAA\n&gt;seq_002|Salmonella_enterica_Typhimurium|chromosome|4857450_bp\nATGAGCAAACAGGAAAAAACCGTGTATATGGATTTACCCAGATGCATACGGCTTCTTGAACGTACGTAATTAG\n&gt;seq_003|Bacillus_subtilis_168|complete_genome|4215606_bp\nATGAAAAACATTCTGACGGACTGGCGTGAACGTCCGAAAGTGCTTCTTGAAGATGGAACGTACGTAATGA\n&gt;seq_004|Pseudomonas_aeruginosa_PAO1|complete_genome|6264404_bp\nATGACCACCATCACCACCATCACCATCACCATCACCATCACCGTACGTAATTAA\nEOF\n\necho \"=== Análisis de archivo FASTA ===\"\n\n# 1. Información básica\necho \"Número total de secuencias: $(grep -c '^&gt;' sequences_example.fasta)\"\necho \"Número total de líneas: $(wc -l &lt; sequences_example.fasta)\"\n\n# 2. Extraer información de headers\necho -e \"\\nOrganismos encontrados:\"\ngrep '^&gt;' sequences_example.fasta | cut -d'|' -f2 | sort\n\n# 3. Buscar secuencias con codón de inicio\necho -e \"\\nSecuencias que empiezan con ATG: $(grep -c '^ATG' sequences_example.fasta)\"\n\n# 4. Buscar secuencias con codones de parada específicos\necho -e \"\\nSecuencias que terminan con codón de parada TAA: $(grep -c 'TAA$' sequences_example.fasta)\"\necho \"Secuencias que terminan con codón de parada TAG: $(grep -c 'TAG$' sequences_example.fasta)\"\n\n# 5. Buscar tamaños de genoma\necho -e \"\\nTamaños de genoma:\"\ngrep '^&gt;' sequences_example.fasta | grep -E '[0-9]+_bp' | sed 's/.*|\\([0-9]\\+\\)_bp/\\1/' | sort -n\n\n# 6. Buscar secuencias que contengan sitio específico\necho -e \"\\nSecuencias con sitio ACGT: $(grep -c 'ACGT' sequences_example.fasta)\"\n\n\n\nEjemplo 2: Análisis de Anotaciones GFF\n\n# Crear archivo GFF de ejemplo\ncat &gt; annotations_example.gff &lt;&lt; 'EOF'\n##gff-version 3\nchr1    RefSeq  gene    1000    3000    .   +   .   ID=gene001;Name=insulin;biotype=protein_coding\nchr1    RefSeq  mRNA    1000    3000    .   +   .   ID=transcript001;Parent=gene001\nchr1    RefSeq  exon    1000    1200    .   +   .   ID=exon001;Parent=transcript001\nchr1    RefSeq  exon    2800    3000    .   +   .   ID=exon002;Parent=transcript001\nchr2    RefSeq  gene    5000    7000    .   -   .   ID=gene002;Name=glucagon;biotype=protein_coding\nchr2    RefSeq  mRNA    5000    7000    .   -   .   ID=transcript002;Parent=gene002\nchrX    RefSeq  gene    10000   12000   .   +   .   ID=gene003;Name=dystrophin;biotype=protein_coding\nchrY    RefSeq  gene    15000   16000   .   +   .   ID=gene004;Name=sry;biotype=protein_coding\nEOF\n\necho \"=== Análisis de archivo GFF ===\"\n\n# 1. Contar diferentes tipos de elementos\necho \"Genes: $(grep -c $'\\tgene\\t' annotations_example.gff)\"\necho \"mRNAs: $(grep -c $'\\tmRNA\\t' annotations_example.gff)\"\necho \"Exones: $(grep -c $'\\texon\\t' annotations_example.gff)\"\n\n# 2. Genes por cromosoma\necho -e \"\\nGenes por cromosoma:\"\ngrep $'\\tgene\\t' annotations_example.gff | cut -f1 | sort | uniq -c\n\n# 3. Genes en cromosomas sexuales\necho -e \"\\nGenes en cromosomas sexuales:\"\ngrep -E \"^chr[XY].*gene\" annotations_example.gff | grep -o 'Name=[^;]*' | cut -d'=' -f2\n\n# 4. Genes en cadena positiva vs negativa\necho -e \"\\nGenes en cadena positiva: $(grep $'\\tgene\\t' annotations_example.gff | grep -c $'\\t+\\t')\"\necho \"Genes en cadena negativa: $(grep $'\\tgene\\t' annotations_example.gff | grep -c $'\\t-\\t')\"\n\n# 5. Rangos de tamaño de genes\necho -e \"\\nTamaños de genes:\"\ngrep $'\\tgene\\t' annotations_example.gff | awk '{print $5-$4+1}' | sort -n",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Búsqueda Avanzada en Archivos y Directorios</span>"
+    ]
+  },
+  {
+    "objectID": "S2_04_busqueda_avanzada.html#consejos-y-buenas-prácticas",
+    "href": "S2_04_busqueda_avanzada.html#consejos-y-buenas-prácticas",
+    "title": "8  Búsqueda Avanzada en Archivos y Directorios",
+    "section": "8.4 Consejos y Buenas Prácticas",
+    "text": "8.4 Consejos y Buenas Prácticas\n\n8.4.1 Mejores prácticas para búsqueda y manipulación de archivos\n\nUsa comillas en grep para patrones complejos y prueba expresiones antes de aplicarlas en scripts automatizados.\nfind es más eficiente cuando se limita la profundidad de búsqueda y se usan criterios bien definidos.\nPara conteo rápido, wc -l es clave, pero para archivos FASTA y FASTQ hay métodos específicos (grep -c \"^&gt;\" y dividir líneas por 4).\n\n\n\n8.4.2 Optimización y rendimiento\n\nUsa grep -F para cadenas literales, grep -E para expresiones regulares avanzadas.\nfind con -exec cmd {} + ejecuta comandos eficientemente en múltiples archivos.\nwc combinado con awk y sort ayuda a obtener estadísticas rápidas.\n\n\n\n8.4.3 Bioinformática aplicada\n\nPara FASTA, grep \"^&gt;\" permite contar secuencias.\nPara coordenadas genómicas, chr[0-9XY]+:[0-9]+-[0-9]+ facilita identificación de regiones.\nPara análisis de grandes volúmenes de datos, considera ripgrep (rg) o fd como alternativas más rápidas.\n\n\n\n8.4.4 Seguridad y mantenimiento\n\nNunca ejecutes rm directamente con find, revisa con -print antes.\nMonitorea el espacio en disco y optimiza búsquedas evitando procesos innecesarios.\nDocumenta patrones y comandos clave para facilitar futuras búsquedas.",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Búsqueda Avanzada en Archivos y Directorios</span>"
+    ]
+  },
+  {
+    "objectID": "S2_04_busqueda_avanzada.html#resumen-de-comandos",
+    "href": "S2_04_busqueda_avanzada.html#resumen-de-comandos",
+    "title": "8  Búsqueda Avanzada en Archivos y Directorios",
+    "section": "8.5 Resumen de Comandos",
+    "text": "8.5 Resumen de Comandos\n\n\n\n\n\n\n\n\nComando\nFunción\nEjemplo Clave\n\n\n\n\ngrep \"patrón\" archivo\nBúsqueda básica\ngrep \"ATCG\" sequences.fasta\n\n\nfind . -name \"*.ext\"\nPor nombre/extensión\nfind ~/data/ -name \"*.fastq.gz\"\n\n\nwc archivo\nLíneas, palabras, caracteres\nwc genome_annotation.gff",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Búsqueda Avanzada en Archivos y Directorios</span>"
+    ]
+  },
+  {
+    "objectID": "S1_02_instalacion_software.html",
+    "href": "S1_02_instalacion_software.html",
+    "title": "2  Instalación de Software",
+    "section": "",
+    "text": "2.1 Instalar WSL (Windows)\nEn este módulo se muestra una guía paso a paso de la instalación de herramientas necesarias para trabajar en este curso:\nwsl --install",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Instalación de Software</span>"
+    ]
+  },
+  {
+    "objectID": "S1_02_instalacion_software.html#instalar-wsl-windows",
+    "href": "S1_02_instalacion_software.html#instalar-wsl-windows",
+    "title": "2  Instalación de Software",
+    "section": "",
+    "text": "Abre PowerShell como Administrador.\nEjecuta el comando:\n\n\n\nReinicia tu equipo cuando se solicite.\nTras reiniciar, abre una terminal de Ubuntu (u otra distribución) desde el menú inicio.\nConfigura tu usuario y contraseña en la primera ejecución.\nPara más detalles, revisa la documentación oficial: https://learn.microsoft.com/es-es/windows/wsl/install",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Instalación de Software</span>"
+    ]
+  },
+  {
+    "objectID": "S1_02_instalacion_software.html#instalar-docker",
+    "href": "S1_02_instalacion_software.html#instalar-docker",
+    "title": "2  Instalación de Software",
+    "section": "2.2 Instalar Docker",
+    "text": "2.2 Instalar Docker\n\n2.2.1 Docker Desktop (Windows)\n\nDescarga el instalador desde: https://docs.docker.com/desktop/setup/install/windows-install/\nEjecuta el instalador y sigue los pasos por defecto.\nAl finalizar, abre Docker Desktop.\n\n\n\n2.2.2 Docker Desktop (macOS)\n\nDescarga el instalador desde: https://docs.docker.com/desktop/setup/install/mac-install/\nEjecuta el instalador y sigue los pasos por defecto.\nAl finalizar, abre Docker Desktop.\n\n\n\n2.2.3 Docker Engine (Linux)\nLa instalación puede variar según la distribución con la que se cuenta, revisar el manual en https://docs.docker.com/desktop/setup/install/linux/. A continuación se muestra la instalación en Ubuntu.\n\nMediante repositorio Docker apt\n\nConfigurar el repositorio de Docker\n\n\n# Actualizar los paquetes e instalar dependencias\nsudo apt-get update\nsudo apt-get install ca-certificates curl\n\n# Agregar la clave GPG oficial de Docker\nsudo install -m 0755 -d /etc/apt/keyrings\nsudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc\nsudo chmod a+r /etc/apt/keyrings/docker.asc\n\n# Agregar el repositorio a las fuentes de APT\necho \\\n  \"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \\\n  $(. /etc/os-release && echo \"${UBUNTU_CODENAME:-$VERSION_CODENAME}\") stable\" | \\\n  sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null\nsudo apt-get update\n\n\nInstalar los paquetes de Docker\n\n\n# Instalar la última versión\nsudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin\n\n\nVerifica la instalación\n\n\ndocker --version\nsudo docker run hello-world\n\n\n\nInstalación manual desde los paquetes deb\n\nVisita https://download.docker.com/linux/ubuntu/dists/, selecciona tu versión de Ubuntu y arquitectura, luego descarga:\n\ncontainerd.io_&lt;version&gt;_&lt;arch&gt;.deb\ndocker-ce_&lt;version&gt;_&lt;arch&gt;.deb\ndocker-ce-cli_&lt;version&gt;_&lt;arch&gt;.deb\ndocker-buildx-plugin_&lt;version&gt;_&lt;arch&gt;.deb\ndocker-compose-plugin_&lt;version&gt;_&lt;arch&gt;.deb\n\nInstala los paquetes\n\n\nsudo dpkg -i ./containerd.io_&lt;version&gt;_&lt;arch&gt;.deb \\\n  ./docker-ce_&lt;version&gt;_&lt;arch&gt;.deb \\\n  ./docker-ce-cli_&lt;version&gt;_&lt;arch&gt;.deb \\\n  ./docker-buildx-plugin_&lt;version&gt;_&lt;arch&gt;.deb \\\n  ./docker-compose-plugin_&lt;version&gt;_&lt;arch&gt;.deb\n\n\nIniciar y verificar Docker\n\n\nsudo service docker start\nsudo docker run hello-world\n\n\n\n\n2.2.4 Docker Desktop (Linux)\nUna vez instalado Docker Engine, podemos instalar Docker Desktop\n\nDescarga la última version de paquete DEB.\nInstalaa el paquete usando apt\n\n\nsudo apt-get update\nsudo apt-get install ./docker-desktop-amd64.deb\n\n\nAl finalizar, abre Docker Desktop.",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Instalación de Software</span>"
+    ]
+  },
+  {
+    "objectID": "S1_02_instalacion_software.html#descargar-la-imagen-docker-personalizada",
+    "href": "S1_02_instalacion_software.html#descargar-la-imagen-docker-personalizada",
+    "title": "2  Instalación de Software",
+    "section": "2.3 Descargar la imagen Docker personalizada",
+    "text": "2.3 Descargar la imagen Docker personalizada\nEn caso de usar una iamgen Docker, los pasos generales son:\n\ndocker pull davidalbertoge/unix-example:latest\n\nPara ejecutar un contenedor interactivo:\n\ndocker run -it davidalbertoge/unix-example:latest /bin/bash",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Instalación de Software</span>"
+    ]
+  },
+  {
+    "objectID": "S1_02_instalacion_software.html#instalar-git",
+    "href": "S1_02_instalacion_software.html#instalar-git",
+    "title": "2  Instalación de Software",
+    "section": "2.4 Instalar Git",
+    "text": "2.4 Instalar Git\n\n2.4.1 Windows\n\nDescarga el instalador desde: https://git-scm.com/downloads/win\nEjecuta el instalador y acepta las opciones por defecto.\nAbre Git Bash desde el menú inicio.\n\n\n\n2.4.2 macOS\n\nInstala homebrew, sino lo tienes instalado\n\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\n\n\nInstala git usando el siguiente comando\n\n\nbrew install git\n\n\n\n2.4.3 Linux\n\nInstala git usando el siguente comando\n\n\nsudo apt update\nsudo apt install git\n\n\n\n2.4.4 Verifica la instalación\n\ngit --version",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Instalación de Software</span>"
+    ]
+  },
+  {
+    "objectID": "S1_02_instalacion_software.html#instalar-visual-studio-code",
+    "href": "S1_02_instalacion_software.html#instalar-visual-studio-code",
+    "title": "2  Instalación de Software",
+    "section": "2.5 Instalar Visual Studio Code",
+    "text": "2.5 Instalar Visual Studio Code\n\nDescarga el instalador desde: https://code.visualstudio.com/\nEjecuta el instalador:\n\nEn Windows: sigue el asistente.\nEn macOS:\n\nExtrae el archivo .zip\nArrastra .app a la carpeta de Aplicaciones\n\nEn Linux (Debian/Ubuntu):\n\n\n\nsudo apt update\nsudo dpkg -i code.deb\n\n\n\n¡Listo! Ahora dispones de un entorno configurado con WSL, Docker, Git y VS Code listo para empezar tu aprendizaje en BioCode Academy.",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Instalación de Software</span>"
+    ]
+  },
+  {
+    "objectID": "S1_03_unix_bash.html",
+    "href": "S1_03_unix_bash.html",
+    "title": "3  Filosofía Unix & Bash",
+    "section": "",
+    "text": "3.1 ¿Por qué Unix?\nEste módulo abacara una introducción a lo que es Unix, Shell y Bash, así como, consejos para trabajar en línea de comandos.",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Filosofía Unix & Bash</span>"
+    ]
+  },
+  {
+    "objectID": "S1_03_unix_bash.html#por-qué-unix",
+    "href": "S1_03_unix_bash.html#por-qué-unix",
+    "title": "3  Filosofía Unix & Bash",
+    "section": "",
+    "text": "3.1.1 Origen e Historia\n\n1969: Sistema operativo desarrollodo inicialmente en AT&T Bell Labs (Ken Thompson, Dennis Ritchie)\n1973: Reescribido en C, permitiendo portabilidad\nEvolución: BSD, System V, GNU/Linux, macOS\n\n\n\n\n\n\n\n\n3.1.2 Filosofía Unix\n\nPrincipio de modularidad: Programas pequeños que hacen una cosa bien\nComposición: Conectar programas mediante pipes (|)\nTexto como interfaz universal: Formatos de texto plano para entrada/salida\nOcultar complejidad: Interfaces simples que ocultan implementaciones complejas\nPrincipio KISS: “Keep It Simple, Stupid”\n\n\n# Ejemplo clásico de filosofía Unix\ngrep \"^&gt;\" secuencias.fasta | sort | uniq -c | sort -nr",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Filosofía Unix & Bash</span>"
+    ]
+  },
+  {
+    "objectID": "S1_03_unix_bash.html#por-qué-shell",
+    "href": "S1_03_unix_bash.html#por-qué-shell",
+    "title": "3  Filosofía Unix & Bash",
+    "section": "3.2 ¿Por qué Shell?",
+    "text": "3.2 ¿Por qué Shell?\n\n3.2.1 El shell como entorno de trabajo\n\nInterfaz fundamental: Acceso directo al sistema operativo\nAutomatización: Scripting para tareas repetitivas\nPortabilidad: Disponible en prácticamente todos los sistemas Unix-like\n\n\n\n3.2.2 Ventajas de Bash\n\nUbicuidad: Shell por defecto en la mayoría de distribuciones Linux\nPotencia: Completo lenguaje de scripting\nPersonalización: .bashrc, aliases, funciones\nCompatibilidad: Mejorado sobre sh tradicional",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Filosofía Unix & Bash</span>"
+    ]
+  },
+  {
+    "objectID": "S1_03_unix_bash.html#principios-básicos-y-ventajas",
+    "href": "S1_03_unix_bash.html#principios-básicos-y-ventajas",
+    "title": "3  Filosofía Unix & Bash",
+    "section": "3.3 Principios básicos y ventajas",
+    "text": "3.3 Principios básicos y ventajas\n\n3.3.1 Principios fundamentales\n\n\n\n\n\n\n\n\nPrincipio\nDescripción\nEjemplo\n\n\n\n\nEverything is a file\nDispositivos, procesos, sockets como archivos\n/dev, /proc\n\n\nSmall is beautiful\nProgramas pequeños y especializados\ngrep, awk, sed\n\n\nFilter pattern\nProgramas que procesan entrada y producen salida\ncat file | sort\n\n\nPreferir texto\nTexto plano como formato universal\nlogs, configs\n\n\nRule of Silence\nNo generar output innecesario\n-q/--quiet\n\n\n\n\n\n3.3.2 Ventajas clave\nEficiencia\n\n# Procesamiento eficiente de datos\nawk 'NR % 4 == 1' archivo.fastq | sort | cut -c2- | sort | uniq -c | sort -rn | head -20\n\nAutomatización\n\n# Backup automatizado\ntar -czf resultados_alineamiento_$(date +%Y%m%d).tar.gz resultados/*.sam && scp resultados_*.tar.gz usuario@servidor:~\n\nPortabilidad\n\n# Script que funciona en múltiples sistemas\n#!/usr/bin/env bash\n\nExtensibilidad\n\n# Crear comandos personalizados\nalias ll='ls -alF'\n\n\n\n3.3.3 Referencias rápidas en bash\n\nCtrl+C: Interrumpir comando\nCtrl+L: Limpiar pantalla\nCtrl+A: Ir al inicio de línea\nCtrl+E: Ir al final de línea\nCtrl+U: Borrar hasta inicio de línea\nCtrl+K: Borrar hasta final de línea",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Filosofía Unix & Bash</span>"
+    ]
+  },
+  {
+    "objectID": "S1_03_unix_bash.html#casos-de-estudio",
+    "href": "S1_03_unix_bash.html#casos-de-estudio",
+    "title": "3  Filosofía Unix & Bash",
+    "section": "3.4 Casos de estudio",
+    "text": "3.4 Casos de estudio\n\n3.4.1 Pipeline clásico\n\n# Analizar archivo FASTQ para obtener lecturas con baja calidad\nseqkit fx2tab -q -n -i reads.fastq | awk '$2 &lt; 30' | sort | uniq -c | sort -nr | head -10\n\n\n\n3.4.2 One-liners\n\n# Buscar archivos FASTQ y comprimirlos\nfind . -name \"*.fastq\" -exec gzip {} \\; | xargs -I{} echo \"Comprimido: {}\"\n\n# Monitorizar uso de memoria durante alineamiento\nwatch -n 1 'ps -C bwa -o %mem,%cpu,cmd'",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Filosofía Unix & Bash</span>"
+    ]
+  },
+  {
+    "objectID": "S1_03_unix_bash.html#buenas-prácticas",
+    "href": "S1_03_unix_bash.html#buenas-prácticas",
+    "title": "3  Filosofía Unix & Bash",
+    "section": "3.5 Buenas Prácticas",
+    "text": "3.5 Buenas Prácticas\n\n3.5.1 Scripting robusto\n\n#!/usr/bin/env bash\nset -euo pipefail     # Falla ante cualquier error\nIFS=$'\\n\\t'           # Maneja nombres con espacios\n\n# Validar argumentos de entrada\nif [[ $# -ne 2 ]]; then\n  echo \"Uso: ${0##*/} &lt;input.fastq&gt; &lt;genoma_referencia.fa&gt;\" &gt;&2\n  exit 1\nfi\n\n# Procesamiento seguro de muestras\necho \"&gt;&gt;&gt; Alineando ${1} contra ${2}...\"\nbwa mem -t 4 \"$2\" \"$1\" | samtools view -bS - &gt; aligned.bam\n\n# Control de calidad del alineamiento\nsamtools flagstat aligned.bam &gt; alignment_stats.txt\necho \"&gt;&gt;&gt; Resultados guardados en alignment_stats.txt\"\n\n\n\n3.5.2 Versión extendida con más controles\n\n#!/usr/bin/env bash\nset -euo pipefail\nIFS=$'\\n\\t'\n\n# Configuración sensible para datos biológicos\nREF_GENOME=\"/data/genomes/hg38.fa\"\nTHREADS=8\nMIN_QUALITY=20\n\n# Validación de entradas\nrequired_tools=(\"bwa\" \"samtools\" \"seqkit\")\nfor tool in \"${required_tools[@]}\"; do\n  if ! command -v \"$tool\" &&gt; /dev/null; then\n    echo \"ERROR: $tool no está instalado\" &gt;&2\n    exit 1\n  fi\ndone\n\n# Procesamiento pipeline\nprocess_sample() {\n  local input_fastq=\"$1\"\n  local sample_name=$(basename \"$input_fastq\" .fastq)\n  \n  echo \"&gt;&gt;&gt; Procesando muestra: $sample_name\"\n  seqkit stats \"$input_fastq\" &gt; \"${sample_name}_qc.txt\"\n  \n  bwa mem -t \"$THREADS\" \"$REF_GENOME\" \"$input_fastq\" \\\n    | samtools view -b -q \"$MIN_QUALITY\" - \\\n    | samtools sort -o \"${sample_name}.sorted.bam\"\n  \n  samtools index \"${sample_name}.sorted.bam\"\n}\n\n# Ejecución principal\nprocess_sample \"$@\"\n\n\n\n3.5.3 Consejos para usuarios\n\nAprender expresiones regulares: grep -E, sed -E\nDominar redirecciones: &gt;, &gt;&gt;, 2&gt;, &&gt;\nUsar man: Documentación completa (man bash, man grep)\nExplorar herramientas estándar: awk, sed, cut, tr\nVersionar scripts: Usar Git incluso para scripts pequeños",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Filosofía Unix & Bash</span>"
+    ]
+  },
+  {
+    "objectID": "S1_03_unix_bash.html#recursos-adicionales",
+    "href": "S1_03_unix_bash.html#recursos-adicionales",
+    "title": "3  Filosofía Unix & Bash",
+    "section": "3.6 Recursos adicionales",
+    "text": "3.6 Recursos adicionales\n\nLibros:\n\n“The Unix Programming Environment” (Kernighan & Pike)\n“Bash Guide for Beginners” (Machtelt Garrels)\n\nEn línea:\n\nBash Hackers Wiki\nGreg’s Wiki\n\nPráctica:\n\nExplain Shell\nShellCheck",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Filosofía Unix & Bash</span>"
+    ]
+  },
+  {
+    "objectID": "S1_04_datos_biologicos.html",
+    "href": "S1_04_datos_biologicos.html",
+    "title": "4  Datos biológicos",
+    "section": "",
+    "text": "4.1 Introducción a las secuencias biológicas\nEste módulo cubre los tipos de datos biológicos fundamentales en bioinformática: secuencias de ADN, ARN y proteínas. Se explican sus características, formatos de archivo y ejemplos de comandos básicos de Unix/Bash para manipularlos.",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Datos biológicos</span>"
+    ]
+  },
+  {
+    "objectID": "S1_04_datos_biologicos.html#introducción-a-las-secuencias-biológicas",
+    "href": "S1_04_datos_biologicos.html#introducción-a-las-secuencias-biológicas",
+    "title": "4  Datos biológicos",
+    "section": "",
+    "text": "ADN (Ácido Desoxirribonucleico): molécula portadora de la información genética. Bases: Adenina (A), Citocinina (C), Guananina (G), Timina (T).\nARN (Ácido Ribonucleico): similar al ADN, pero con ribosa y Uracilo (U) en lugar de T. Muy importante en expresión génica.\nProteínas: polímeros de aminoácidos (20 tipos estándar). Funcionan como enzimas, estructuras y mensajeros.",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Datos biológicos</span>"
+    ]
+  },
+  {
+    "objectID": "S1_04_datos_biologicos.html#formatos-de-archivo",
+    "href": "S1_04_datos_biologicos.html#formatos-de-archivo",
+    "title": "4  Datos biológicos",
+    "section": "4.2 Formatos de archivo",
+    "text": "4.2 Formatos de archivo\n\n4.2.1 FASTA\nEs el formato más común para representar secuencias individuales.\n```fasta\n&gt;seq1 Homo_sapiens_geneX\nATGCGTACGTAGCTAGCTAGCTAGC\n&gt;seq2 Mus_musculus_geneY\nATGCGTAGCTAGCTAAACCGGTT\n```\n\nLínea de encabezado: comienza con &gt; seguido del identificador y descripción.\nSiguientes líneas: la secuencia en mayúsculas.\n\n\nEjemplo Bash: contar secuencias\n\n# Contar el número de secuencias en un FASTA\ngrep -c \"&gt;\" secuencias.fasta\n\n\n\n\n4.2.2 FASTQ\nFormato para secuencias con calidad de lecturas (p. ej., Illumina).\n```fastq\n@read1\nACGTAGCTAGCTAGC\n+\nIIIIHHHHGGGGFFFF\n```\n\nLínea 1: @ + identificador.\nLínea 2: secuencia.\nLínea 3: + opcionalmente repetición del identificador.\nLínea 4: puntuaciones de calidad en ASCII.\n\n\nEjemplo Bash: extraer IDs de lecturas de baja calidad\n\n# Usando seqkit para calidad promedio &lt; 20\nseqkit fx2tab -q -n -i reads.fastq | awk '$2 &lt; 20' | cut -f1\n\n\n\n\n4.2.3 gff/gff3\nFormato tabular para anotaciones genómicas.\nEsta compuesto de 9 columnas:\n\nseqid - Nombre del cromosoma o scaffold.\nsource - Nombre del programa que generó esta característica o fuente de datos (base de datos o proyecto).\ntype - Tipo de característica. Debe ser un término o acceso de la ontología de secuencias SOFA.\nstart - Posición inicial de la característica (la numeración de secuencia comienza en 1).\nend - Posición final de la característica (la numeración de secuencia comienza en 1).\nscore - Valor numérico de punto flotante.\nstrand - Cadena definida como ‘+’ (forward/sentido) o ‘-’ (reverse/antisentido).\nphase - Uno de ‘0’, ‘1’ o ‘2’. ‘0’ indica que la primera base de la característica es la primera base de un codón, ‘1’ que la segunda base es la primera de un codón, etc.\nattributes - Lista de pares tag-valor separados por punto y coma, que proveen información adicional sobre cada característica. Algunos tags están predefinidos (ID, Name, Alias, Parent). Consulte la documentación GFF para más detalles.\n\n```gff3\n##gff-version 3\nChr_1   funannotate gene    550 1495    .   -   .   ID=Tatro_000001;\nChr_1   funannotate mRNA    550 1495    .   -   .   ID=Tatro_000001-T1;Parent=Tatro_000001;product=hypothetical protein;\nChr_1   funannotate exon    1230    1495    .   -   .   ID=Tatro_000001-T1.exon1;Parent=Tatro_000001-T1;\nChr_1   funannotate exon    550 1171    .   -   .   ID=Tatro_000001-T1.exon2;Parent=Tatro_000001-T1;\nChr_1   funannotate CDS 1230    1495    .   -   0   ID=Tatro_000001-T1.cds;Parent=Tatro_000001-T1;\nChr_1   funannotate CDS 550 1171    .   -   1   ID=Tatro_000001-T1.cds;Parent=Tatro_000001-T1;\nChr_1   funannotate gene    3585    5108    .   -   .   ID=Tatro_000002;\nChr_1   funannotate mRNA    3585    5108    .   -   .   ID=Tatro_000002-T1;Parent=Tatro_000002;product=hypothetical protein;\nChr_1   funannotate five_prime_UTR  4960    5108    .   -   .   ID=Tatro_000002-T1.utr5p1;Parent=Tatro_000002-T1;\nChr_1   funannotate exon    4516    5108    .   -   .   ID=Tatro_000002-T1.exon1;Parent=Tatro_000002-T1;\nChr_1   funannotate exon    3585    4452    .   -   .   ID=Tatro_000002-T1.exon2;Parent=Tatro_000002-T1;\nChr_1   funannotate three_prime_UTR 3585    3780    .   -   .   ID=Tatro_000002-T1.utr3p1;Parent=Tatro_000002-T1;\nChr_1   funannotate CDS 4516    4959    .   -   0   ID=Tatro_000002-T1.cds;Parent=Tatro_000002-T1;\nChr_1   funannotate CDS 3781    4452    .   -   0   ID=Tatro_000002-T1.cds;Parent=Tatro_000002-T1;\n```\n\nEjemplo Bash: extraer genes de cromosoma 1\n\nawk '\\$1==\"chr1\" && \\$3==\"gene\"' anotacion.gff3 &gt; genes_chr1.gff3\n\n\n\n\n4.2.4 BAM/SAM\n\nSAM: formato de texto para alineamientos.\nBAM: versión binaria compacta.\n\n\nEjemplo Bash: ver primeras 5 líneas de un BAM\n\nsamtools view alignments.bam | head -5",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Datos biológicos</span>"
+    ]
+  },
+  {
+    "objectID": "S1_04_datos_biologicos.html#comparación-y-uso-en-unix",
+    "href": "S1_04_datos_biologicos.html#comparación-y-uso-en-unix",
+    "title": "4  Datos biológicos",
+    "section": "4.3 Comparación y uso en Unix",
+    "text": "4.3 Comparación y uso en Unix\n\nLas secuencias se manipulan con pipes y herramientas como grep, awk, cut, sort, uniq, seqkit, samtools.\nPrincipio Unix: un comando realiza una tarea, y se combinan con pipes para flujos complejos.",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Datos biológicos</span>"
+    ]
+  },
+  {
+    "objectID": "S1_04_datos_biologicos.html#buenas-prácticas",
+    "href": "S1_04_datos_biologicos.html#buenas-prácticas",
+    "title": "4  Datos biológicos",
+    "section": "4.4 Buenas prácticas",
+    "text": "4.4 Buenas prácticas\n\nIndentar y comentar scripts.\nCrear archivos de log.",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Datos biológicos</span>"
+    ]
+  },
+  {
+    "objectID": "S1_04_datos_biologicos.html#recursos-adicionales",
+    "href": "S1_04_datos_biologicos.html#recursos-adicionales",
+    "title": "4  Datos biológicos",
+    "section": "4.5 Recursos adicionales",
+    "text": "4.5 Recursos adicionales\n\nBiostars\nNCBI Genome\nseqkit documentation",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Datos biológicos</span>"
+    ]
+  },
+  {
+    "objectID": "S2_01_explorar_archivos.html",
+    "href": "S2_01_explorar_archivos.html",
+    "title": "5  Exploración del Sistema de Archivos",
+    "section": "",
+    "text": "5.1 ¿Por qué es importante?\nLa navegación efectiva del sistema de archivos es fundamental para cualquier trabajo en bioinformática. En este módulo aprenderás a moverte con confianza por tu sistema usando la terminal bash.\nEn bioinformática trabajamos constantemente con:",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Exploración del Sistema de Archivos</span>"
+    ]
+  },
+  {
+    "objectID": "S2_01_explorar_archivos.html#por-qué-es-importante",
+    "href": "S2_01_explorar_archivos.html#por-qué-es-importante",
+    "title": "5  Exploración del Sistema de Archivos",
+    "section": "",
+    "text": "Archivos de secuencias (FASTA, FASTQ)\nBases de datos genómicas\nScripts de análisis\nResultados de experimentos\nMúltiples directorios de proyectos",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Exploración del Sistema de Archivos</span>"
+    ]
+  },
+  {
+    "objectID": "S2_01_explorar_archivos.html#comandos-básicos-de-navegación",
+    "href": "S2_01_explorar_archivos.html#comandos-básicos-de-navegación",
+    "title": "5  Exploración del Sistema de Archivos",
+    "section": "5.2 Comandos básicos de navegación",
+    "text": "5.2 Comandos básicos de navegación\nAntes de comenzar, vamos a descargar y descomprimir el siguiente archivo class.zip, el cual contiene los archivos necesarios para esta clase.\n\n# Descarga de archivos de la web\nwget \n\n# Descomprimir archivos .zip\nunzip class.zip\n\n\nNota: Estos archivos son propiedad de la (Software Carpetry)[https://software-carpentry.org/] (The Carpentries 2025) un proyecto que enseña habilidades computacionales básicas a investigadores para que puedan trabajar de forma más eficiente y productiva.\n\n\n5.2.1 pwd - ¿Dónde estoy?\nEl comando pwd (Print Working Directory) te muestra tu ubicación actual:\n\npwd\n\nResultado esperado:\n\n# Salida: \n# /home/david/Documents/Code/courses/BioCode-Academy/Unix\n\n\n\n5.2.2 ls - ¿Qué hay aquí?\nLista el contenido del directorio actual o especificado:\n\n# Listado básico\nls\n\n# Listado detallado con permisos, fechas y tamaños\nls -l\n\n# Incluir archivos ocultos\nls -la\n\n# Ordenar por fecha de modificación\nls -lt\n\n# Tamaños legibles para humanos\nls -lh\n\nEjemplo:\n\nls -lh class/\n\nResultado esperado:\n\n# total 72K\n# drwxr-xr-x 2 david david 4.0K Nov 17  2015 creatures\n# drwxr-xr-x 5 david david 4.0K Nov 17  2015 data\n# drwxr-xr-x 2 david david 4.0K Nov 17  2015 Desktop\n# drwxr-xr-x 2 david david 4.0K Nov 17  2015 molecules\n# drwxrwxr-x 2 david david 4.0K May 26 14:54 Neucr2\n# drwxr-xr-x 3 david david 4.0K Nov 17  2015 north-pacific-gyre\n# -rw-r--r-- 1 david david   86 Nov 17  2015 notes.txt\n# -rw-r--r-- 1 david david   32 Nov 17  2015 pizza.cfg\n# -rw-r--r-- 1 david david  22K Nov 17  2015 solar.pdf\n# drwxr-xr-x 6 david david 4.0K Nov 17  2015 writing\n\nOpciones útiles de ls:\n\n-l: formato largo con detalles\n-a: mostrar archivos ocultos (empiezan con .)\n-h: tamaños legibles (KB, MB, GB)\n-t: ordenar por fecha\n-r: orden inverso\n-S: ordenar por tamaño\n\n\n\n5.2.3 cd - Moverse entre directorios\nEste comando permite cambiar de directorio (Change Directory)\n\n# Ir a un directorio específico\ncd /home/usuario/proyectos\n\n# Ir al directorio padre\ncd ..\n\n# Ir al directorio home del usuario\ncd ~\n# o simplemente\ncd\n\n# Volver al directorio anterior\ncd -\n\nEjemplo:\n\n# Navegando en un proyecto de análisis de microbioma\npwd \n# /home/david/Documents/Code/courses/BioCode-Academy/Unix/\ncd class/creatures/\npwd\n# /home/david/Documents/Code/courses/BioCode-Academy/Unix/class/creatures\ncd ..\npwd\n# /home/david/Documents/Code/courses/BioCode-Academy/Unix/class\ncd\npwd\n# /home/david\ncd -\npwd\n# /home/david/Documents/Code/courses/BioCode-Academy/Unix/class\ncd ..\npwd\n# /home/david/Documents/Code/courses/BioCode-Academy/Unix/\n\n\n\n5.2.4 tree - Vista jerárquica\nMuestra la estructura de directorios en forma de árbol (tree):\n\n# Instalar tree si no está disponible\nsudo apt install tree  # Ubuntu/Debian\nbrew install tree      # macOS\n\n# Uso básico\ntree\n\n# Limitar profundidad\ntree -L 2\n\n# Solo directorios\ntree -d\n\n# Incluir tamaños de archivo\ntree -h\n\nEjemplo:\n\n# Estructura típica de un proyecto de bioinformática\ntree class/ -L 2 -h\n\nResultado esperado:\n\n# [4.0K]  class/\n# ├── [4.0K]  creatures\n# │   ├── [1.8K]  basilisk.dat\n# │   └── [1.8K]  unicorn.dat\n# ├── [4.0K]  data\n# │   ├── [ 283]  amino-acids.txt\n# │   ├── [4.0K]  animal-counts\n# │   ├── [ 136]  animals.txt\n# │   ├── [4.0K]  elements\n# │   ├── [ 554]  morse.txt\n# │   ├── [4.0K]  pdb\n# │   ├── [8.7K]  planets.txt\n# │   ├── [  45]  salmon.txt\n# │   └── [ 72K]  sunspot.txt\n# ├── [4.0K]  Desktop\n# ├── [4.0K]  molecules\n# │   ├── [1.1K]  cubane.pdb\n# │   ├── [ 622]  ethane.pdb\n# │   ├── [ 422]  methane.pdb\n# │   ├── [1.8K]  octane.pdb\n# │   ├── [1.2K]  pentane.pdb\n# │   └── [ 825]  propane.pdb\n# ├── [4.0K]  Neucr2\n# │   ├── [ 12M]  Neucr2_AssemblyScaffolds.fasta.gz\n# │   ├── [ 13M]  Neucr2_AssemblyScaffolds_Repeatmasked.fasta.gz\n# │   ├── [1.1M]  Neucr2.filtered_proteins.BroadModels.gff3.gz\n# │   ├── [4.6M]  Neucr2_GeneCatalog_CDS_20130412.fasta.gz\n# │   ├── [779K]  Neucr2_GeneCatalog_genes_20130412.gff.gz\n# │   ├── [3.0M]  Neucr2_GeneCatalog_proteins_20130412.aa.fasta.gz\n# │   ├── [242K]  Neucr2_GeneCatalog_proteins_20130412_GO.tab.gz\n# │   ├── [632K]  Neucr2_GeneCatalog_proteins_20130412_IPR.tab.gz\n# │   ├── [ 84K]  Neucr2_GeneCatalog_proteins_20130412_KEGG.tab.gz\n# │   ├── [120K]  Neucr2_GeneCatalog_proteins_20130412_KOG.tab.gz\n# │   ├── [5.7K]  Neucr2_GeneCatalog_proteins_20130412_SigP.tab.gz\n# │   └── [6.8M]  Neucr2_GeneCatalog_transcripts_20130412.nt.fasta.gz\n# ├── [4.0K]  north-pacific-gyre\n# │   └── [4.0K]  2012-07-03\n# ├── [  86]  notes.txt\n# ├── [  32]  pizza.cfg\n# ├── [ 21K]  solar.pdf\n# └── [4.0K]  writing\n#     ├── [4.0K]  data\n#     ├── [ 218]  haiku.txt\n#     ├── [4.0K]  old\n#     ├── [4.0K]  thesis\n#     └── [4.0K]  tools\n# \n# 15 directories, 18 files",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Exploración del Sistema de Archivos</span>"
+    ]
+  },
+  {
+    "objectID": "S2_01_explorar_archivos.html#atajos-y-rutas-especiales",
+    "href": "S2_01_explorar_archivos.html#atajos-y-rutas-especiales",
+    "title": "5  Exploración del Sistema de Archivos",
+    "section": "5.3 Atajos y rutas especiales",
+    "text": "5.3 Atajos y rutas especiales\n\n5.3.1 Rutas absolutas vs relativas\n\n# Ruta absoluta (desde la raíz del sistema)\ncd /home/usuario/proyectos/genomica/datos\n\n# Ruta relativa (desde la ubicación actual)\ncd datos/\ncd ../scripts/\ncd ../../otro_proyecto/\n\n\n\n5.3.2 Atajos importantes\n\n# ~ : Directorio home del usuario\nls ~/Documentos/\n\n# . : Directorio actual\nls ./datos/\n\n# .. : Directorio padre\ncd ../\n\n# $PWD : Variable con el directorio actual\necho \"Estoy en: $PWD\"\n\n# $HOME : Variable con el directorio home\necho \"Mi home es: $HOME\"",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Exploración del Sistema de Archivos</span>"
+    ]
+  },
+  {
+    "objectID": "S2_01_explorar_archivos.html#ejemplo-práctico",
+    "href": "S2_01_explorar_archivos.html#ejemplo-práctico",
+    "title": "5  Exploración del Sistema de Archivos",
+    "section": "5.4 Ejemplo práctico",
+    "text": "5.4 Ejemplo práctico\n\n5.4.1 Navegando un proyecto\nEjemplo:\n\n# Ir al directorio de clase\ncd /home/david/Documents/Code/courses/BioCode-Academy/Unix/class\n\n# Explorar la estructura\ntree -d\n\nResultado esperado:\n\n# .\n# ├── creatures\n# ├── data\n# │   ├── animal-counts\n# │   ├── elements\n# │   └── pdb\n# ├── Desktop\n# ├── molecules\n# ├── Neucr2\n# ├── north-pacific-gyre\n# │   └── 2012-07-03\n# └── writing\n#     ├── data\n#     ├── old\n#     ├── thesis\n#     └── tools\n#         └── old\n#\n# 16 directories\n\nEjemplo:\n\n# Verificar archivos presentes en la carpeta pdb\n## V1\nls -lh data/pdb/ | head -n 5\n## V2\ncd data/pdb/ | ls -lh | head -n 5\n\nResultado esperado:\n\n# total 208K\n# -rw-r--r-- 1 david david 1.5K Nov 17  2015 aldrin.pdb\n# -rw-r--r-- 1 david david  306 Nov 17  2015 ammonia.pdb\n# -rw-r--r-- 1 david david 1.5K Nov 17  2015 ascorbic-acid.pdb\n# -rw-r--r-- 1 david david 1.1K Nov 17  2015 benzaldehyde.pdb",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Exploración del Sistema de Archivos</span>"
+    ]
+  },
+  {
+    "objectID": "S2_01_explorar_archivos.html#consejos-y-buenas-prácticas",
+    "href": "S2_01_explorar_archivos.html#consejos-y-buenas-prácticas",
+    "title": "5  Exploración del Sistema de Archivos",
+    "section": "5.5 Consejos y Buenas Prácticas",
+    "text": "5.5 Consejos y Buenas Prácticas\n\nUsa autocompletado: Presiona Tab para completar nombres de archivos y directorios\nHistorial de comandos: Usa las flechas ↑↓ para navegar por comandos anteriores\nNombres descriptivos: Usa nombres claros para directorios (datos_crudos mejor que data1)\nEstructura consistente: Mantén una organización estándar en todos tus proyectos\nBackup regular: Siempre ten copias de seguridad de datos importantes",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Exploración del Sistema de Archivos</span>"
+    ]
+  },
+  {
+    "objectID": "S2_01_explorar_archivos.html#comando-de-ayuda",
+    "href": "S2_01_explorar_archivos.html#comando-de-ayuda",
+    "title": "5  Exploración del Sistema de Archivos",
+    "section": "5.6 Comando de ayuda",
+    "text": "5.6 Comando de ayuda\n\n# Obtener ayuda de la mayoría de los comandos\nman ls\nman cd\nls --help",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Exploración del Sistema de Archivos</span>"
+    ]
+  },
+  {
+    "objectID": "S2_01_explorar_archivos.html#resumen-de-comandos",
+    "href": "S2_01_explorar_archivos.html#resumen-de-comandos",
+    "title": "5  Exploración del Sistema de Archivos",
+    "section": "5.7 Resumen de comandos",
+    "text": "5.7 Resumen de comandos\n\n\n\nComando\nFunción\nEjemplo\n\n\n\n\npwd\nMostrar directorio actual\npwd\n\n\nls\nListar contenido\nls -lh\n\n\ncd\nCambiar directorio\ncd datos/\n\n\ntree\nVista jerárquica\ntree -L 2\n\n\n~\nDirectorio home\ncd ~\n\n\n.\nDirectorio actual\nls ./\n\n\n..\nDirectorio padre\ncd ../\n\n\n\n\n\n\n\nThe Carpentries. 2025. “Software Carpentry.” https://software-carpentry.org/.",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Exploración del Sistema de Archivos</span>"
+    ]
+  },
+  {
+    "objectID": "S2_02_gestion_archivos.html",
+    "href": "S2_02_gestion_archivos.html",
+    "title": "6  Gestión de Archivos y Directorios",
+    "section": "",
+    "text": "6.1 Creación de archivos y directorios\nLa gestión eficiente de archivos y directorios es esencial en bioinformática, donde trabajamos con grandes volúmenes de datos, múltiples versiones de archivos y estructuras de proyectos complejas.",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Gestión de Archivos y Directorios</span>"
+    ]
+  },
+  {
+    "objectID": "S2_02_gestion_archivos.html#creación-de-archivos-y-directorios",
+    "href": "S2_02_gestion_archivos.html#creación-de-archivos-y-directorios",
+    "title": "6  Gestión de Archivos y Directorios",
+    "section": "",
+    "text": "6.1.1 touch - Crear archivos vacíos\n\n# Crear un archivo vacío\ntouch archivo.txt\n\n# Crear múltiples archivos\ntouch archivo1.txt archivo2.txt archivo3.txt\n\n# Crear archivos con nombres específicos de bioinformática\ntouch secuencias.fasta\ntouch metadata.tsv\ntouch pipeline_config.yaml\ntouch analysis_log.txt\n\n# Crear archivos con timestamp\ntouch experimento_$(date +%Y%m%d).log\n\nEjemplo:\n\n# Asegurate estar en la carpeta class\n# Crear archivos de prueba\ntouch genome_assembly.fasta\ntouch gene_annotations.gff3\ntouch protein_sequences.faa\ntouch analysis_parameters.txt\n\n# Listamos los archivos esperadno encontrar los que creamoms\nls -lt\n\nResultado esperado:\n\n# drwxrwxr-x 2 david david  4096 May 26 14:54 Neucr2\n# -rw-rw-r-- 1 david david     0 May 26 12:56 protein_sequences.faa\n# -rw-rw-r-- 1 david david     0 May 26 12:56 analysis_parameters.txt\n# -rw-rw-r-- 1 david david     0 May 26 12:56 gene_annotations.gff3\n# -rw-rw-r-- 1 david david     0 May 26 12:56 genome_assembly.fasta\n# drwxr-xr-x 2 david david  4096 Nov 17  2015 creatures\n# drwxr-xr-x 5 david david  4096 Nov 17  2015 data\n# drwxr-xr-x 2 david david  4096 Nov 17  2015 Desktop\n# drwxr-xr-x 2 david david  4096 Nov 17  2015 molecules\n# drwxr-xr-x 3 david david  4096 Nov 17  2015 north-pacific-gyre\n# -rw-r--r-- 1 david david    86 Nov 17  2015 notes.txt\n# -rw-r--r-- 1 david david    32 Nov 17  2015 pizza.cfg\n# -rw-r--r-- 1 david david 21583 Nov 17  2015 solar.pdf\n# drwxr-xr-x 6 david david  4096 Nov 17  2015 writing\n\nNota importante: touch también actualiza la fecha de modificación de archivos existentes sin cambiar su contenido.\n\n\n6.1.2 mkdir - Crear directorios\nEl comando mkdir (Make Directory) nos permite crear directorios\n\n# Crear un directorio\nmkdir nuevo_directorio\n\n# Crear múltiples directorios\nmkdir dir1 dir2 dir3\n\n# Crear estructura de directorios anidados (-p crea padres si no existen)\nmkdir -p proyecto/datos/raw\nmkdir -p proyecto/datos/processed\nmkdir -p proyecto/resultados/plots\n\nEjemplo:\n\n# Crearmos una carpeta de prueba\nmkdir -p project/{data/{raw_sequences,processed,metadata},scripts/{preprocessing,analysis},results/{diversity,taxonomy,figures},references}\n\n# Verificar la estructura creada\ntree project/\n\nResultado esperado:\n\n# project/\n# ├── data\n# │   ├── metadata\n# │   ├── processed\n# │   └── raw_sequences\n# ├── references\n# ├── results\n# │   ├── diversity\n# │   ├── figures\n# │   └── taxonomy\n# └── scripts\n#     ├── analysis\n#     └── preprocessing\n#\n# 13 directories, 0 files\n\nOpciones útiles de mkdir: - -p: crear directorios padre si no existen - -v: modo verbose (mostrar lo que se está creando) - -m: establecer permisos específicos",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Gestión de Archivos y Directorios</span>"
+    ]
+  },
+  {
+    "objectID": "S2_02_gestion_archivos.html#copiado-de-archivos-y-directorios",
+    "href": "S2_02_gestion_archivos.html#copiado-de-archivos-y-directorios",
+    "title": "6  Gestión de Archivos y Directorios",
+    "section": "6.2 Copiado de archivos y directorios",
+    "text": "6.2 Copiado de archivos y directorios\n\n6.2.1 cp - Copiar archivos y directorios\nEl comando cp (Copy) nos permite copiar archivos y directorios\n\n# Copiar un archivo\ncp archivo_original.txt copia_archivo.txt\n\n# Copiar a otro directorio\ncp secuencias.fasta /ruta/destino/\n\n# Copiar múltiples archivos a un directorio\ncp *.fasta *.fastq /datos/backup/\n\n# Copiar manteniendo atributos originales\ncp -p archivo.txt copia_con_atributos.txt\n\n# Copiar directorios recursivamente\ncp -r directorio_origen/ directorio_destino/\n\n# Copiar con modo interactivo (pregunta antes de sobrescribir)\ncp -i archivo.txt destino.txt\n\nEjemplo:\n\n# Copiar un archivo de mi lugar a otro lugar\ncp protein_sequences.faa project/data/.\n\n# Copiar una carpeta de otro lugar a mi lugar\ncp -r project/results/ .\n\n# Copiar una carpeta de otro lugar a otro lugar\ncp -r project/references project/data/.\n\n# Verificamos\ntree project/ results/\n\nResultado esperado:\n\n# project/\n# ├── data\n# │   ├── metadata\n# │   ├── processed\n# │   ├── protein_sequences.faa\n# │   ├── raw_sequences\n# │   └── references\n# ├── references\n# ├── results\n# │   ├── diversity\n# │   ├── figures\n# │   └── taxonomy\n# └── scripts\n#     ├── analysis\n#     └── preprocessing\n# results/\n# ├── diversity\n# ├── figures\n# └── taxonomy\n# \n# 18 directories, 1 file\n\nOpciones útiles de cp: - -r o -R: copia recursiva (para directorios) - -p: preservar atributos (permisos, timestamps) - -i: modo interactivo - -v: modo verbose - -u: copiar solo si el archivo fuente es más nuevo",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Gestión de Archivos y Directorios</span>"
+    ]
+  },
+  {
+    "objectID": "S2_02_gestion_archivos.html#movimiento-y-renombrado",
+    "href": "S2_02_gestion_archivos.html#movimiento-y-renombrado",
+    "title": "6  Gestión de Archivos y Directorios",
+    "section": "6.3 Movimiento y renombrado",
+    "text": "6.3 Movimiento y renombrado\n\n6.3.1 mv - Mover y renombrar archivos\nEl comando mv nos permite mover (Move) o renombrar archivos o directorios\n\n# Renombrar un archivo\nmv nombre_viejo.txt nombre_nuevo.txt\n\n# Mover archivo a otro directorio\nmv archivo.txt /otro/directorio/\n\n# Mover y renombrar simultáneamente\nmv datos_crudos.csv datos/raw/experimento_01.csv\n\n# Mover múltiples archivos\nmv *.fastq datos/secuencias/\n\n# Mover directorios\nmv proyecto_viejo/ proyectos/proyecto_renombrado/\n\nEjemplo:\n\n# Movemos archivos\nmv gene_annotations.gff3 project/data/.\nmv genome_assembly.fasta project/data/.\nmv protein_sequences.faa project/results/.\nmv analysis_parameters.txt project/references/.\n\n# Movemos carpetas\nmv results project/data/.\n\n# Cambiamos el nombre de una carpeta\nmv project/data/results/ project/data/results_v2\n\n# Verificamos\ntree project\n\nResultado esperado:\n\n# project/\n# ├── data\n# │   ├── gene_annotations.gff3\n# │   ├── genome_assembly.fasta\n# │   ├── metadata\n# │   ├── processed\n# │   ├── protein_sequences.faa\n# │   ├── raw_sequences\n# │   ├── references\n# │   └── results_v2\n# │       ├── diversity\n# │       ├── figures\n# │       └── taxonomy\n# ├── references\n# │   └── analysis_parameters.txt\n# ├── results\n# │   ├── diversity\n# │   ├── figures\n# │   ├── protein_sequences.faa\n# │   └── taxonomy\n# └── scripts\n#     ├── analysis\n#     └── preprocessing\n# \n# 18 directories, 5 files",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Gestión de Archivos y Directorios</span>"
+    ]
+  },
+  {
+    "objectID": "S2_02_gestion_archivos.html#eliminación-de-archivos-y-directorios",
+    "href": "S2_02_gestion_archivos.html#eliminación-de-archivos-y-directorios",
+    "title": "6  Gestión de Archivos y Directorios",
+    "section": "6.4 Eliminación de archivos y directorios",
+    "text": "6.4 Eliminación de archivos y directorios\n\n6.4.1 rm - Eliminar archivos y directorios\n⚠️ PRECAUCIÓN: El comando rm elimina (Remove) permanentemente. No hay papelera de reciclaje.\n\n# Eliminar un archivo\nrm archivo_innecesario.txt\n\n# Eliminar múltiples archivos\nrm archivo1.txt archivo2.txt\n\n# Eliminar con confirmación\nrm -i archivo_importante.txt\n\n# Eliminar archivos por patrón\nrm *.tmp\nrm *_backup.*\n\n# Eliminar directorios vacíos\nrmdir directorio_vacio/\n\n# Eliminar directorios con contenido\nrm -r directorio_completo/\n\n# Eliminar forzadamente (sin confirmación)\nrm -rf directorio/  # ¡MUY PELIGROSO!\n\nEjemplo:\n\n# Asegurate de estar dentro de la caperta class\n# Eliminamos archivos\nrm -rf project/data\n\n# Verificamos\ntree project/\n\nResultado esperado:\n\n# project/\n# ├── references\n# │   └── analysis_parameters.txt\n# ├── results\n# │   ├── diversity\n# │   ├── figures\n# │   ├── protein_sequences.faa\n# │   └── taxonomy\n# └── scripts\n#     ├── analysis\n#     └── preprocessing\n# \n# 9 directories, 2 files\n\nEjemplo:\n\nls\nrm -rf project/\nls\n\nResultado esperado:\n\n# creatures  data  Desktop  molecules  Neucr2  north-pacific-gyre  notes.txt  pizza.cfg  solar.pdf  writing\n\nOpciones importantes de rm: - -i: modo interactivo (pregunta antes de eliminar) - -r o -R: eliminación recursiva (directorios) - -f: forzar eliminación sin preguntar - -v: modo verbose",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Gestión de Archivos y Directorios</span>"
+    ]
+  },
+  {
+    "objectID": "S2_02_gestion_archivos.html#manejo-seguro-de-archivos",
+    "href": "S2_02_gestion_archivos.html#manejo-seguro-de-archivos",
+    "title": "6  Gestión de Archivos y Directorios",
+    "section": "6.5 Manejo Seguro de Archivos",
+    "text": "6.5 Manejo Seguro de Archivos\n\n6.5.1 Crear copias de seguridad antes de operaciones importantes\n\nCuando inicias un proyecto con grandes cantidades de datos, se recomienda crear una copia de seguridad de los datos originales, y trabajar con los datos que se copiaron, por si se comete algún error y se modifican estos archivos, siempre tendrás la copia original.\nEn lugar de eliminar una carpeta, una posible opción de seguridad, es crear primero una carpeta basura donde lo que desees eliminar, lo muevas a esta carpeta. Y cuando finalices tu proyecto, ahora si puedes eliminar todo lo que hayas movido a esa carpeta.",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Gestión de Archivos y Directorios</span>"
+    ]
+  },
+  {
+    "objectID": "S2_02_gestion_archivos.html#casos-de-uso-prácticos-en-bioinformática",
+    "href": "S2_02_gestion_archivos.html#casos-de-uso-prácticos-en-bioinformática",
+    "title": "6  Gestión de Archivos y Directorios",
+    "section": "6.6 Casos de uso prácticos en bioinformática",
+    "text": "6.6 Casos de uso prácticos en bioinformática\n\n6.6.1 Ejemplo 1: Organización de datos de secuenciación\n\n# Crear estructura de proyecto\nmkdir -p seq_project/{raw_data,processed_data,results,scripts,metadata}\n\n# Simular llegada de datos de secuenciación\ntouch sample_{01..10}_R{1,2}.fastq.gz\n\n# Organizar por tipo de muestra\nmkdir -p seq_project/raw_data/{control,treatment}\nmv sample_0{1..5}* seq_project/raw_data/control/\nmv sample_0{6..9}* seq_project/raw_data/treatment/\nmv sample_10* seq_project/raw_data/treatment/\n\n# Crear metadatos\ntouch seq_project/metadata/sample_info.tsv\ntouch seq_project/metadata/experimental_design.txt\n\n\n\n6.6.2 Ejemplo 2: Gestión de ensamblajes de genomas\n\n# Crear directorio para diferentes versiones de ensamblaje\nmkdir -p genome_assembly/{version_1.0,version_1.1,version_2.0,final}\n\n# Copiar ensamblajes a versiones específicas\ncp assembly_draft.fasta genome_assembly/version_1.0/\ncp assembly_improved.fasta genome_assembly/version_1.1/\ncp assembly_polished.fasta genome_assembly/version_2.0/\n\n# Crear enlaces a la versión final\nln -s version_2.0/assembly_polished.fasta genome_assembly/final/genome_final.fasta\n\n\n\n6.6.3 Ejemplo 3: Limpieza y organización post-análisis\n\n# Crear directorios para archivar\nmkdir -p archive/{intermediate_files,old_versions,logs}\n\n# Mover archivos intermedios\nmv *.sam archive/intermediate_files/\nmv temp_* archive/intermediate_files/\n\n# Archivar versiones viejas\nmv *_v1.* archive/old_versions/\nmv *_draft.* archive/old_versions/\n\n# Organizar logs por fecha\nmv *.log archive/logs/",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Gestión de Archivos y Directorios</span>"
+    ]
+  },
+  {
+    "objectID": "S2_02_gestion_archivos.html#consejos-y-buenas-prácticas",
+    "href": "S2_02_gestion_archivos.html#consejos-y-buenas-prácticas",
+    "title": "6  Gestión de Archivos y Directorios",
+    "section": "6.7 Consejos y Buenas Prácticas",
+    "text": "6.7 Consejos y Buenas Prácticas\n\nSiempre hacer backup: Antes de operaciones destructivas\nVerificar antes de eliminar: Usar ls para confirmar qué se va a eliminar\nUsar modo interactivo: -i en operaciones críticas\nOrganización consistente: Mantener estructura similar en todos los proyectos\nDocumentar cambios: Llevar log de reorganizaciones importantes",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Gestión de Archivos y Directorios</span>"
+    ]
+  },
+  {
+    "objectID": "S2_02_gestion_archivos.html#comandos-de-verificación",
+    "href": "S2_02_gestion_archivos.html#comandos-de-verificación",
+    "title": "6  Gestión de Archivos y Directorios",
+    "section": "6.8 Comandos de Verificación",
+    "text": "6.8 Comandos de Verificación\n\n# Verificar operaciones\nls -la  # Confirmar creación/movimiento\ndu -sh directorio/  # Verificar tamaño\ntree  # Ver estructura completa",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Gestión de Archivos y Directorios</span>"
+    ]
+  },
+  {
+    "objectID": "S2_02_gestion_archivos.html#resumen-de-comandos",
+    "href": "S2_02_gestion_archivos.html#resumen-de-comandos",
+    "title": "6  Gestión de Archivos y Directorios",
+    "section": "6.9 Resumen de Comandos",
+    "text": "6.9 Resumen de Comandos\n\n\n\n\n\n\n\n\nComando\nFunción\nEjemplo Clave\n\n\n\n\ntouch\nCrear archivos vacíos\ntouch sequences.fasta\n\n\nmkdir\nCrear directorios\nmkdir -p data/{raw,processed}\n\n\ncp\nCopiar archivos/directorios\ncp -r data/ backup/\n\n\nmv\nMover/renombrar\nmv old_name.txt new_name.txt\n\n\nrm\nEliminar archivos\nrm -i temp_files/*\n\n\nrmdir\nEliminar directorios vacíos\nrmdir empty_folder/\n\n\n\n\n\n\n\nGalagan, J. E., S. E. Calvo, K. A. Borkovich, E. U. Selker, N. D. Read, D. Jaffe, W. FitzHugh, et al. 2003. “The Genome Sequence of the Filamentous Fungus Neurospora Crassa.” Nature 422 (6934): 859–68. https://doi.org/10.1038/nature01554.",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Gestión de Archivos y Directorios</span>"
+    ]
+  },
+  {
+    "objectID": "S2_03_procesamiento_texto.html",
+    "href": "S2_03_procesamiento_texto.html",
+    "title": "7  Procesamiento de texto",
+    "section": "",
+    "text": "7.1 Visualización de Archivos de Texto\nEl procesamiento de texto es fundamental en bioinformática. La mayoría de nuestros datos están en formato texto: secuencias FASTA, archivos de metadatos, resultados de análisis, logs de programas, etc. Dominar estos comandos te permitirá explorar y manipular datos de manera eficiente.",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Procesamiento de texto</span>"
+    ]
+  },
+  {
+    "objectID": "S2_03_procesamiento_texto.html#visualización-de-archivos-de-texto",
+    "href": "S2_03_procesamiento_texto.html#visualización-de-archivos-de-texto",
+    "title": "7  Procesamiento de texto",
+    "section": "",
+    "text": "7.1.1 cat - Mostrar contenido completo\n\n# Mostrar todo el contenido de un archivo\ncat archivo.txt\n\n# Mostrar múltiples archivos\ncat archivo1.txt archivo2.txt\n\n# Mostrar con números de línea\ncat -n secuencias.fasta\n\nEjemplo:\n\n# Ejemplo con archivo FASTA\ncat multi.fasta\n\nResultado esperado:\n\n# &gt;sequenceID-001 description\n# AAGTAGGAATAATATCTTATCATTATAGATAAAAACCTTCTGAATTTGCTTAGTGTGTAT\n# ACGACTAGACATATATCAGCTCGCCGATTATTTGGATTATTCCCTG\n# &gt;sequenceID-002 description\n# CAGTAAAGAGTGGATGTAAGAACCGTCCGATCTACCAGATGTGATAGAGGTTGCCAGTAC\n# AAAAATTGCATAATAATTGATTAATCCTTTAATATTGTTTAGAATATATCCGTCAGATAA\n# TCCTAAAAATAACGATATGATGGCGGAAATCGTC\n# &gt;sequenceID-003 description\n# CTTCAATTACCCTGCTGACGCGAGATACCTTATGCATCGAAGGTAAAGCGATGAATTTAT\n# CCAAGGTTTTAATTTG\n\nOpciones útiles de cat: - -n: numerar líneas - -b: numerar solo líneas no vacías - -A: mostrar todos los caracteres no imprimibles - -s: comprimir múltiples líneas vacías en una\n\n\n7.1.2 head - Mostrar las primeras líneas\n\n# Primeras 10 líneas (por defecto)\nhead archivo.txt\n\n# Primeras n líneas específicas\nhead -n 20 archivo.txt\nhead -20 archivo.txt  # Forma abreviada\n\n# Múltiples archivos\nhead -5 *.fasta\n\nEjemplo:\n\n# Ver encabezados de archivos FASTA\nhead -2 multi.fasta\n\nResultado esperado:\n\n# &gt;sequenceID-001 description\n# AAGTAGGAATAATATCTTATCATTATAGATAAAAACCTTCTGAATTTGCTTAGTGTGTAT\n\nEjemplo:\n\n# Verificar formato de archivo de calidad\nhead -4 fastq.fq\n\nResultado esperado:\n\n# @HWI-ST999:102:D1N6AACXX:1:1101:1235:1936 1:N:0:\n# ATGTCTCCTGGACCCCTCTGTGCCCAAGCTCCTCATGCATCCTCCTCAGCAACTTGTCCTGTAGCTGAGGCTCACTGACTACCAGCTGCAG\n# +\n# 1:DAADDDF&lt;B&lt;AGF=FGIEHCCD9DG=1E9?D&gt;CF@HHG??B&lt;GEBGHCG;;CDB8==C@@&gt;&gt;GII@@5?A?@B&gt;CEDCFCC:;?CCCAC\n\n\n\n7.1.3 tail - Mostrar las últimas líneas\n\n# Últimas 10 líneas (por defecto)\ntail archivo.txt\n\n# Últimas n líneas específicas\ntail -n 15 archivo.txt\n\n# Seguimiento en tiempo real (útil para logs)\ntail -f analysis.log\n\n# Empezar desde una línea específica\ntail -n +100 archivo.txt  # Desde la línea 100 hasta el final\n\nEjemplo:\n\n# Ver encabezados de archivos FASTA\ntail -5 multi.fasta\n\nResultado esperado:\n\n# AAAAATTGCATAATAATTGATTAATCCTTTAATATTGTTTAGAATATATCCGTCAGATAA\n# TCCTAAAAATAACGATATGATGGCGGAAATCGTC\n# &gt;sequenceID-003 description\n# CTTCAATTACCCTGCTGACGCGAGATACCTTATGCATCGAAGGTAAAGCGATGAATTTAT\n# CCAAGGTTTTAATTTG\n\nEjemplo:\n\n# Verificar formato de archivo de calidad\ntail -4 fastq.fq\n\nResultado esperado:\n\n# @OBIWAN:24:D1KUMACXX:3:1112:9698:62774 1:N:0:\n# TAATATGGCTAATGCCCTAATCTTAGTGTGCCCAACCCACTTACTAACAAATAACTAACATTAAGATCGGAAGAGCACACGTCTGAACTCAGTCACTGACC\n# +\n# CCCFFFFFHHHHHIJJJJJJJJJJJJIIHHIJJJJJJJJJJJJJJJJJJJJIJJJJJJIJJJJIJJJJJJJHHHHFDFFEDEDDDDDDDDDDDDDDDDDDC\n\n\n\n7.1.4 less - Navegación avanzada de archivos\n\n# Abrir archivo con navegación interactiva\nless archivo.txt\n\n# Abrir múltiples archivos\nless archivo1.txt archivo2.txt\n\n# Comandos dentro de less:\n# - Espacio: página siguiente\n# - b: página anterior\n# - j/k: línea siguiente/anterior\n# - /texto: buscar hacia adelante\n# - ?texto: buscar hacia atrás\n# - n: siguiente coincidencia\n# - N: coincidencia anterior\n# - q: salir\n# - h: ayuda\n\nEjemplo:\n\n# Asegurate de estar en Neucr2\n# Descomprimir un archivo .gz\ngunzip -d Neucr2_GeneCatalog_CDS_20130412.fasta.gz\n\n# Ejemplo con archivo grande de secuencias\nless Neucr2_GeneCatalog_CDS_20130412.fasta\n\n# Ver archivo con números de línea\nless -N Neucr2_GeneCatalog_CDS_20130412.fasta\n\nAlternativas a less: - more: similar pero menos funcional - most: versión más avanzada con colores",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Procesamiento de texto</span>"
+    ]
+  },
+  {
+    "objectID": "S2_03_procesamiento_texto.html#redireccionamiento-y-pipes",
+    "href": "S2_03_procesamiento_texto.html#redireccionamiento-y-pipes",
+    "title": "7  Procesamiento de texto",
+    "section": "7.2 Redireccionamiento y Pipes",
+    "text": "7.2 Redireccionamiento y Pipes\n\n7.2.1 Operadores de Redireccionamiento\n\n# &gt; : Redirigir salida (sobrescribir)\ncat sequences1.fasta &gt; combined_sequences.fasta\n\n# &gt;&gt; : Redirigir salida (anexar)\ncat sequences2.fasta &gt;&gt; combined_sequences.fasta\n\n# &lt; : Redirigir entrada\nsort &lt; sample_list.txt\n\nEjemplo:\n\n# Crear una lista de IDs\ngrep \"&gt;\" Neucr2_GeneCatalog_CDS_20130412.fasta &gt; IDs_CDS-fasta.txt\n\n# Crear lista de archivos de Neurospora\nls Neucr2* &gt; \"files.txt\"\n\n# Crear archivo de configuración\necho \"threads=8\" &gt; config.txt\necho \"memory=16G\" &gt;&gt; config.txt\necho \"output_dir=/results/\" &gt;&gt; config.txt\n\n# Verficamos\nhead -5 IDs_CDS-fasta.txt\ncat config.txt files.txt\n\nResultado esperado:\n\n# &gt;jgi|Neucr2|411|NCU10129T0\n# &gt;jgi|Neucr2|412|NCU09901T0\n# &gt;jgi|Neucr2|413|NCU09903T0\n# &gt;jgi|Neucr2|414|NCU11134T0\n# &gt;jgi|Neucr2|415|NCU09904T0\n\n# threads=8\n# memory=16G\n# output_dir=/results/\n# Neucr2_AssemblyScaffolds.fasta.gz\n# Neucr2_AssemblyScaffolds_Repeatmasked.fasta.gz\n# Neucr2.filtered_proteins.BroadModels.gff3.gz\n# Neucr2_GeneCatalog_CDS_20130412.fasta\n# Neucr2_GeneCatalog_genes_20130412.gff.gz\n# Neucr2_GeneCatalog_proteins_20130412.aa.fasta.gz\n# Neucr2_GeneCatalog_proteins_20130412_GO.tab.gz\n# Neucr2_GeneCatalog_proteins_20130412_IPR.tab.gz\n# Neucr2_GeneCatalog_proteins_20130412_KEGG.tab.gz\n# Neucr2_GeneCatalog_proteins_20130412_KOG.tab.gz\n# Neucr2_GeneCatalog_proteins_20130412_SigP.tab.gz\n# Neucr2_GeneCatalog_transcripts_20130412.nt.fasta.gz\n\n\n\n7.2.2 Pipes (|) - Conectar comandos\n\n# Pipe básico: salida de un comando como entrada del siguiente\ncomando1 | comando2\n\nEjemplo:\n\n# Contar número de secuencias en archivo FASTA\ngrep \"^&gt;\" Neucr2_GeneCatalog_CDS_20130412.fasta | wc -l\n\n# Ver secuencias ordenadas alfabéticamente y ver las primeras 5\ngrep \"^&gt;\" Neucr2_GeneCatalog_CDS_20130412.fasta | sort | head -5\n\nResultado esperado:\n\n# 10785\n\n# &gt;jgi|Neucr2|10000|NCU05018T0\n# &gt;jgi|Neucr2|10001|NCU05017T0\n# &gt;jgi|Neucr2|10002|NCU05016T0\n# &gt;jgi|Neucr2|10003|NCU05015T0\n# &gt;jgi|Neucr2|10004|NCU05014T0",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Procesamiento de texto</span>"
+    ]
+  },
+  {
+    "objectID": "S2_03_procesamiento_texto.html#comandos-avanzados-de-procesamiento",
+    "href": "S2_03_procesamiento_texto.html#comandos-avanzados-de-procesamiento",
+    "title": "7  Procesamiento de texto",
+    "section": "7.3 Comandos Avanzados de Procesamiento",
+    "text": "7.3 Comandos Avanzados de Procesamiento\n\n7.3.1 sort - Ordenar contenido\n\n# Ordenamiento básico\nsort archivo.txt\n\n# Ordenamiento numérico\nsort -n numeros.txt\n\n# Ordenamiento reverso\nsort -r archivo.txt\n\n\n\n7.3.2 cut - Extraer columnas\n\n# Extraer columnas específicas\ncut -f1,3 archivo.tsv        # Columnas 1 y 3\ncut -d',' -f2 archivo.csv    # Segunda columna de CSV\ncut -c1-10 archivo.txt       # Caracteres 1-10\n\n\n\n7.3.3 paste - Combinar archivos por columnas\n\n# Combinar archivos lado a lado\npaste file1.txt file2.txt\n\n# Con delimitador específico\npaste -d',' file1.txt file2.txt\n\n\n\n7.3.4 tr - Transformar caracteres\n\n# Convertir mayúsculas a minúsculas\ntr 'A-Z' 'a-z' &lt; archivo.txt\n\n# Eliminar caracteres específicos\ntr -d '\\r' &lt; archivo_windows.txt &gt; archivo_unix.txt\n\n# Reemplazar caracteres\ntr ' ' '_' &lt; nombres_con_espacios.txt",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Procesamiento de texto</span>"
+    ]
+  },
+  {
+    "objectID": "S2_03_procesamiento_texto.html#casos-de-uso-prácticos-avanzados",
+    "href": "S2_03_procesamiento_texto.html#casos-de-uso-prácticos-avanzados",
+    "title": "7  Procesamiento de texto",
+    "section": "7.4 Casos de Uso Prácticos Avanzados",
+    "text": "7.4 Casos de Uso Prácticos Avanzados\n\n7.4.1 Análisis de archivos FASTA\n\n# Crear archivo FASTA de prueba\ncat &gt; example_sequences.fasta &lt;&lt; EOF\n&gt;sequence_1 Escherichia coli strain K12\nATCGATCGATCGATCGATCGATCGATCGATCGATCGATCG\nGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTA\n&gt;sequence_2 Salmonella enterica\nTTCCGGAATTCCGGAATTCCGGAATTCCGGAATTCCGGAA\nGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAA\n&gt;sequence_3 Bacillus subtilis\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT\nEOF\n\n# Análisis básico del archivo FASTA\necho \"=== Análisis de archivo FASTA ===\"\n\n# Contar secuencias\necho \"Número de secuencias: $(grep -c '^&gt;' example_sequences.fasta)\"\n\n# Listar nombres de secuencias\necho \"Nombres de secuencias:\"\ngrep '^&gt;' example_sequences.fasta | cut -c2-\n\n# Calcular longitud de cada secuencia\necho \"Longitudes de secuencias:\"\nawk '/^&gt;/ {if(seq) print header \": \" length(seq); header=$0; seq=\"\"; next} {seq=seq$0} END {print header \": \" length(seq)}' example_sequences.fasta\n\n# Composición nucleotídica\necho \"Composición total:\"\ngrep -v '^&gt;' example_sequences.fasta | tr -d '\\n' | fold -w1 | sort | uniq -c\n\n\n\n7.4.2 Procesamiento de archivos de metadatos\n\ncat &gt; sample_metadata.tsv &lt;&lt; EOF\nsample_id   condition   batch   concentration   quality_score\nsample_001  control 1   2.5 8.2\nsample_002  treatment   1   3.2 7.9\nsample_003  control 2   2.8 8.5\nsample_004  treatment   2   3.1 8.0\nsample_005  control 1   2.3 7.8\nEOF\n\n# Análisis de metadatos\necho \"=== Análisis de metadatos ===\"\n\n# Mostrar estructura\necho \"Primeras líneas:\"\nhead -3 sample_metadata.tsv\n\n# Contar muestras por condición\necho \"Muestras por condición:\"\ntail -n +2 sample_metadata.tsv | cut -f2 | sort | uniq -c\n\n# Calcular estadísticas de concentración\necho \"Estadísticas de concentración:\"\ntail -n +2 sample_metadata.tsv | cut -f4 | sort -n | awk '\n{\n    values[NR] = $1\n    sum += $1\n}\nEND {\n    print \"Mínimo: \" values[1]\n    print \"Máximo: \" values[NR]\n    print \"Promedio: \" sum/NR\n    print \"Mediana: \" values[int(NR/2)]\n}'\n\n\n\n7.4.3 Pipeline de análisis de calidad FASTQ\n\n# Crear archivo FASTQ de ejemplo\ncat &gt; example_reads.fastq &lt;&lt; EOF\n@read_1\nATCGATCGATCGATCGATCGATCGATCGATCGATCGATCG\n+\nIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII\n@read_2\nTTCCGGAATTCCGGAATTCCGGAATTCCGGAATTCCGGAA\n+\nHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH\n@read_3\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n+\nGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG\nEOF\n\n# Análisis básico de archivo FASTQ\necho \"=== Análisis FASTQ ===\"\n\n# Contar número de lecturas\necho \"Número de lecturas: $(($(wc -l &lt; example_reads.fastq) / 4))\"\n\n# Longitud de lecturas\necho \"Longitud de primera lectura: $(sed -n '2p' example_reads.fastq | wc -c)\"\n\n# Primeros 5 IDs de lecturas\necho \"Primeros IDs:\"\ngrep '^@' example_reads.fastq | head -5\n\n# Distribución de calidad (primera posición)\necho \"Distribución de calidad (primera posición):\"\nawk 'NR%4==0' example_reads.fastq | cut -c1 | sort | uniq -c",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Procesamiento de texto</span>"
+    ]
+  },
+  {
+    "objectID": "S2_03_procesamiento_texto.html#editor-de-texto-nano",
+    "href": "S2_03_procesamiento_texto.html#editor-de-texto-nano",
+    "title": "7  Procesamiento de texto",
+    "section": "7.5 Editor de Texto nano",
+    "text": "7.5 Editor de Texto nano\n\n7.5.1 Uso básico de nano\n\n# Abrir archivo existente o crear nuevo\nnano archivo.txt\n\n# Comandos básicos en nano:\n# Ctrl+O: Guardar\n# Ctrl+X: Salir\n# Ctrl+W: Buscar\n# Ctrl+K: Cortar línea\n# Ctrl+U: Pegar línea cortada\n# Ctrl+G: Ayuda\n\n# Abrir archivo en línea específica\nnano +25 script.py\n\n# Modo solo lectura\nnano -v archivo.txt",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Procesamiento de texto</span>"
+    ]
+  },
+  {
+    "objectID": "S2_03_procesamiento_texto.html#consejos-avanzados-y-buenas-prácticas",
+    "href": "S2_03_procesamiento_texto.html#consejos-avanzados-y-buenas-prácticas",
+    "title": "7  Procesamiento de texto",
+    "section": "7.6 Consejos Avanzados y Buenas Prácticas",
+    "text": "7.6 Consejos Avanzados y Buenas Prácticas\n\n7.6.1 Manejo eficiente de archivos grandes\n\n# Para archivos muy grandes, usar comandos optimizados\n# En lugar de cat archivo_grande.txt | grep \"patrón\"\n# Usar directamente:\ngrep \"patrón\" archivo_grande.txt\n\n# Para procesar archivos línea por línea sin cargar todo en memoria\nwhile IFS= read -r line; do\n    # procesar línea\n    echo \"Procesando: $line\"\ndone &lt; archivo_grande.txt",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Procesamiento de texto</span>"
+    ]
+  },
+  {
+    "objectID": "S2_03_procesamiento_texto.html#recursos-adicionales",
+    "href": "S2_03_procesamiento_texto.html#recursos-adicionales",
+    "title": "7  Procesamiento de texto",
+    "section": "7.7 Recursos Adicionales",
+    "text": "7.7 Recursos Adicionales\n\n7.7.1 Comandos relacionados útiles\n\n# wc - contar líneas, palabras, caracteres\nwc -l archivo.txt      # líneas\nwc -w archivo.txt      # palabras  \nwc -c archivo.txt      # caracteres\n\n# uniq - eliminar líneas duplicadas consecutivas\nsort archivo.txt | uniq\n\n# comm - comparar archivos ordenados\ncomm -12 archivo1.txt archivo2.txt  # líneas comunes\n\n# diff - comparar archivos\ndiff archivo1.txt archivo2.txt",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Procesamiento de texto</span>"
+    ]
+  },
+  {
+    "objectID": "S2_03_procesamiento_texto.html#resumen-de-comandos",
+    "href": "S2_03_procesamiento_texto.html#resumen-de-comandos",
+    "title": "7  Procesamiento de texto",
+    "section": "7.8 Resumen de Comandos",
+    "text": "7.8 Resumen de Comandos\n\n\n\n\n\n\n\n\nComando\nFunción\nEjemplo Bioinformático\n\n\n\n\ncat\nMostrar archivo completo\ncat sequences.fasta\n\n\nhead\nPrimeras líneas\nhead -10 reads.fastq\n\n\ntail\nÚltimas líneas\ntail -f analysis.log\n\n\nless\nNavegador de archivos\nless large_genome.fasta\n\n\n&gt;\nRedirigir salida\ngrep \"^&gt;\" file.fasta &gt; headers.txt\n\n\n&gt;&gt;\nAnexar salida\necho \"done\" &gt;&gt; log.txt\n\n\n\\|\nPipe\ngrep \"gene\" file.gff \\| wc -l\n\n\nnano\nEditor de texto\nnano analysis_script.sh\n\n\nsort\nOrdenar\nsort -k2,2n annotations.gff\n\n\ncut\nExtraer columnas\ncut -f1,4,5 variants.vcf",
+    "crumbs": [
+      "Módulo 2: Navegación & Gestión de Archivos",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Procesamiento de texto</span>"
     ]
   },
   {
@@ -34,7 +586,7 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "Galagan, J. E., S. E. Calvo, K. A. Borkovich, E. U. Selker, N. D. Read,\nD. Jaffe, W. FitzHugh, et al. 2003. “The Genome Sequence of the\nFilamentous Fungus Neurospora Crassa.” Nature 422\n(6934): 859–68. https://doi.org/10.1038/nature01554.\n\n\nThe Carpentries. 2025. “Software Carpentry.”\nhttps://software-carpentry.org/.",
     "crumbs": [
       "References"
     ]

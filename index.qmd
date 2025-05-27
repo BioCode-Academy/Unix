@@ -81,12 +81,12 @@
 
 *Actividades:*
 
--   📁 **Explora tu sistema de archivos**
+-   📁 **Exploración del Sistema de Archivos**
 
     -   Comandos básicos `ls`, `cd`, `tree`
     -   Atajos (`~`, `.`, `..`, `$PWD`)
 
--   🗂 **Crear y mover archivos**
+-   🗂 **Gestión de Archivos y Directorios**
 
     -   `touch`, `mkdir`, `cp`, `mv`, `rm`
 
