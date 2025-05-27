@@ -13,6 +13,7 @@ references*
 # Other files
 class/
 images/
-conducta*
+conducta.md
+conducta.pdf
 
 /.quarto/
