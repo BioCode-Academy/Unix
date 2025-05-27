@@ -1,5 +1,16 @@
-/.quarto/
+# Quarto files
+.quarto
+_quarto.yml
+*.qmd
+references*
+
+# R files
 .Rproj.user
 .Rhistory
 .RData
 *.Rproj
+
+# Other files
+class/
+images/
+conducta*
