@@ -113,7 +113,7 @@
     "href": "S1_02_instalacion_software.html#descargar-la-imagen-docker-personalizada",
     "title": "2  Instalación de Software",
     "section": "2.3 Descargar la imagen Docker personalizada",
-    "text": "2.3 Descargar la imagen Docker personalizada\nEn caso de usar una iamgen Docker, los pasos generales son:\n\ndocker pull davidalbertoge/unix-example:latest\n\nPara ejecutar un contenedor interactivo:\n\ndocker run -it davidalbertoge/unix-example:latest /bin/bash",
+    "text": "2.3 Descargar la imagen Docker personalizada\nEn caso de usar una imagen Docker, los pasos generales son:\n\ndocker pull davidalbertoge/bioinfo_seq-alig:0.0.1\n\nPara ejecutar un contenedor interactivo:\n\n# Verificar que ya se tiene la imagen\ndocker images\n# REPOSITORY                             TAG       IMAGE ID       CREATED        SIZE\n# davidalbertoge/bioinfo_seq-alig        0.0.1     b99918d2a909   2 months ago   7.54GB\n\ndocker run -v &lt;directorio/trabajo/&gt;:/home/ -it davidalbertoge/bioinfo_seq-alig:0.0.1\n\n# Deberá generar una terminal nueva",
     "crumbs": [
       "Módulo 1: Introducción & Configuración",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Instalación de Software</span>"
