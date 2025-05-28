@@ -347,18 +347,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Resultado esperado:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt;sequenceID-001 description</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># AAGTAGGAATAATATCTTATCATTATAGATAAAAACCTTCTGAATTTGCTTAGTGTGTAT</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ACGACTAGACATATATCAGCTCGCCGATTATTTGGATTATTCCCTG</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt;sequenceID-002 description</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># CAGTAAAGAGTGGATGTAAGAACCGTCCGATCTACCAGATGTGATAGAGGTTGCCAGTAC</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># AAAAATTGCATAATAATTGATTAATCCTTTAATATTGTTTAGAATATATCCGTCAGATAA</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># TCCTAAAAATAACGATATGATGGCGGAAATCGTC</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt;sequenceID-003 description</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># CTTCAATTACCCTGCTGACGCGAGATACCTTATGCATCGAAGGTAAAGCGATGAATTTAT</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># CCAAGGTTTTAATTTG</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>sequenceID-001 <span class="ex">description</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">AAGTAGGAATAATATCTTATCATTATAGATAAAAACCTTCTGAATTTGCTTAGTGTGTAT</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">ACGACTAGACATATATCAGCTCGCCGATTATTTGGATTATTCCCTG</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>sequenceID-002 <span class="ex">description</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ex">CAGTAAAGAGTGGATGTAAGAACCGTCCGATCTACCAGATGTGATAGAGGTTGCCAGTAC</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ex">AAAAATTGCATAATAATTGATTAATCCTTTAATATTGTTTAGAATATATCCGTCAGATAA</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ex">TCCTAAAAATAACGATATGATGGCGGAAATCGTC</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>sequenceID-003 <span class="ex">description</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ex">CTTCAATTACCCTGCTGACGCGAGATACCTTATGCATCGAAGGTAAAGCGATGAATTTAT</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="ex">CCAAGGTTTTAATTTG</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>Opciones útiles de <code>cat</code>:</strong> - <code>-n</code>: numerar líneas - <code>-b</code>: numerar solo líneas no vacías - <code>-A</code>: mostrar todos los caracteres no imprimibles - <code>-s</code>: comprimir múltiples líneas vacías en una</p>
+<p><strong>Opciones útiles de <code>cat</code>:</strong></p>
+<ul>
+<li><strong><code>-n</code></strong>: numerar líneas</li>
+<li><strong><code>-b</code></strong>: numerar solo líneas no vacías</li>
+<li><strong><code>-A</code></strong>: mostrar todos los caracteres no imprimibles</li>
+<li><strong><code>-s</code></strong>: comprimir múltiples líneas vacías en una</li>
+</ul>
 </section>
 <section id="head---mostrar-las-primeras-líneas" class="level3" data-number="7.1.2">
 <h3 data-number="7.1.2" class="anchored" data-anchor-id="head---mostrar-las-primeras-líneas"><span class="header-section-number">7.1.2</span> <code>head</code> - Mostrar las primeras líneas</h3>
@@ -380,8 +386,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Resultado esperado:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt;sequenceID-001 description</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># AAGTAGGAATAATATCTTATCATTATAGATAAAAACCTTCTGAATTTGCTTAGTGTGTAT</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>sequenceID-001 <span class="ex">description</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">AAGTAGGAATAATATCTTATCATTATAGATAAAAACCTTCTGAATTTGCTTAGTGTGTAT</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Ejemplo:</p>
 <div class="cell">
@@ -390,10 +396,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Resultado esperado:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># @HWI-ST999:102:D1N6AACXX:1:1101:1235:1936 1:N:0:</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># ATGTCTCCTGGACCCCTCTGTGCCCAAGCTCCTCATGCATCCTCCTCAGCAACTTGTCCTGTAGCTGAGGCTCACTGACTACCAGCTGCAG</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># +</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 1:DAADDDF&lt;B&lt;AGF=FGIEHCCD9DG=1E9?D&gt;CF@HHG??B&lt;GEBGHCG;;CDB8==C@@&gt;&gt;GII@@5?A?@B&gt;CEDCFCC:;?CCCAC</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">@HWI-ST999:102:D1N6AACXX:1:1101:1235:1936</span> 1:N:0:</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">ATGTCTCCTGGACCCCTCTGTGCCCAAGCTCCTCATGCATCCTCCTCAGCAACTTGTCCTGTAGCTGAGGCTCACTGACTACCAGCTGCAG</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="ex">+</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="ex">1:DAADDDF</span><span class="op">&lt;</span>B<span class="op">&lt;</span>AGF=FGIEHCCD9DG=1E9<span class="pp">?</span>D<span class="op">&gt;</span>CF@HHG<span class="pp">??</span>B<span class="op">&lt;</span>GEBGHCG<span class="kw">;;</span><span class="va">CDB8</span><span class="op">=</span>=C@@<span class="op">&gt;&gt;</span>GII@@5<span class="pp">?</span>A<span class="pp">?</span>@B<span class="op">&gt;</span>CEDCFCC:<span class="kw">;</span><span class="ex">?CCCAC</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="tail---mostrar-las-últimas-líneas" class="level3" data-number="7.1.3">
@@ -418,11 +424,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Resultado esperado:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># AAAAATTGCATAATAATTGATTAATCCTTTAATATTGTTTAGAATATATCCGTCAGATAA</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co"># TCCTAAAAATAACGATATGATGGCGGAAATCGTC</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt;sequenceID-003 description</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># CTTCAATTACCCTGCTGACGCGAGATACCTTATGCATCGAAGGTAAAGCGATGAATTTAT</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co"># CCAAGGTTTTAATTTG</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">AAAAATTGCATAATAATTGATTAATCCTTTAATATTGTTTAGAATATATCCGTCAGATAA</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="ex">TCCTAAAAATAACGATATGATGGCGGAAATCGTC</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>sequenceID-003 <span class="ex">description</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="ex">CTTCAATTACCCTGCTGACGCGAGATACCTTATGCATCGAAGGTAAAGCGATGAATTTAT</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="ex">CCAAGGTTTTAATTTG</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Ejemplo:</p>
 <div class="cell">
@@ -431,10 +437,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Resultado esperado:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># @OBIWAN:24:D1KUMACXX:3:1112:9698:62774 1:N:0:</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># TAATATGGCTAATGCCCTAATCTTAGTGTGCCCAACCCACTTACTAACAAATAACTAACATTAAGATCGGAAGAGCACACGTCTGAACTCAGTCACTGACC</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co"># +</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># CCCFFFFFHHHHHIJJJJJJJJJJJJIIHHIJJJJJJJJJJJJJJJJJJJJIJJJJJJIJJJJIJJJJJJJHHHHFDFFEDEDDDDDDDDDDDDDDDDDDC</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">@OBIWAN:24:D1KUMACXX:3:1112:9698:62774</span> 1:N:0:</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="ex">TAATATGGCTAATGCCCTAATCTTAGTGTGCCCAACCCACTTACTAACAAATAACTAACATTAAGATCGGAAGAGCACACGTCTGAACTCAGTCACTGACC</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="ex">+</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="ex">CCCFFFFFHHHHHIJJJJJJJJJJJJIIHHIJJJJJJJJJJJJJJJJJJJJIJJJJJJIJJJJIJJJJJJJHHHHFDFFEDEDDDDDDDDDDDDDDDDDDC</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="less---navegación-avanzada-de-archivos" class="level3" data-number="7.1.4">
@@ -444,19 +450,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">less</span> archivo.txt</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Abrir múltiples archivos</span></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="fu">less</span> archivo1.txt archivo2.txt</span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Comandos dentro de less:</span></span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co"># - Espacio: página siguiente</span></span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="co"># - b: página anterior</span></span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co"># - j/k: línea siguiente/anterior</span></span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="co"># - /texto: buscar hacia adelante</span></span>
-<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="co"># - ?texto: buscar hacia atrás</span></span>
-<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="co"># - n: siguiente coincidencia</span></span>
-<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a><span class="co"># - N: coincidencia anterior</span></span>
-<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a><span class="co"># - q: salir</span></span>
-<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a><span class="co"># - h: ayuda</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="fu">less</span> archivo1.txt archivo2.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>Comandos dentro de <code>less</code>:</p>
+<ul>
+<li><strong>Espacio</strong>: página siguiente</li>
+<li><strong>b</strong>: página anterior</li>
+<li><strong>j/k</strong>: línea siguiente/anterior</li>
+<li><strong>/texto</strong>: buscar hacia adelante</li>
+<li><strong>?texto</strong>: buscar hacia atrás</li>
+<li><strong>n</strong>: siguiente coincidencia</li>
+<li><strong>N</strong>: coincidencia anterior</li>
+<li><strong>q</strong>: salir</li>
+<li><strong>h</strong>: ayuda</li>
+</ul>
 <p>Ejemplo:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Asegurate de estar en Neucr2</span></span>
@@ -469,21 +476,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Ver archivo con números de línea</span></span>
 <span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="fu">less</span> <span class="at">-N</span> Neucr2_GeneCatalog_CDS_20130412.fasta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>Alternativas a <code>less</code>:</strong> - <code>more</code>: similar pero menos funcional - <code>most</code>: versión más avanzada con colores</p>
+<p><strong>Alternativas a <code>less</code>:</strong></p>
+<ul>
+<li><strong><code>more</code></strong>: similar pero menos funcional</li>
+<li><strong><code>most</code></strong>: versión más avanzada con colores</li>
+</ul>
 </section>
 </section>
 <section id="redireccionamiento-y-pipes" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="redireccionamiento-y-pipes"><span class="header-section-number">7.2</span> Redireccionamiento y Pipes</h2>
 <section id="operadores-de-redireccionamiento" class="level3" data-number="7.2.1">
 <h3 data-number="7.2.1" class="anchored" data-anchor-id="operadores-de-redireccionamiento"><span class="header-section-number">7.2.1</span> Operadores de Redireccionamiento</h3>
+<ul>
+<li><strong>&gt;</strong> : Redirigir salida (sobrescribir)</li>
+<li><strong>&gt;&gt;</strong> : Redirigir salida (anexar)</li>
+<li><strong>&lt;</strong> : Redirigir entrada</li>
+</ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt; : Redirigir salida (sobrescribir)</span></span>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt; </span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> sequences1.fasta <span class="op">&gt;</span> combined_sequences.fasta</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt;&gt; : Redirigir salida (anexar)</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt;&gt; </span></span>
 <span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> sequences2.fasta <span class="op">&gt;&gt;</span> combined_sequences.fasta</span>
 <span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co"># &lt; : Redirigir entrada</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co"># &lt; </span></span>
 <span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span> <span class="op">&lt;</span> sample_list.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Ejemplo:</p>
@@ -491,66 +507,81 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear una lista de IDs</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="st">"&gt;"</span> Neucr2_GeneCatalog_CDS_20130412.fasta <span class="op">&gt;</span> IDs_CDS-fasta.txt</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear lista de archivos de Neurospora</span></span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> Neucr2<span class="pp">*</span> <span class="op">&gt;</span> <span class="st">"files.txt"</span></span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear archivo de configuración</span></span>
-<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"threads=8"</span> <span class="op">&gt;</span> config.txt</span>
-<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"memory=16G"</span> <span class="op">&gt;&gt;</span> config.txt</span>
-<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"output_dir=/results/"</span> <span class="op">&gt;&gt;</span> config.txt</span>
-<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Verficamos</span></span>
-<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span> <span class="at">-5</span> IDs_CDS-fasta.txt</span>
-<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> config.txt files.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualizamos las 5 primeras líneas</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span> <span class="at">-5</span> IDs_CDS-fasta.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Resultado inesperado:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>jgi<span class="kw">|</span><span class="ex">Neucr2</span><span class="kw">|</span><span class="ex">411</span><span class="kw">|</span><span class="ex">NCU10129T0</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>jgi<span class="kw">|</span><span class="ex">Neucr2</span><span class="kw">|</span><span class="ex">412</span><span class="kw">|</span><span class="ex">NCU09901T0</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>jgi<span class="kw">|</span><span class="ex">Neucr2</span><span class="kw">|</span><span class="ex">413</span><span class="kw">|</span><span class="ex">NCU09903T0</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>jgi<span class="kw">|</span><span class="ex">Neucr2</span><span class="kw">|</span><span class="ex">414</span><span class="kw">|</span><span class="ex">NCU11134T0</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>jgi<span class="kw">|</span><span class="ex">Neucr2</span><span class="kw">|</span><span class="ex">415</span><span class="kw">|</span><span class="ex">NCU09904T0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Ejemplo:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear lista de archivos de Neurospora</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> Neucr2<span class="pp">*</span> <span class="op">&gt;</span> <span class="st">"files.txt"</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Vemos el archivo completo</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> files.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Resultado esperado:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt;jgi|Neucr2|411|NCU10129T0</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt;jgi|Neucr2|412|NCU09901T0</span></span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt;jgi|Neucr2|413|NCU09903T0</span></span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt;jgi|Neucr2|414|NCU11134T0</span></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt;jgi|Neucr2|415|NCU09904T0</span></span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="co"># threads=8</span></span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="co"># memory=16G</span></span>
-<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="co"># output_dir=/results/</span></span>
-<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Neucr2_AssemblyScaffolds.fasta.gz</span></span>
-<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Neucr2_AssemblyScaffolds_Repeatmasked.fasta.gz</span></span>
-<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Neucr2.filtered_proteins.BroadModels.gff3.gz</span></span>
-<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Neucr2_GeneCatalog_CDS_20130412.fasta</span></span>
-<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Neucr2_GeneCatalog_genes_20130412.gff.gz</span></span>
-<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Neucr2_GeneCatalog_proteins_20130412.aa.fasta.gz</span></span>
-<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Neucr2_GeneCatalog_proteins_20130412_GO.tab.gz</span></span>
-<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Neucr2_GeneCatalog_proteins_20130412_IPR.tab.gz</span></span>
-<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Neucr2_GeneCatalog_proteins_20130412_KEGG.tab.gz</span></span>
-<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Neucr2_GeneCatalog_proteins_20130412_KOG.tab.gz</span></span>
-<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Neucr2_GeneCatalog_proteins_20130412_SigP.tab.gz</span></span>
-<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Neucr2_GeneCatalog_transcripts_20130412.nt.fasta.gz</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Neucr2_AssemblyScaffolds.fasta.gz</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Neucr2_AssemblyScaffolds_Repeatmasked.fasta.gz</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Neucr2.filtered_proteins.BroadModels.gff3.gz</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Neucr2_GeneCatalog_CDS_20130412.fasta</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Neucr2_GeneCatalog_genes_20130412.gff.gz</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="ex">Neucr2_GeneCatalog_proteins_20130412.aa.fasta.gz</span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="ex">Neucr2_GeneCatalog_proteins_20130412_GO.tab.gz</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="ex">Neucr2_GeneCatalog_proteins_20130412_IPR.tab.gz</span></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a><span class="ex">Neucr2_GeneCatalog_proteins_20130412_KEGG.tab.gz</span></span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a><span class="ex">Neucr2_GeneCatalog_proteins_20130412_KOG.tab.gz</span></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a><span class="ex">Neucr2_GeneCatalog_proteins_20130412_SigP.tab.gz</span></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a><span class="ex">Neucr2_GeneCatalog_transcripts_20130412.nt.fasta.gz</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Ejemplo:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear archivo de configuración</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"threads=8"</span> <span class="op">&gt;</span> config.txt</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"memory=16G"</span> <span class="op">&gt;&gt;</span> config.txt</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"output_dir=/results/"</span> <span class="op">&gt;&gt;</span> config.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Resultado esperado:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="va">threads</span><span class="op">=</span>8</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="va">memory</span><span class="op">=</span>16G</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="va">output_dir</span><span class="op">=</span>/results/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="pipes---conectar-comandos" class="level3" data-number="7.2.2">
 <h3 data-number="7.2.2" class="anchored" data-anchor-id="pipes---conectar-comandos"><span class="header-section-number">7.2.2</span> Pipes (<code>|</code>) - Conectar comandos</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pipe básico: salida de un comando como entrada del siguiente</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="ex">comando1</span> <span class="kw">|</span> <span class="ex">comando2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pipe básico: salida de un comando como entrada del siguiente</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="ex">comando1</span> <span class="kw">|</span> <span class="ex">comando2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Ejemplo:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Contar número de secuencias en archivo FASTA</span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="st">"^&gt;"</span> Neucr2_GeneCatalog_CDS_20130412.fasta <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Ver secuencias ordenadas alfabéticamente y ver las primeras 5</span></span>
-<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="st">"^&gt;"</span> Neucr2_GeneCatalog_CDS_20130412.fasta <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Contar número de secuencias en archivo FASTA</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="st">"^&gt;"</span> Neucr2_GeneCatalog_CDS_20130412.fasta <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Resultado esperado:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 10785</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt;jgi|Neucr2|10000|NCU05018T0</span></span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt;jgi|Neucr2|10001|NCU05017T0</span></span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt;jgi|Neucr2|10002|NCU05016T0</span></span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt;jgi|Neucr2|10003|NCU05015T0</span></span>
-<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt;jgi|Neucr2|10004|NCU05014T0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="ex">10785</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Ejemplo:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ver secuencias ordenadas alfabéticamente y ver las primeras 5</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="st">"^&gt;"</span> Neucr2_GeneCatalog_CDS_20130412.fasta <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Resultados esperados:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>jgi<span class="kw">|</span><span class="ex">Neucr2</span><span class="kw">|</span><span class="ex">10000</span><span class="kw">|</span><span class="ex">NCU05018T0</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>jgi<span class="kw">|</span><span class="ex">Neucr2</span><span class="kw">|</span><span class="ex">10001</span><span class="kw">|</span><span class="ex">NCU05017T0</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>jgi<span class="kw">|</span><span class="ex">Neucr2</span><span class="kw">|</span><span class="ex">10002</span><span class="kw">|</span><span class="ex">NCU05016T0</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>jgi<span class="kw">|</span><span class="ex">Neucr2</span><span class="kw">|</span><span class="ex">10003</span><span class="kw">|</span><span class="ex">NCU05015T0</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>jgi<span class="kw">|</span><span class="ex">Neucr2</span><span class="kw">|</span><span class="ex">10004</span><span class="kw">|</span><span class="ex">NCU05014T0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
@@ -559,46 +590,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="sort---ordenar-contenido" class="level3" data-number="7.3.1">
 <h3 data-number="7.3.1" class="anchored" data-anchor-id="sort---ordenar-contenido"><span class="header-section-number">7.3.1</span> <code>sort</code> - Ordenar contenido</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ordenamiento básico</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span> archivo.txt</span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Ordenamiento numérico</span></span>
-<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span> <span class="at">-n</span> numeros.txt</span>
-<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Ordenamiento reverso</span></span>
-<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span> <span class="at">-r</span> archivo.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ordenamiento básico</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span> archivo.txt</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Ordenamiento numérico</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span> <span class="at">-n</span> numeros.txt</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Ordenamiento reverso</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span> <span class="at">-r</span> archivo.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="cut---extraer-columnas" class="level3" data-number="7.3.2">
 <h3 data-number="7.3.2" class="anchored" data-anchor-id="cut---extraer-columnas"><span class="header-section-number">7.3.2</span> <code>cut</code> - Extraer columnas</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Extraer columnas específicas</span></span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cut</span> <span class="at">-f1,3</span> archivo.tsv        <span class="co"># Columnas 1 y 3</span></span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cut</span> <span class="at">-d</span><span class="st">','</span> <span class="at">-f2</span> archivo.csv    <span class="co"># Segunda columna de CSV</span></span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="fu">cut</span> <span class="at">-c1-10</span> archivo.txt       <span class="co"># Caracteres 1-10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Extraer columnas específicas</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cut</span> <span class="at">-f1,3</span> archivo.tsv        <span class="co"># Columnas 1 y 3</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cut</span> <span class="at">-d</span><span class="st">','</span> <span class="at">-f2</span> archivo.csv    <span class="co"># Segunda columna de CSV</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="fu">cut</span> <span class="at">-c1-10</span> archivo.txt       <span class="co"># Caracteres 1-10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="paste---combinar-archivos-por-columnas" class="level3" data-number="7.3.3">
 <h3 data-number="7.3.3" class="anchored" data-anchor-id="paste---combinar-archivos-por-columnas"><span class="header-section-number">7.3.3</span> <code>paste</code> - Combinar archivos por columnas</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Combinar archivos lado a lado</span></span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span> file1.txt file2.txt</span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Con delimitador específico</span></span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span> <span class="at">-d</span><span class="st">','</span> file1.txt file2.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Combinar archivos lado a lado</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span> file1.txt file2.txt</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Con delimitador específico</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span> <span class="at">-d</span><span class="st">','</span> file1.txt file2.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="tr---transformar-caracteres" class="level3" data-number="7.3.4">
 <h3 data-number="7.3.4" class="anchored" data-anchor-id="tr---transformar-caracteres"><span class="header-section-number">7.3.4</span> <code>tr</code> - Transformar caracteres</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convertir mayúsculas a minúsculas</span></span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tr</span> <span class="st">'A-Z'</span> <span class="st">'a-z'</span> <span class="op">&lt;</span> archivo.txt</span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Eliminar caracteres específicos</span></span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="fu">tr</span> <span class="at">-d</span> <span class="st">'\r'</span> <span class="op">&lt;</span> archivo_windows.txt <span class="op">&gt;</span> archivo_unix.txt</span>
-<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Reemplazar caracteres</span></span>
-<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="fu">tr</span> <span class="st">' '</span> <span class="st">'_'</span> <span class="op">&lt;</span> nombres_con_espacios.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convertir mayúsculas a minúsculas</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tr</span> <span class="st">'A-Z'</span> <span class="st">'a-z'</span> <span class="op">&lt;</span> archivo.txt</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Eliminar caracteres específicos</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="fu">tr</span> <span class="at">-d</span> <span class="st">'\r'</span> <span class="op">&lt;</span> archivo_windows.txt <span class="op">&gt;</span> archivo_unix.txt</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Reemplazar caracteres</span></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a><span class="fu">tr</span> <span class="st">' '</span> <span class="st">'_'</span> <span class="op">&lt;</span> nombres_con_espacios.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
@@ -607,111 +638,111 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="análisis-de-archivos-fasta" class="level3" data-number="7.4.1">
 <h3 data-number="7.4.1" class="anchored" data-anchor-id="análisis-de-archivos-fasta"><span class="header-section-number">7.4.1</span> Análisis de archivos FASTA</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear archivo FASTA de prueba</span></span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> <span class="op">&gt;</span> example_sequences.fasta <span class="op">&lt;&lt; EOF</span></span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="st">&gt;sequence_1 Escherichia coli strain K12</span></span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="st">ATCGATCGATCGATCGATCGATCGATCGATCGATCGATCG</span></span>
-<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="st">GCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTA</span></span>
-<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a><span class="st">&gt;sequence_2 Salmonella enterica</span></span>
-<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="st">TTCCGGAATTCCGGAATTCCGGAATTCCGGAATTCCGGAA</span></span>
-<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a><span class="st">GGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAA</span></span>
-<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a><span class="st">&gt;sequence_3 Bacillus subtilis</span></span>
-<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a><span class="st">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span></span>
-<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a><span class="st">TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT</span></span>
-<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a><span class="op">EOF</span></span>
-<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Análisis básico del archivo FASTA</span></span>
-<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"=== Análisis de archivo FASTA ==="</span></span>
-<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Contar secuencias</span></span>
-<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Número de secuencias: </span><span class="va">$(</span><span class="fu">grep</span> <span class="at">-c</span> <span class="st">'^&gt;'</span> example_sequences.fasta<span class="va">)</span><span class="st">"</span></span>
-<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-20"><a href="#cb26-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Listar nombres de secuencias</span></span>
-<span id="cb26-21"><a href="#cb26-21" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Nombres de secuencias:"</span></span>
-<span id="cb26-22"><a href="#cb26-22" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="st">'^&gt;'</span> example_sequences.fasta <span class="kw">|</span> <span class="fu">cut</span> <span class="at">-c2-</span></span>
-<span id="cb26-23"><a href="#cb26-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-24"><a href="#cb26-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcular longitud de cada secuencia</span></span>
-<span id="cb26-25"><a href="#cb26-25" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Longitudes de secuencias:"</span></span>
-<span id="cb26-26"><a href="#cb26-26" aria-hidden="true" tabindex="-1"></a><span class="fu">awk</span> <span class="st">'/^&gt;/ {if(seq) print header ": " length(seq); header=$0; seq=""; next} {seq=seq$0} END {print header ": " length(seq)}'</span> example_sequences.fasta</span>
-<span id="cb26-27"><a href="#cb26-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-28"><a href="#cb26-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Composición nucleotídica</span></span>
-<span id="cb26-29"><a href="#cb26-29" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Composición total:"</span></span>
-<span id="cb26-30"><a href="#cb26-30" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="at">-v</span> <span class="st">'^&gt;'</span> example_sequences.fasta <span class="kw">|</span> <span class="fu">tr</span> <span class="at">-d</span> <span class="st">'\n'</span> <span class="kw">|</span> <span class="fu">fold</span> <span class="at">-w1</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear archivo FASTA de prueba</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> <span class="op">&gt;</span> example_sequences.fasta <span class="op">&lt;&lt; EOF</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="st">&gt;sequence_1 Escherichia coli strain K12</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="st">ATCGATCGATCGATCGATCGATCGATCGATCGATCGATCG</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a><span class="st">GCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTA</span></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a><span class="st">&gt;sequence_2 Salmonella enterica</span></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a><span class="st">TTCCGGAATTCCGGAATTCCGGAATTCCGGAATTCCGGAA</span></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a><span class="st">GGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAAGGCCTTAA</span></span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a><span class="st">&gt;sequence_3 Bacillus subtilis</span></span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a><span class="st">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span></span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a><span class="st">TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT</span></span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a><span class="op">EOF</span></span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Análisis básico del archivo FASTA</span></span>
+<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"=== Análisis de archivo FASTA ==="</span></span>
+<span id="cb32-16"><a href="#cb32-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-17"><a href="#cb32-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Contar secuencias</span></span>
+<span id="cb32-18"><a href="#cb32-18" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Número de secuencias: </span><span class="va">$(</span><span class="fu">grep</span> <span class="at">-c</span> <span class="st">'^&gt;'</span> example_sequences.fasta<span class="va">)</span><span class="st">"</span></span>
+<span id="cb32-19"><a href="#cb32-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-20"><a href="#cb32-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Listar nombres de secuencias</span></span>
+<span id="cb32-21"><a href="#cb32-21" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Nombres de secuencias:"</span></span>
+<span id="cb32-22"><a href="#cb32-22" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="st">'^&gt;'</span> example_sequences.fasta <span class="kw">|</span> <span class="fu">cut</span> <span class="at">-c2-</span></span>
+<span id="cb32-23"><a href="#cb32-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-24"><a href="#cb32-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcular longitud de cada secuencia</span></span>
+<span id="cb32-25"><a href="#cb32-25" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Longitudes de secuencias:"</span></span>
+<span id="cb32-26"><a href="#cb32-26" aria-hidden="true" tabindex="-1"></a><span class="fu">awk</span> <span class="st">'/^&gt;/ {if(seq) print header ": " length(seq); header=$0; seq=""; next} {seq=seq$0} END {print header ": " length(seq)}'</span> example_sequences.fasta</span>
+<span id="cb32-27"><a href="#cb32-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-28"><a href="#cb32-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Composición nucleotídica</span></span>
+<span id="cb32-29"><a href="#cb32-29" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Composición total:"</span></span>
+<span id="cb32-30"><a href="#cb32-30" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="at">-v</span> <span class="st">'^&gt;'</span> example_sequences.fasta <span class="kw">|</span> <span class="fu">tr</span> <span class="at">-d</span> <span class="st">'\n'</span> <span class="kw">|</span> <span class="fu">fold</span> <span class="at">-w1</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="procesamiento-de-archivos-de-metadatos" class="level3" data-number="7.4.2">
 <h3 data-number="7.4.2" class="anchored" data-anchor-id="procesamiento-de-archivos-de-metadatos"><span class="header-section-number">7.4.2</span> Procesamiento de archivos de metadatos</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> <span class="op">&gt;</span> sample_metadata.tsv <span class="op">&lt;&lt; EOF</span></span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="st">sample_id   condition   batch   concentration   quality_score</span></span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="st">sample_001  control 1   2.5 8.2</span></span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="st">sample_002  treatment   1   3.2 7.9</span></span>
-<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="st">sample_003  control 2   2.8 8.5</span></span>
-<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="st">sample_004  treatment   2   3.1 8.0</span></span>
-<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="st">sample_005  control 1   2.3 7.8</span></span>
-<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a><span class="op">EOF</span></span>
-<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Análisis de metadatos</span></span>
-<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"=== Análisis de metadatos ==="</span></span>
-<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Mostrar estructura</span></span>
-<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Primeras líneas:"</span></span>
-<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span> <span class="at">-3</span> sample_metadata.tsv</span>
-<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Contar muestras por condición</span></span>
-<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Muestras por condición:"</span></span>
-<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span> <span class="at">-n</span> +2 sample_metadata.tsv <span class="kw">|</span> <span class="fu">cut</span> <span class="at">-f2</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span></span>
-<span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcular estadísticas de concentración</span></span>
-<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Estadísticas de concentración:"</span></span>
-<span id="cb27-23"><a href="#cb27-23" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span> <span class="at">-n</span> +2 sample_metadata.tsv <span class="kw">|</span> <span class="fu">cut</span> <span class="at">-f4</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">awk</span> <span class="st">'</span></span>
-<span id="cb27-24"><a href="#cb27-24" aria-hidden="true" tabindex="-1"></a><span class="st">{</span></span>
-<span id="cb27-25"><a href="#cb27-25" aria-hidden="true" tabindex="-1"></a><span class="st">    values[NR] = $1</span></span>
-<span id="cb27-26"><a href="#cb27-26" aria-hidden="true" tabindex="-1"></a><span class="st">    sum += $1</span></span>
-<span id="cb27-27"><a href="#cb27-27" aria-hidden="true" tabindex="-1"></a><span class="st">}</span></span>
-<span id="cb27-28"><a href="#cb27-28" aria-hidden="true" tabindex="-1"></a><span class="st">END {</span></span>
-<span id="cb27-29"><a href="#cb27-29" aria-hidden="true" tabindex="-1"></a><span class="st">    print "Mínimo: " values[1]</span></span>
-<span id="cb27-30"><a href="#cb27-30" aria-hidden="true" tabindex="-1"></a><span class="st">    print "Máximo: " values[NR]</span></span>
-<span id="cb27-31"><a href="#cb27-31" aria-hidden="true" tabindex="-1"></a><span class="st">    print "Promedio: " sum/NR</span></span>
-<span id="cb27-32"><a href="#cb27-32" aria-hidden="true" tabindex="-1"></a><span class="st">    print "Mediana: " values[int(NR/2)]</span></span>
-<span id="cb27-33"><a href="#cb27-33" aria-hidden="true" tabindex="-1"></a><span class="st">}'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> <span class="op">&gt;</span> sample_metadata.tsv <span class="op">&lt;&lt; EOF</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="st">sample_id   condition   batch   concentration   quality_score</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="st">sample_001  control 1   2.5 8.2</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="st">sample_002  treatment   1   3.2 7.9</span></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a><span class="st">sample_003  control 2   2.8 8.5</span></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a><span class="st">sample_004  treatment   2   3.1 8.0</span></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a><span class="st">sample_005  control 1   2.3 7.8</span></span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a><span class="op">EOF</span></span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Análisis de metadatos</span></span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"=== Análisis de metadatos ==="</span></span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Mostrar estructura</span></span>
+<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Primeras líneas:"</span></span>
+<span id="cb33-15"><a href="#cb33-15" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span> <span class="at">-3</span> sample_metadata.tsv</span>
+<span id="cb33-16"><a href="#cb33-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-17"><a href="#cb33-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Contar muestras por condición</span></span>
+<span id="cb33-18"><a href="#cb33-18" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Muestras por condición:"</span></span>
+<span id="cb33-19"><a href="#cb33-19" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span> <span class="at">-n</span> +2 sample_metadata.tsv <span class="kw">|</span> <span class="fu">cut</span> <span class="at">-f2</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span></span>
+<span id="cb33-20"><a href="#cb33-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-21"><a href="#cb33-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcular estadísticas de concentración</span></span>
+<span id="cb33-22"><a href="#cb33-22" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Estadísticas de concentración:"</span></span>
+<span id="cb33-23"><a href="#cb33-23" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span> <span class="at">-n</span> +2 sample_metadata.tsv <span class="kw">|</span> <span class="fu">cut</span> <span class="at">-f4</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">awk</span> <span class="st">'</span></span>
+<span id="cb33-24"><a href="#cb33-24" aria-hidden="true" tabindex="-1"></a><span class="st">{</span></span>
+<span id="cb33-25"><a href="#cb33-25" aria-hidden="true" tabindex="-1"></a><span class="st">    values[NR] = $1</span></span>
+<span id="cb33-26"><a href="#cb33-26" aria-hidden="true" tabindex="-1"></a><span class="st">    sum += $1</span></span>
+<span id="cb33-27"><a href="#cb33-27" aria-hidden="true" tabindex="-1"></a><span class="st">}</span></span>
+<span id="cb33-28"><a href="#cb33-28" aria-hidden="true" tabindex="-1"></a><span class="st">END {</span></span>
+<span id="cb33-29"><a href="#cb33-29" aria-hidden="true" tabindex="-1"></a><span class="st">    print "Mínimo: " values[1]</span></span>
+<span id="cb33-30"><a href="#cb33-30" aria-hidden="true" tabindex="-1"></a><span class="st">    print "Máximo: " values[NR]</span></span>
+<span id="cb33-31"><a href="#cb33-31" aria-hidden="true" tabindex="-1"></a><span class="st">    print "Promedio: " sum/NR</span></span>
+<span id="cb33-32"><a href="#cb33-32" aria-hidden="true" tabindex="-1"></a><span class="st">    print "Mediana: " values[int(NR/2)]</span></span>
+<span id="cb33-33"><a href="#cb33-33" aria-hidden="true" tabindex="-1"></a><span class="st">}'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="pipeline-de-análisis-de-calidad-fastq" class="level3" data-number="7.4.3">
 <h3 data-number="7.4.3" class="anchored" data-anchor-id="pipeline-de-análisis-de-calidad-fastq"><span class="header-section-number">7.4.3</span> Pipeline de análisis de calidad FASTQ</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear archivo FASTQ de ejemplo</span></span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> <span class="op">&gt;</span> example_reads.fastq <span class="op">&lt;&lt; EOF</span></span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="st">@read_1</span></span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="st">ATCGATCGATCGATCGATCGATCGATCGATCGATCGATCG</span></span>
-<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="st">+</span></span>
-<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="st">IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII</span></span>
-<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="st">@read_2</span></span>
-<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a><span class="st">TTCCGGAATTCCGGAATTCCGGAATTCCGGAATTCCGGAA</span></span>
-<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a><span class="st">+</span></span>
-<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a><span class="st">HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</span></span>
-<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a><span class="st">@read_3</span></span>
-<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a><span class="st">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span></span>
-<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a><span class="st">+</span></span>
-<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a><span class="st">GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</span></span>
-<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a><span class="op">EOF</span></span>
-<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Análisis básico de archivo FASTQ</span></span>
-<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"=== Análisis FASTQ ==="</span></span>
-<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Contar número de lecturas</span></span>
-<span id="cb28-21"><a href="#cb28-21" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Número de lecturas: </span><span class="va">$(($(</span><span class="fu">wc</span> <span class="at">-l</span> <span class="op">&lt;</span> example_reads.fastq<span class="va">)</span> <span class="op">/</span> <span class="dv">4</span><span class="va">))</span><span class="st">"</span></span>
-<span id="cb28-22"><a href="#cb28-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-23"><a href="#cb28-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Longitud de lecturas</span></span>
-<span id="cb28-24"><a href="#cb28-24" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Longitud de primera lectura: </span><span class="va">$(</span><span class="fu">sed</span> <span class="at">-n</span> <span class="st">'2p'</span> example_reads.fastq <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-c</span><span class="va">)</span><span class="st">"</span></span>
-<span id="cb28-25"><a href="#cb28-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-26"><a href="#cb28-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Primeros 5 IDs de lecturas</span></span>
-<span id="cb28-27"><a href="#cb28-27" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Primeros IDs:"</span></span>
-<span id="cb28-28"><a href="#cb28-28" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="st">'^@'</span> example_reads.fastq <span class="kw">|</span> <span class="fu">head</span> <span class="at">-5</span></span>
-<span id="cb28-29"><a href="#cb28-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-30"><a href="#cb28-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Distribución de calidad (primera posición)</span></span>
-<span id="cb28-31"><a href="#cb28-31" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Distribución de calidad (primera posición):"</span></span>
-<span id="cb28-32"><a href="#cb28-32" aria-hidden="true" tabindex="-1"></a><span class="fu">awk</span> <span class="st">'NR%4==0'</span> example_reads.fastq <span class="kw">|</span> <span class="fu">cut</span> <span class="at">-c1</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear archivo FASTQ de ejemplo</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> <span class="op">&gt;</span> example_reads.fastq <span class="op">&lt;&lt; EOF</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="st">@read_1</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="st">ATCGATCGATCGATCGATCGATCGATCGATCGATCGATCG</span></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a><span class="st">+</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a><span class="st">IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII</span></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a><span class="st">@read_2</span></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="st">TTCCGGAATTCCGGAATTCCGGAATTCCGGAATTCCGGAA</span></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a><span class="st">+</span></span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a><span class="st">HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</span></span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a><span class="st">@read_3</span></span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a><span class="st">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span></span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a><span class="st">+</span></span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a><span class="st">GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</span></span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a><span class="op">EOF</span></span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Análisis básico de archivo FASTQ</span></span>
+<span id="cb34-18"><a href="#cb34-18" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"=== Análisis FASTQ ==="</span></span>
+<span id="cb34-19"><a href="#cb34-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-20"><a href="#cb34-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Contar número de lecturas</span></span>
+<span id="cb34-21"><a href="#cb34-21" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Número de lecturas: </span><span class="va">$(($(</span><span class="fu">wc</span> <span class="at">-l</span> <span class="op">&lt;</span> example_reads.fastq<span class="va">)</span> <span class="op">/</span> <span class="dv">4</span><span class="va">))</span><span class="st">"</span></span>
+<span id="cb34-22"><a href="#cb34-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-23"><a href="#cb34-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Longitud de lecturas</span></span>
+<span id="cb34-24"><a href="#cb34-24" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Longitud de primera lectura: </span><span class="va">$(</span><span class="fu">sed</span> <span class="at">-n</span> <span class="st">'2p'</span> example_reads.fastq <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-c</span><span class="va">)</span><span class="st">"</span></span>
+<span id="cb34-25"><a href="#cb34-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-26"><a href="#cb34-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Primeros 5 IDs de lecturas</span></span>
+<span id="cb34-27"><a href="#cb34-27" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Primeros IDs:"</span></span>
+<span id="cb34-28"><a href="#cb34-28" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="st">'^@'</span> example_reads.fastq <span class="kw">|</span> <span class="fu">head</span> <span class="at">-5</span></span>
+<span id="cb34-29"><a href="#cb34-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-30"><a href="#cb34-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Distribución de calidad (primera posición)</span></span>
+<span id="cb34-31"><a href="#cb34-31" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Distribución de calidad (primera posición):"</span></span>
+<span id="cb34-32"><a href="#cb34-32" aria-hidden="true" tabindex="-1"></a><span class="fu">awk</span> <span class="st">'NR%4==0'</span> example_reads.fastq <span class="kw">|</span> <span class="fu">cut</span> <span class="at">-c1</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
@@ -720,23 +751,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="uso-básico-de-nano" class="level3" data-number="7.5.1">
 <h3 data-number="7.5.1" class="anchored" data-anchor-id="uso-básico-de-nano"><span class="header-section-number">7.5.1</span> Uso básico de nano</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Abrir archivo existente o crear nuevo</span></span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">nano</span> archivo.txt</span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Comandos básicos en nano:</span></span>
-<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Ctrl+O: Guardar</span></span>
-<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Ctrl+X: Salir</span></span>
-<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Ctrl+W: Buscar</span></span>
-<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Ctrl+K: Cortar línea</span></span>
-<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Ctrl+U: Pegar línea cortada</span></span>
-<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Ctrl+G: Ayuda</span></span>
-<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Abrir archivo en línea específica</span></span>
-<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a><span class="fu">nano</span> +25 script.py</span>
-<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Modo solo lectura</span></span>
-<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a><span class="fu">nano</span> <span class="at">-v</span> archivo.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Abrir archivo existente o crear nuevo</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="fu">nano</span> archivo.txt</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Abrir archivo en línea específica</span></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="fu">nano</span> +25 script.py</span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Modo solo lectura</span></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a><span class="fu">nano</span> <span class="at">-v</span> archivo.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>Comandos básicos en nano:</p>
+<ul>
+<li><strong>Ctrl+O</strong>: Guardar</li>
+<li><strong>Ctrl+X</strong>: Salir</li>
+<li><strong>Ctrl+W</strong>: Buscar</li>
+<li><strong>Ctrl+K</strong>: Cortar línea</li>
+<li><strong>Ctrl+U</strong>: Pegar línea cortada</li>
+<li><strong>Ctrl+G</strong>: Ayuda</li>
+</ul>
 </section>
 </section>
 <section id="consejos-avanzados-y-buenas-prácticas" class="level2" data-number="7.6">
@@ -744,16 +776,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="manejo-eficiente-de-archivos-grandes" class="level3" data-number="7.6.1">
 <h3 data-number="7.6.1" class="anchored" data-anchor-id="manejo-eficiente-de-archivos-grandes"><span class="header-section-number">7.6.1</span> Manejo eficiente de archivos grandes</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Para archivos muy grandes, usar comandos optimizados</span></span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="co"># En lugar de cat archivo_grande.txt | grep "patrón"</span></span>
-<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Usar directamente:</span></span>
-<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="st">"patrón"</span> archivo_grande.txt</span>
-<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Para procesar archivos línea por línea sin cargar todo en memoria</span></span>
-<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">IFS</span><span class="op">=</span> <span class="bu">read</span> <span class="at">-r</span> <span class="va">line</span><span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># procesar línea</span></span>
-<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"Procesando: </span><span class="va">$line</span><span class="st">"</span></span>
-<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span> <span class="op">&lt;</span> archivo_grande.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Para archivos muy grandes, usar comandos optimizados</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="co"># En lugar de cat archivo_grande.txt | grep "patrón"</span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Usar directamente:</span></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="st">"patrón"</span> archivo_grande.txt</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Para procesar archivos línea por línea sin cargar todo en memoria</span></span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">IFS</span><span class="op">=</span> <span class="bu">read</span> <span class="at">-r</span> <span class="va">line</span><span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># procesar línea</span></span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"Procesando: </span><span class="va">$line</span><span class="st">"</span></span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span> <span class="op">&lt;</span> archivo_grande.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
@@ -762,19 +794,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="comandos-relacionados-útiles" class="level3" data-number="7.7.1">
 <h3 data-number="7.7.1" class="anchored" data-anchor-id="comandos-relacionados-útiles"><span class="header-section-number">7.7.1</span> Comandos relacionados útiles</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># wc - contar líneas, palabras, caracteres</span></span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wc</span> <span class="at">-l</span> archivo.txt      <span class="co"># líneas</span></span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="fu">wc</span> <span class="at">-w</span> archivo.txt      <span class="co"># palabras  </span></span>
-<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="fu">wc</span> <span class="at">-c</span> archivo.txt      <span class="co"># caracteres</span></span>
-<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="co"># uniq - eliminar líneas duplicadas consecutivas</span></span>
-<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span> archivo.txt <span class="kw">|</span> <span class="fu">uniq</span></span>
-<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a><span class="co"># comm - comparar archivos ordenados</span></span>
-<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a><span class="fu">comm</span> <span class="at">-12</span> archivo1.txt archivo2.txt  <span class="co"># líneas comunes</span></span>
-<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a><span class="co"># diff - comparar archivos</span></span>
-<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a><span class="fu">diff</span> archivo1.txt archivo2.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># wc - contar líneas, palabras, caracteres</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wc</span> <span class="at">-l</span> archivo.txt      <span class="co"># líneas</span></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="fu">wc</span> <span class="at">-w</span> archivo.txt      <span class="co"># palabras  </span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="fu">wc</span> <span class="at">-c</span> archivo.txt      <span class="co"># caracteres</span></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a><span class="co"># uniq - eliminar líneas duplicadas consecutivas</span></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span> archivo.txt <span class="kw">|</span> <span class="fu">uniq</span></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a><span class="co"># comm - comparar archivos ordenados</span></span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a><span class="fu">comm</span> <span class="at">-12</span> archivo1.txt archivo2.txt  <span class="co"># líneas comunes</span></span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a><span class="co"># diff - comparar archivos</span></span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a><span class="fu">diff</span> archivo1.txt archivo2.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
@@ -782,15 +814,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="7.8" class="anchored" data-anchor-id="resumen-de-comandos"><span class="header-section-number">7.8</span> Resumen de Comandos</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 12%">
-<col style="width: 35%">
-<col style="width: 52%">
+<col style="width: 16%">
+<col style="width: 33%">
+<col style="width: 49%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Comando</th>
-<th>Función</th>
-<th>Ejemplo Bioinformático</th>
+<th><strong>Comando</strong></th>
+<th><strong>Función</strong></th>
+<th><strong>Ejemplo Bioinformático</strong></th>
 </tr>
 </thead>
 <tbody>
