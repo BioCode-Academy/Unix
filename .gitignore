@@ -11,6 +11,7 @@ references*
 *.Rproj
 
 # Other files
+analisis_secuencias/
 class/
 /images/
 /conducta.md
