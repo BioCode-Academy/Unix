@@ -310,8 +310,7 @@ div.csl-indent {
   <li><a href="#ejemplo-3-limpieza-y-organización-post-análisis" id="toc-ejemplo-3-limpieza-y-organización-post-análisis" class="nav-link" data-scroll-target="#ejemplo-3-limpieza-y-organización-post-análisis"><span class="header-section-number">6.6.3</span> Ejemplo 3: Limpieza y organización post-análisis</a></li>
   </ul></li>
   <li><a href="#consejos-y-buenas-prácticas" id="toc-consejos-y-buenas-prácticas" class="nav-link" data-scroll-target="#consejos-y-buenas-prácticas"><span class="header-section-number">6.7</span> Consejos y Buenas Prácticas</a></li>
-  <li><a href="#comandos-de-verificación" id="toc-comandos-de-verificación" class="nav-link" data-scroll-target="#comandos-de-verificación"><span class="header-section-number">6.8</span> Comandos de Verificación</a></li>
-  <li><a href="#resumen-de-comandos" id="toc-resumen-de-comandos" class="nav-link" data-scroll-target="#resumen-de-comandos"><span class="header-section-number">6.9</span> Resumen de Comandos</a></li>
+  <li><a href="#resumen-de-comandos" id="toc-resumen-de-comandos" class="nav-link" data-scroll-target="#resumen-de-comandos"><span class="header-section-number">6.8</span> Resumen de Comandos</a></li>
   </ul>
 </nav>
     </div>
@@ -345,6 +344,7 @@ div.csl-indent {
 <h2 data-number="6.1" class="anchored" data-anchor-id="creación-de-archivos-y-directorios"><span class="header-section-number">6.1</span> Creación de archivos y directorios</h2>
 <section id="touch---crear-archivos-vacíos" class="level3" data-number="6.1.1">
 <h3 data-number="6.1.1" class="anchored" data-anchor-id="touch---crear-archivos-vacíos"><span class="header-section-number">6.1.1</span> <code>touch</code> - Crear archivos vacíos</h3>
+<p><code>touch</code> es utilizado para cambiar la fecha y hora de última modificación de un archivo. También puede utilizarse para crear un archivo vacío.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear un archivo vacío</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> archivo.txt</span>
@@ -375,22 +375,21 @@ div.csl-indent {
 </div>
 <p>Resultado esperado:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># drwxrwxr-x 2 david david  4096 May 26 14:54 Neucr2</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># -rw-rw-r-- 1 david david     0 May 26 12:56 protein_sequences.faa</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># -rw-rw-r-- 1 david david     0 May 26 12:56 analysis_parameters.txt</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># -rw-rw-r-- 1 david david     0 May 26 12:56 gene_annotations.gff3</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># -rw-rw-r-- 1 david david     0 May 26 12:56 genome_assembly.fasta</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># drwxr-xr-x 2 david david  4096 Nov 17  2015 creatures</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># drwxr-xr-x 5 david david  4096 Nov 17  2015 data</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># drwxr-xr-x 2 david david  4096 Nov 17  2015 Desktop</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># drwxr-xr-x 2 david david  4096 Nov 17  2015 molecules</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># drwxr-xr-x 3 david david  4096 Nov 17  2015 north-pacific-gyre</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># -rw-r--r-- 1 david david    86 Nov 17  2015 notes.txt</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># -rw-r--r-- 1 david david    32 Nov 17  2015 pizza.cfg</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># -rw-r--r-- 1 david david 21583 Nov 17  2015 solar.pdf</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># drwxr-xr-x 6 david david  4096 Nov 17  2015 writing</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">drwxrwxr-x</span> 2 david david  4096 May 26 14:54 Neucr2</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-rw-r--</span> 1 david david     0 May 26 12:56 protein_sequences.faa</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-rw-r--</span> 1 david david     0 May 26 12:56 analysis_parameters.txt</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-rw-r--</span> 1 david david     0 May 26 12:56 gene_annotations.gff3</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-rw-r--</span> 1 david david     0 May 26 12:56 genome_assembly.fasta</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ex">drwxr-xr-x</span> 2 david david  4096 Nov 17  2015 creatures</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ex">drwxr-xr-x</span> 5 david david  4096 Nov 17  2015 data</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ex">drwxr-xr-x</span> 2 david david  4096 Nov 17  2015 Desktop</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ex">drwxr-xr-x</span> 2 david david  4096 Nov 17  2015 molecules</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="ex">drwxr-xr-x</span> 3 david david  4096 Nov 17  2015 north-pacific-gyre</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-r--r--</span> 1 david david    86 Nov 17  2015 notes.txt</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-r--r--</span> 1 david david    32 Nov 17  2015 pizza.cfg</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-r--r--</span> 1 david david 21583 Nov 17  2015 solar.pdf</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="ex">drwxr-xr-x</span> 6 david david  4096 Nov 17  2015 writing</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>Nota importante</strong>: <code>touch</code> también actualiza la fecha de modificación de archivos existentes sin cambiar su contenido.</p>
 </section>
 <section id="mkdir---crear-directorios" class="level3" data-number="6.1.2">
 <h3 data-number="6.1.2" class="anchored" data-anchor-id="mkdir---crear-directorios"><span class="header-section-number">6.1.2</span> <code>mkdir</code> - Crear directorios</h3>
@@ -417,23 +416,28 @@ div.csl-indent {
 </div>
 <p>Resultado esperado:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># project/</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># ├── data</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── metadata</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── processed</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co"># │   └── raw_sequences</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co"># ├── references</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># ├── results</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── diversity</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── figures</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># │   └── taxonomy</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co"># └── scripts</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co">#     ├── analysis</span></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co">#     └── preprocessing</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 13 directories, 0 files</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">project/</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> data</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── metadata</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── processed</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   └── raw_sequences</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> references</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> results</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── diversity</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── figures</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   └── taxonomy</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="ex">└──</span> scripts</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="ex">├──</span> analysis</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="ex">└──</span> preprocessing</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="ex">13</span> directories, 0 files</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>Opciones útiles de <code>mkdir</code>:</strong> - <code>-p</code>: crear directorios padre si no existen - <code>-v</code>: modo verbose (mostrar lo que se está creando) - <code>-m</code>: establecer permisos específicos</p>
+<p><strong>Opciones útiles de <code>mkdir</code>:</strong></p>
+<ul>
+<li><strong><code>-p</code></strong>: crear directorios padre si no existen</li>
+<li><strong><code>-v</code></strong>: modo verbose (mostrar lo que se está creando)</li>
+<li><strong><code>-m</code></strong>: establecer permisos específicos</li>
+</ul>
 </section>
 </section>
 <section id="copiado-de-archivos-y-directorios" class="level2" data-number="6.2">
@@ -476,29 +480,35 @@ div.csl-indent {
 </div>
 <p>Resultado esperado:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># project/</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># ├── data</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── metadata</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── processed</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── protein_sequences.faa</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── raw_sequences</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># │   └── references</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co"># ├── references</span></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co"># ├── results</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── diversity</span></span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── figures</span></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co"># │   └── taxonomy</span></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="co"># └── scripts</span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="co">#     ├── analysis</span></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="co">#     └── preprocessing</span></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="co"># results/</span></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="co"># ├── diversity</span></span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a><span class="co"># ├── figures</span></span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="co"># └── taxonomy</span></span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="co"># 18 directories, 1 file</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">project/</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> data</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── metadata</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── processed</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── protein_sequences.faa</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── raw_sequences</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   └── references</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> references</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> results</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── diversity</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── figures</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   └── taxonomy</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="ex">└──</span> scripts</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>    <span class="ex">├──</span> analysis</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>    <span class="ex">└──</span> preprocessing</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="ex">results/</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> diversity</span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> figures</span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="ex">└──</span> taxonomy</span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="ex">18</span> directories, 1 file</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>Opciones útiles de <code>cp</code>:</strong> - <code>-r</code> o <code>-R</code>: copia recursiva (para directorios) - <code>-p</code>: preservar atributos (permisos, timestamps) - <code>-i</code>: modo interactivo - <code>-v</code>: modo verbose - <code>-u</code>: copiar solo si el archivo fuente es más nuevo</p>
+<p><strong>Opciones útiles de <code>cp</code>:</strong></p>
+<ul>
+<li><strong><code>-r</code></strong> o <strong><code>-R</code></strong>: copia recursiva (para directorios)</li>
+<li><strong><code>-p</code></strong>: preservar atributos (permisos, timestamps)</li>
+<li><strong><code>-i</code></strong>: modo interactivo - <code>-v</code>: modo verbose</li>
+<li><strong><code>-u</code></strong>: copiar solo si el archivo fuente es más nuevo</li>
+</ul>
 </section>
 </section>
 <section id="movimiento-y-renombrado" class="level2" data-number="6.3">
@@ -541,31 +551,31 @@ div.csl-indent {
 </div>
 <p>Resultado esperado:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># project/</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># ├── data</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── gene_annotations.gff3</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── genome_assembly.fasta</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── metadata</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── processed</span></span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── protein_sequences.faa</span></span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── raw_sequences</span></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── references</span></span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="co"># │   └── results_v2</span></span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="co"># │       ├── diversity</span></span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="co"># │       ├── figures</span></span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="co"># │       └── taxonomy</span></span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="co"># ├── references</span></span>
-<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a><span class="co"># │   └── analysis_parameters.txt</span></span>
-<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a><span class="co"># ├── results</span></span>
-<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── diversity</span></span>
-<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── figures</span></span>
-<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── protein_sequences.faa</span></span>
-<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a><span class="co"># │   └── taxonomy</span></span>
-<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a><span class="co"># └── scripts</span></span>
-<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a><span class="co">#     ├── analysis</span></span>
-<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a><span class="co">#     └── preprocessing</span></span>
-<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
-<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a><span class="co"># 18 directories, 5 files</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">project/</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> data</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── gene_annotations.gff3</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── genome_assembly.fasta</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── metadata</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── processed</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── protein_sequences.faa</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── raw_sequences</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── references</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   └── results_v2</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>       ├── diversity</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>       ├── figures</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>       └── taxonomy</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> references</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   └── analysis_parameters.txt</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> results</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── diversity</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── figures</span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── protein_sequences.faa</span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   └── taxonomy</span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a><span class="ex">└──</span> scripts</span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>    <span class="ex">├──</span> analysis</span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>    <span class="ex">└──</span> preprocessing</span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a><span class="ex">18</span> directories, 5 files</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
@@ -608,19 +618,19 @@ div.csl-indent {
 </div>
 <p>Resultado esperado:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># project/</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co"># ├── references</span></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co"># │   └── analysis_parameters.txt</span></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># ├── results</span></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── diversity</span></span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── figures</span></span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co"># │   ├── protein_sequences.faa</span></span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="co"># │   └── taxonomy</span></span>
-<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="co"># └── scripts</span></span>
-<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="co">#     ├── analysis</span></span>
-<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="co">#     └── preprocessing</span></span>
-<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
-<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 9 directories, 2 files</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">project/</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> references</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   └── analysis_parameters.txt</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> results</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── diversity</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── figures</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── protein_sequences.faa</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   └── taxonomy</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="ex">└──</span> scripts</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>    <span class="ex">├──</span> analysis</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>    <span class="ex">└──</span> preprocessing</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a><span class="ex">9</span> directories, 2 files</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Ejemplo:</p>
 <div class="cell">
@@ -630,9 +640,15 @@ div.csl-indent {
 </div>
 <p>Resultado esperado:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># creatures  data  Desktop  molecules  Neucr2  north-pacific-gyre  notes.txt  pizza.cfg  solar.pdf  writing</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">creatures</span>  data  Desktop  molecules  Neucr2  north-pacific-gyre  notes.txt  pizza.cfg  solar.pdf  writing</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>Opciones importantes de <code>rm</code>:</strong> - <code>-i</code>: modo interactivo (pregunta antes de eliminar) - <code>-r</code> o <code>-R</code>: eliminación recursiva (directorios) - <code>-f</code>: forzar eliminación sin preguntar - <code>-v</code>: modo verbose</p>
+<p><strong>Opciones importantes de <code>rm</code>:</strong></p>
+<ul>
+<li><strong><code>-i</code></strong>: modo interactivo (pregunta antes de eliminar)</li>
+<li><strong><code>-r</code></strong> o <strong><code>-R</code></strong>: eliminación recursiva (directorios)</li>
+<li><strong><code>-f</code></strong>: forzar eliminación sin preguntar</li>
+<li><strong><code>-v</code></strong>: modo verbose</li>
+</ul>
 </section>
 </section>
 <section id="manejo-seguro-de-archivos" class="level2" data-number="6.5">
@@ -711,28 +727,19 @@ div.csl-indent {
 <li><strong>Documentar cambios</strong>: Llevar log de reorganizaciones importantes</li>
 </ol>
 </section>
-<section id="comandos-de-verificación" class="level2" data-number="6.8">
-<h2 data-number="6.8" class="anchored" data-anchor-id="comandos-de-verificación"><span class="header-section-number">6.8</span> Comandos de Verificación</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificar operaciones</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-la</span>  <span class="co"># Confirmar creación/movimiento</span></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="fu">du</span> <span class="at">-sh</span> directorio/  <span class="co"># Verificar tamaño</span></span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="ex">tree</span>  <span class="co"># Ver estructura completa</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="resumen-de-comandos" class="level2" data-number="6.9">
-<h2 data-number="6.9" class="anchored" data-anchor-id="resumen-de-comandos"><span class="header-section-number">6.9</span> Resumen de Comandos</h2>
+<section id="resumen-de-comandos" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="resumen-de-comandos"><span class="header-section-number">6.8</span> Resumen de Comandos</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 12%">
-<col style="width: 40%">
-<col style="width: 46%">
+<col style="width: 17%">
+<col style="width: 38%">
+<col style="width: 44%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Comando</th>
-<th>Función</th>
-<th>Ejemplo Clave</th>
+<th><strong>Comando</strong></th>
+<th><strong>Función</strong></th>
+<th><strong>Ejemplo Clave</strong></th>
 </tr>
 </thead>
 <tbody>
