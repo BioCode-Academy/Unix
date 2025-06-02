@@ -65,11 +65,22 @@
     ]
   },
   {
+    "objectID": "S1_02_instalacion_software.html#instalar-r-y-rstudio",
+    "href": "S1_02_instalacion_software.html#instalar-r-y-rstudio",
+    "title": "2  Instalación de Software",
+    "section": "2.5 Instalar R y RStudio",
+    "text": "2.5 Instalar R y RStudio\n\n2.5.1 Windows\n\nDescarga el instalador de R desde: https://cran.r-project.org/bin/windows/base/\nEjecuta el instalador y sigue los pasos por defecto.\nDescarga RStudio Desktop desde: https://posit.co/download/rstudio-desktop/\nEjecuta el instalador de RStudio y sigue las instrucciones.\n\n\n\n2.5.2 macOS\n\nDescarga el instalador de R desde: https://cran.r-project.org/bin/macosx/\nAbre el archivo .pkg y sigue las instrucciones para instalar.\nDescarga RStudio Desktop desde: https://posit.co/download/rstudio-desktop/\nArrastra RStudio.app a tu carpeta de Aplicaciones.\n\n\n\n2.5.3 Linux (Debian/Ubuntu)\n\nInstala R desde los repositorios de CRAN:\n\n\nsudo apt update\nsudo apt install r-base\n\n\nVerifica la instalación:\n\n\nR --version\n\n\nDescarga el paquete .deb de RStudio desde: https://posit.co/download/rstudio-desktop/\nInstala RStudio:\n\n\nsudo dpkg -i rstudio-*.deb\nsudo apt-get install -f  # Para resolver dependencias si es necesario\n\n\nVerifica que puedes abrir RStudio desde el menú o con:\n\n\nrstudio",
+    "crumbs": [
+      "Módulo 1: Introducción & Configuración",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Instalación de Software</span>"
+    ]
+  },
+  {
     "objectID": "S1_02_instalacion_software.html#instalar-visual-studio-code",
     "href": "S1_02_instalacion_software.html#instalar-visual-studio-code",
     "title": "2  Instalación de Software",
-    "section": "2.5 Instalar Visual Studio Code",
-    "text": "2.5 Instalar Visual Studio Code\n\nDescarga el instalador desde: https://code.visualstudio.com/\nEjecuta el instalador:\n\nEn Windows: sigue el asistente.\nEn macOS:\n\nExtrae el archivo .zip\nArrastra .app a la carpeta de Aplicaciones\n\nEn Linux (Debian/Ubuntu):\n\n\n\nsudo apt update\nsudo dpkg -i code.deb\n\n\n\n¡Listo! Ahora dispones de un entorno configurado con WSL, Docker, Git y VS Code listo para empezar tu aprendizaje en BioCode Academy.",
+    "section": "2.6 Instalar Visual Studio Code",
+    "text": "2.6 Instalar Visual Studio Code\n\nDescarga el instalador desde: https://code.visualstudio.com/\nEjecuta el instalador:\n\nEn Windows: sigue el asistente.\nEn macOS:\n\nExtrae el archivo .zip\nArrastra .app a la carpeta de Aplicaciones\n\nEn Linux (Debian/Ubuntu):\n\n\n\nsudo apt update\nsudo dpkg -i code.deb\n\n\n\n¡Listo! Ahora dispones de un entorno configurado con WSL, Docker, Git, R, RStudio y VS Code listo para empezar tu aprendizaje en BioCode Academy.",
     "crumbs": [
       "Módulo 1: Introducción & Configuración",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Instalación de Software</span>"

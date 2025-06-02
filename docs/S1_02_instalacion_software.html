@@ -282,7 +282,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#linux" id="toc-linux" class="nav-link" data-scroll-target="#linux"><span class="header-section-number">2.4.3</span> Linux</a></li>
   <li><a href="#verifica-la-instalación" id="toc-verifica-la-instalación" class="nav-link" data-scroll-target="#verifica-la-instalación"><span class="header-section-number">2.4.4</span> Verifica la instalación</a></li>
   </ul></li>
-  <li><a href="#instalar-visual-studio-code" id="toc-instalar-visual-studio-code" class="nav-link" data-scroll-target="#instalar-visual-studio-code"><span class="header-section-number">2.5</span> Instalar Visual Studio Code</a></li>
+  <li><a href="#instalar-r-y-rstudio" id="toc-instalar-r-y-rstudio" class="nav-link" data-scroll-target="#instalar-r-y-rstudio"><span class="header-section-number">2.5</span> Instalar R y RStudio</a>
+  <ul>
+  <li><a href="#windows-1" id="toc-windows-1" class="nav-link" data-scroll-target="#windows-1"><span class="header-section-number">2.5.1</span> Windows</a></li>
+  <li><a href="#macos-1" id="toc-macos-1" class="nav-link" data-scroll-target="#macos-1"><span class="header-section-number">2.5.2</span> macOS</a></li>
+  <li><a href="#linux-debianubuntu" id="toc-linux-debianubuntu" class="nav-link" data-scroll-target="#linux-debianubuntu"><span class="header-section-number">2.5.3</span> Linux (Debian/Ubuntu)</a></li>
+  </ul></li>
+  <li><a href="#instalar-visual-studio-code" id="toc-instalar-visual-studio-code" class="nav-link" data-scroll-target="#instalar-visual-studio-code"><span class="header-section-number">2.6</span> Instalar Visual Studio Code</a></li>
   </ul>
 </nav>
     </div>
@@ -314,6 +320,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>🐳 <strong>Docker</strong></li>
 <li>🐳 <strong>Imagen Docker personalizada</strong></li>
 <li>🔗 <strong>Git</strong></li>
+<li>💻 <strong>R y RStudio</strong></li>
 <li>💻 <strong>Visual Studio Code</strong></li>
 </ul>
 <section id="instalar-wsl-windows" class="level2" data-number="2.1">
@@ -499,8 +506,59 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 </section>
-<section id="instalar-visual-studio-code" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="instalar-visual-studio-code"><span class="header-section-number">2.5</span> Instalar Visual Studio Code</h2>
+<section id="instalar-r-y-rstudio" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="instalar-r-y-rstudio"><span class="header-section-number">2.5</span> Instalar R y RStudio</h2>
+<section id="windows-1" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="windows-1"><span class="header-section-number">2.5.1</span> Windows</h3>
+<ol type="1">
+<li>Descarga el instalador de R desde: <a href="https://cran.r-project.org/bin/windows/base/" class="uri">https://cran.r-project.org/bin/windows/base/</a></li>
+<li>Ejecuta el instalador y sigue los pasos por defecto.</li>
+<li>Descarga RStudio Desktop desde: <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></li>
+<li>Ejecuta el instalador de RStudio y sigue las instrucciones.</li>
+</ol>
+</section>
+<section id="macos-1" class="level3" data-number="2.5.2">
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="macos-1"><span class="header-section-number">2.5.2</span> macOS</h3>
+<ol type="1">
+<li>Descarga el instalador de R desde: <a href="https://cran.r-project.org/bin/macosx/" class="uri">https://cran.r-project.org/bin/macosx/</a></li>
+<li>Abre el archivo <code>.pkg</code> y sigue las instrucciones para instalar.</li>
+<li>Descarga RStudio Desktop desde: <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></li>
+<li>Arrastra <code>RStudio.app</code> a tu carpeta de Aplicaciones.</li>
+</ol>
+</section>
+<section id="linux-debianubuntu" class="level3" data-number="2.5.3">
+<h3 data-number="2.5.3" class="anchored" data-anchor-id="linux-debianubuntu"><span class="header-section-number">2.5.3</span> Linux (Debian/Ubuntu)</h3>
+<ol type="1">
+<li>Instala R desde los repositorios de CRAN:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install r-base</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="2" type="1">
+<li>Verifica la instalación:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">R</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="3" type="1">
+<li><p>Descarga el paquete .deb de RStudio desde: <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></p></li>
+<li><p>Instala RStudio:</p></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> dpkg <span class="at">-i</span> rstudio-<span class="pp">*</span>.deb</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install <span class="at">-f</span>  <span class="co"># Para resolver dependencias si es necesario</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="5" type="1">
+<li>Verifica que puedes abrir RStudio desde el menú o con:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="ex">rstudio</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="instalar-visual-studio-code" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="instalar-visual-studio-code"><span class="header-section-number">2.6</span> Instalar Visual Studio Code</h2>
 <ol type="1">
 <li><p>Descarga el instalador desde: <a href="https://code.visualstudio.com/" class="uri">https://code.visualstudio.com/</a></p></li>
 <li><p>Ejecuta el instalador:</p>
@@ -515,12 +573,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul></li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> dpkg <span class="at">-i</span> code.deb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> dpkg <span class="at">-i</span> code.deb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <hr>
 <blockquote class="blockquote">
-<p><strong>¡Listo!</strong> Ahora dispones de un entorno configurado con WSL, Docker, Git y VS Code listo para empezar tu aprendizaje en BioCode Academy.</p>
+<p><strong>¡Listo!</strong> Ahora dispones de un entorno configurado con WSL, Docker, Git, R, RStudio y VS Code listo para empezar tu aprendizaje en BioCode Academy.</p>
 </blockquote>
 
 
