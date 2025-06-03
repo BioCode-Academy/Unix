@@ -1,85 +1,102 @@
-# 🧬 Introducción a Unix para Bioinformática 🖥️
+# 🐧 Curso Introductorio de Unix para Bioinformática
 
-**🚀 Curso fundamental para científicos de datos biológicos**
+¡Bienvenido al punto de partida de tu viaje bioinformático! 🌟
 
-## 📋 Descripción
-¡Bienvenido al punto de partida de tu viaje bioinformático! 🌟 Este curso te introduce al poderoso mundo de Unix, la columna vertebral de casi todas las herramientas bioinformáticas modernas.
+Este curso te introduce al poderoso mundo de Unix, la columna vertebral de casi todas las herramientas bioinformáticas modernas. Aprenderás a dominar la terminal, automatizar tareas y trabajar con datos biológicos desde la línea de comandos.
 
-🔍 **¿Qué aprenderás?**
+---
+
+## 📚 ¿Qué aprenderás?
+
 - 📁 Navegación eficiente por el sistema de archivos
 - ⌨️ Dominio de comandos esenciales para el análisis de datos
 - 📝 Creación de scripts para automatizar tareas repetitivas
 - 🧩 Manipulación de archivos de secuencias biológicas
-- 🔄 Pipelines básicos de procesamiento de datos
+- 🔄 Construcción de pipelines simples de análisis
 
-## 📚 Temario del curso
-
-### Pre-requisitos 📋
-- Laptop Windows, MacOS o Linux
-- Acceso a internet
-- **No se requiere experiencia previa en programación**
+> ✅ Curso 100% práctico, ideal para quienes inician en bioinformática
 
 ---
 
-### Módulo 1: Introducción e instalación 💻
-1. Presentación del curso
-2. Instalación de software:
-   - 🐧 WSL (Windows)
-   - 🐳 Docker
-   - 🔗 Git
-   - 📊 R
-   - 💻 RStudio/VSCode (opcional)
-3. Datos de prueba (secuencias biológicas)
+## 📌 Información general
+
+- ⌛ **Duración:** 8 horas (4 sesiones de 2 horas)
+- 💬 **Idioma:** Español
+- 🧑‍💻 **Modalidad:** 80% práctica + 20% teoría
+- 📍 **Ubicación:** Virtual (Microsoft Teams)
+- ⚠️ **Requisitos:**
+  - 💻 Laptop con conexión a internet
+  - 🐧 Idealmente con ambiente Unix o WSL (no obligatorio)
+
+> 🧘 ***NO SE REQUIERE CONOCIMIENTO PREVIO EN PROGRAMACIÓN***
 
 ---
 
-### Módulo 2: Fundamentos Unix 🖥️ (Bioinformática)
-1. Terminal básica:
-   - Bash, comandos esenciales (`pwd`, `ls`, etc.)
-2. Gestión de archivos:
-   - Rutas en proyectos bioinformáticos
-   - Permisos (`chmod`, `chown`)
-   - Comodines (`*`, `?`)
-3. Procesamiento de texto:
-   - Visualización (`cat`, `less`, etc.)
-   - Búsqueda (`grep`, `find`)
-   - Tuberías (`>`, `|`)
-4. Editores:
-   - `nano` (servidores)
-   - VSCode (desarrollo)
+## 🗓️ Agenda del curso
+
+### 📅 Día 1
+
+**🔧 Módulo 1: Introducción & Configuración**
+
+🎯 *Objetivo:* Tener un entorno Unix funcional para análisis posterior.
+
+- 🔥 Bienvenida y dinámicas grupales
+- 💻 Instalación:
+  - [WSL](https://learn.microsoft.com/es-es/windows/wsl/install)
+  - [Docker](https://www.docker.com/), [Imagen Docker personalizada](https://hub.docker.com/repository/docker/davidalbertoge)
+  - [Git](https://git-scm.com/), [Visual Studio Code](https://code.visualstudio.com/)
+- 🌐 Filosofía Unix & Bash: ventajas, principios clave
+- 🧬 Introducción a los datos biológicos (ADN, ARN, proteínas)
+
+### 📅 Día 2
+
+**📂 Módulo 2: Navegación y Gestión de Archivos**
+
+🎯 *Objetivo:* Gestionar archivos/carpetas y procesar texto desde terminal.
+
+- 📁 Exploración del sistema de archivos: `ls`, `cd`, `tree`, `$PWD`
+- 🗂 Gestión: `mkdir`, `touch`, `cp`, `mv`, `rm`
+- 📄 Procesamiento de texto: `cat`, `head`, `tail`, `less`, `nano`
+- 🔍 Búsqueda avanzada: `grep`, `find`, `wc`, redirección (`>`, `>>`, `|`)
+
+### 📅 Día 3
+
+**📜 Módulo 3: Fundamentos de Scripting Shell**
+
+🎯 *Objetivo:* Crear scripts básicos para automatizar tareas repetitivas.
+
+- 🚀 Introducción al scripting: `#!/bin/bash`, permisos (`chmod +x`)
+- 🔣 Variables y argumentos (`$1`, `$@`), uso de comillas
+- 🤔 Control de flujo: `if`, `case`, `for`, `while`, `until`
+- 🐞 Debugging y logging: `set -e`, `set -u`, `set -x`
+
+### 📅 Día 4
+
+**🏁 Módulo 4: Buenas Prácticas & Proyecto Final**
+
+🎯 *Objetivo:* Aplicar lo aprendido a través de un mini-proyecto práctico.
+
+- 📏 Estilo de scripting profesional: comentarios, modularidad
+- 🎯 Definición del proyecto: pipeline simple de procesamiento
+- 💻 Hackathon guiado: trabajo en parejas o grupos
+- 🏆 Demo final y retroalimentación colectiva
 
 ---
 
-### Módulo 3: Scripting Shell 📝
-1. Creación de scripts:
-   - Shebang (`#!`), `chmod +x`
-   - Variables
-2. Control:
-   - `if`, `case`
-   - Bucles (`for`, `while`)
-3. Buenas prácticas:
-   - Argumentos
-   - Documentación
+## 👤 Instructor
+
+**David Alberto García Estrada**
+
+- Candidato a Doctor en Biología Integrativa, UGA, Cinvestav.
+- Cofundador de [BioCode Academy](https://github.com/BioCode-Academy)
+
+📬 Contacto:
+
+- GitHub: [@DavidAlberto](https://github.com/DavidAlberto)
+- Email: [albert_dge@hotmail.com](mailto:albert_dge@hotmail.com)
+- Email: [david.garcia.e@cinvestav.mx](mailto:david.garcia.e@cinvestav.mx)
+- Email: [biocodeacademy@gmail.com](mailto:biocodeacademy@gmail.com)
 
 ---
 
-### 🎯 Proyecto Final
-Pipeline para:
-1. Descargar secuencias
-2. Procesar FASTQ
-3. Buscar patrones
-4. Generar reportes
-
----
-
-## 🔗 Recursos
-- Cheatsheets Unix
-- Datos ejemplo (FASTA, FASTQ)
-- Herramientas bioinformáticas
-- Glosario técnico
-
----
-
-*[BioCode Academy](https://github.com/BioCode-Academy) - Plataforma educativa dicada a la formación en bioinformática, desde conceptos básicos hasta análisis avanzados* 📊 💻
-
-> Todos los módulos incluyen ejercicios prácticos con datos biológicos reales.
+> 🧠 ¡Domina la terminal y automatiza tu ciencia desde cero!
