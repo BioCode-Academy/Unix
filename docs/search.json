@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Introducción a Unix para Bioinformática",
     "section": "",
-    "text": "BioCode Academy\n\n\n\n\n\n\nInformación general\n\n📋 Descripción del curso📌 Sobre el curso📅 Agenda👤 Instructores\n\n\n¡Bienvenido al punto de partida de tu viaje bioinformático! 🌟 Este curso te introduce al poderoso mundo de Unix, la columna vertebral de casi todas las herramientas bioinformáticas modernas.\n🔍 ¿Qué aprenderás?\n\n📁 Navegación eficiente por el sistema de archivos\n⌨️ Dominio de comandos esenciales para el análisis de datos\n📝 Creación de scripts para automatizar tareas repetitivas\n🧩 Manipulación de archivos de secuencias biológicas\n🔄 Pipelines básicos de procesamiento de datos\n\n\n\n\n⌛ Duración: 8 horas (2 horas diarias)\n💬 Idioma: Español\n📍 Ubicación: Virtual (Teams)\n📝 Modalidad: Práctico (80%) + Teórico (20%)\nRequerimientos:\n\n💻 Laptop\n🌐 Conexión a internet\n🐧 Ambiente Unix/WSL (no obligatorio)\n\n\n\nNO SE REQUIERE CONOCIMIENTO PREVIO EN PROGRAMACIÓN\n\n\n\n\n📅 Día 1\nMódulo 1: Introducción & Configuración\nObjetivo: Al finalizar, tendrás un ambiente Unix para posteriores análisis.\nActividades:\n\n🔥 Bienvenida & dinámicas\n\nPresentación del curso\nCódigo de conducta\nRonda exprés de presentaciones\n\n💻 Instalación de software\n\n🐧 WSL (Windows)\n🐳 Docker\n🐳 Imagen docker Unix\n🔗 Git\n💻 VisualStudioCode\n\n🌐 Filosofía Unix & Bash\n\n¿Por qué “Unix” y por qué “shell”?\nPrincipios básicos y ventajas\n\n💻 Datos biológicos\n\nSecuencias biológicas: ADN, ARN y proteínas\n\n\n\n\n📅 Día 2\nMódulo 2: Navegación y Gestión de Archivos\nObjetivo: Gestionarás archivos y carpetas, y procesarás texto desde la terminal.\nActividades:\n\n📁 Exploración del Sistema de Archivos\n\nComandos básicos ls, cd, tree\nAtajos (~, ., .., $PWD)\n\n🗂 Gestión de Archivos y Directorios\n\ntouch, mkdir, cp, mv, rm\n\n📄 Procesamiento de texto\n\ncat, head, tail, less\nRedireccionamiento (&gt;, &gt;&gt;, |)\nEditor de texto (nano)\n\n🔍 Búsqueda avanzada\n\ngrep, find, wc\n\n\n\n\n📅 Día 3\nMódulo 3: Fundamentos de Scripting Shell\nObjetivo: Automatizarás tareas creando y depurando tus propios scripts.\nActividades:\n\n🚀 Introducción al scripting\n\nShebang (#!/bin/bash)\nPermisos (chmod +x)\n\n🔣 Variables & parámetros\n\nDefinir variables, comillas\nArgumentos posicionales ($1, $@)\n\n🤔 Control de flujo\n\nif…then…else, case\nBucles for, while, until\n\n🐞 Depuración y logging\n\nset -e, set -u, set -x\n\n\n\n\n📅 Día 4\nMódulo 4: Buenas Prácticas & Proyecto Final\nObjetivo: Aplicarás estándares profesionales y entregarás un mini-proyecto.\nActividades:\n\n📏 Estilo y mantenimiento\n\nNomenclatura - Comentarios y funciones modulares\n\n🎯 Inicio de proyecto\n\nDefinición de alcance (e.g. pipeline de texto)\n\n💻 Hackathon guiado\n\nTrabajo en parejas/grupos\nMentoría en vivo\n\n🏆 Demo & retroalimentación\n\nPresentaciones exprés - Feedback colectivo\n\n\n\n\n\nDavid Alberto García Estrada\n\nCandidato a Doctor en Biología Integrativa, UGA, Cinvestav.\nCo-fundador de BioCode Academy\nContacto\n\n🔗 Github\n📨 albert_dge@hotmail.com\n📨 david.garcia.e@cinvestav.mx\n📨 biocodeacademy@gmail.com",
+    "text": "BioCode Academy\n\n\n\n\n\n\nInformación general\n\n📋 Descripción del curso📌 Sobre el curso📅 Agenda👤 Instructores\n\n\n¡Bienvenido al punto de partida de tu viaje bioinformático! 🌟 Este curso te introduce al poderoso mundo de Unix, la columna vertebral de casi todas las herramientas bioinformáticas modernas.\n🔍 ¿Qué aprenderás?\n\n📁 Navegación eficiente por el sistema de archivos\n⌨️ Dominio de comandos esenciales para el análisis de datos\n📝 Creación de scripts para automatizar tareas repetitivas\n🧩 Manipulación de archivos de secuencias biológicas\n🔄 Pipelines básicos de procesamiento de datos\n\n\n\n\n⌛ Duración: 8 horas (2 horas diarias)\n💬 Idioma: Español\n📍 Ubicación: Virtual (Teams)\n📝 Modalidad: Práctico (80%) + Teórico (20%)\nRequerimientos:\n\n💻 Laptop\n🌐 Conexión a internet\n🐧 Ambiente Unix/WSL (no obligatorio)\n\n\n\nNO SE REQUIERE CONOCIMIENTO PREVIO EN PROGRAMACIÓN\n\n\n\n\n📅 Día 1\nMódulo 1: Introducción & Configuración\nObjetivo: Al finalizar, tendrás un ambiente Unix para posteriores análisis.\nActividades:\n\n🔥 Bienvenida & dinámicas\n\nPresentación del curso\nCódigo de conducta\nRonda exprés de presentaciones\n\n💻 Instalación de software\n\n🐧 WSL (Windows)\n🐳 Docker\n🐳 Imagen docker Unix\n🔗 Git\n💻 VisualStudioCode\n\n🌐 Filosofía Unix & Bash\n\n¿Por qué “Unix” y por qué “shell”?\nPrincipios básicos y ventajas\n\n💻 Datos biológicos\n\nSecuencias biológicas: ADN, ARN y proteínas\n\n\n\n\n📅 Día 2\nMódulo 2: Navegación y Gestión de Archivos\nObjetivo: Gestionarás archivos y carpetas, y procesarás texto desde la terminal.\nActividades:\n\n📁 Exploración del Sistema de Archivos\n\nComandos básicos ls, cd, tree\nAtajos (~, ., .., $PWD)\n\n🗂 Gestión de Archivos y Directorios\n\ntouch, mkdir, cp, mv, rm\n\n📄 Procesamiento de texto\n\ncat, head, tail, less\nRedireccionamiento (&gt;, &gt;&gt;, |)\nEditor de texto (nano)\n\n🔍 Búsqueda avanzada\n\ngrep, find, wc\n\n\n\n\n📅 Día 3\nMódulo 3: Fundamentos de Scripting Shell\nObjetivo: Automatizarás tareas creando y depurando tus propios scripts.\nActividades:\n\n🚀 Introducción al scripting\n\nShebang (#!/bin/bash)\nPermisos (chmod +x)\n\n🔣 Variables & parámetros\n\nDefinir variables, comillas\nArgumentos posicionales ($1, $@)\n\n🤔 Control de flujo\n\nif…then…else, case\nBucles for, while, until\n\n\n\n\n📅 Día 4\nMódulo 4: Proyecto Final\nObjetivo: Entrega y presentación de un mini-proyecto.\nActividades:\n\n🎯 Inicio de proyecto\n\nDefinición de alcance (e.g. pipeline de texto)\n\n💻 Hackathon guiado\n\nTrabajo en parejas/grupos\nMentoría en vivo\n\n🏆 Demo & retroalimentación\n\nPresentaciones exprés - Feedback colectivo\n\n\n\n\n\nDavid Alberto García Estrada\n\nCandidato a Doctor en Biología Integrativa, UGA, Cinvestav.\nCo-fundador de BioCode Academy\nContacto\n\n🔗 Github\n📨 albert_dge@hotmail.com\n📨 david.garcia.e@cinvestav.mx\n📨 biocodeacademy@gmail.com",
     "crumbs": [
       "Información general"
     ]
@@ -579,6 +579,270 @@
     "crumbs": [
       "Módulo 2: Navegación & Gestión de Archivos",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Búsqueda Avanzada en Archivos y Directorios</span>"
+    ]
+  },
+  {
+    "objectID": "S3_01_introduccion_scripting.html",
+    "href": "S3_01_introduccion_scripting.html",
+    "title": "9  Introducción al scripting",
+    "section": "",
+    "text": "9.1 Shebang\nEn este módulo se mostrará lo que es un script de shell, cómo definir el intérprete, asignar permisos y ejecutar scripts.\nEl shebang (#!) en la primera línea de un script indica al sistema qué intérprete utilizar.\n#!/bin/bash             # Bash específico\n#!/usr/bin/env bash     # Más portable\n#!/bin/sh               # Shell POSIX básico\nSin él, tendrías que invocar explícitamente bash script.sh.",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Introducción al scripting</span>"
+    ]
+  },
+  {
+    "objectID": "S3_01_introduccion_scripting.html#comentarios",
+    "href": "S3_01_introduccion_scripting.html#comentarios",
+    "title": "9  Introducción al scripting",
+    "section": "9.2 Comentarios",
+    "text": "9.2 Comentarios\n\n#: los comentarios comienzan con # y el sistema los ignora.\nIncluye metadatos, explicaciones, y ejemplos de uso.\n\n\n#!/bin/bash\n# Este script lista archivos FASTQ y cuenta sus líneas",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Introducción al scripting</span>"
+    ]
+  },
+  {
+    "objectID": "S3_01_introduccion_scripting.html#permisos-de-ejecución",
+    "href": "S3_01_introduccion_scripting.html#permisos-de-ejecución",
+    "title": "9  Introducción al scripting",
+    "section": "9.3 Permisos de Ejecución",
+    "text": "9.3 Permisos de Ejecución\nPara convertir un archivo en ejecutable:\n\nchmod +x script.sh\n\n\nrwx: permisos de lectura, escritura y ejecución.\nVer permisos: ls -l",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Introducción al scripting</span>"
+    ]
+  },
+  {
+    "objectID": "S3_01_introduccion_scripting.html#estructura-básica",
+    "href": "S3_01_introduccion_scripting.html#estructura-básica",
+    "title": "9  Introducción al scripting",
+    "section": "9.4 Estructura Básica",
+    "text": "9.4 Estructura Básica\n\n#!/bin/bash\nset -euo pipefail  # Configuración robusta\n\n# Variables globales\nSCRIPT_DIR=\"$(dirname \"$0\")\"\nOUTPUT_DIR=\"./results\"\n\n# Función de ayuda\nusage() {\n    echo \"USO: $0 &lt;input.fastq&gt; [output_dir]\"\n    echo \"Ejemplo: $0 sample.fastq /tmp/results\"\n}\n\n# Función principal\nmain() {\n    local input=\"$1\"\n    local output=\"${2:-$OUTPUT_DIR}\"\n    \n    echo \"Procesando: $input\"\n    mkdir -p \"$output\"\n    \n    # Procesamiento aquí\n    process_file \"$input\" \"$output\"\n}\n\n# Verificar argumentos\n[[ $# -eq 0 ]] && { usage; exit 1; }\n\n# Ejecutar\nmain \"$@\"",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Introducción al scripting</span>"
+    ]
+  },
+  {
+    "objectID": "S3_01_introduccion_scripting.html#ejemplo-bioinformático",
+    "href": "S3_01_introduccion_scripting.html#ejemplo-bioinformático",
+    "title": "9  Introducción al scripting",
+    "section": "9.5 Ejemplo Bioinformático",
+    "text": "9.5 Ejemplo Bioinformático\nNivel: conteo de lecturas en varios archivos FASTQ:\n\n#!/bin/bash\n# Cuenta lecturas en archivos FASTQ/FASTA\n\ncount_reads() {\n    local file=\"$1\"\n    case \"${file##*.}\" in\n        gz) lines=$(zcat \"$file\" | wc -l) ;;\n        *) lines=$(wc -l &lt; \"$file\") ;;\n    esac\n    \n    # FASTQ: 4 líneas por read, FASTA: contar headers\n    if [[ \"$file\" == *fastq* ]]; then\n        echo \"$((lines / 4))\"\n    else\n        grep -c '^&gt;' \"$file\"\n    fi\n}\n\nfor file in data/*.{fastq,fasta}{,.gz}; do\n    [[ -f \"$file\" ]] && printf \"%-20s %'d reads\\n\" \"$(basename \"$file\")\" \"$(count_reads \"$file\")\"\ndone",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Introducción al scripting</span>"
+    ]
+  },
+  {
+    "objectID": "S3_01_introduccion_scripting.html#consejos-avanzados-y-buenas-prácticas",
+    "href": "S3_01_introduccion_scripting.html#consejos-avanzados-y-buenas-prácticas",
+    "title": "9  Introducción al scripting",
+    "section": "9.6 Consejos Avanzados y Buenas Prácticas",
+    "text": "9.6 Consejos Avanzados y Buenas Prácticas\n\nIncluye set -euo pipefail para fallar rápido ante errores y variables no definidas.\nUsa un encabezado con usage() que muestre sintaxis y ejemplos de uso.\nAlmacena rutas en variables configurables al inicio.\nVersiona tus scripts con comments de changelog.",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Introducción al scripting</span>"
+    ]
+  },
+  {
+    "objectID": "S3_01_introduccion_scripting.html#resumen-de-comandos",
+    "href": "S3_01_introduccion_scripting.html#resumen-de-comandos",
+    "title": "9  Introducción al scripting",
+    "section": "9.7 Resumen de Comandos",
+    "text": "9.7 Resumen de Comandos\n\n\n\nComando\nDescripción\n\n\n\n\n#!/bin/bash\nDefine intérprete de Bash\n\n\nchmod +x file\nDa permiso de ejecución al archivo\n\n\nls path/*.fastq\nLista archivos FASTQ\n\n\nwc -l &lt; file\nCuenta líneas\n\n\nexit 0\nSalida exitosa",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Introducción al scripting</span>"
+    ]
+  },
+  {
+    "objectID": "S3_02_variables_parametros.html",
+    "href": "S3_02_variables_parametros.html",
+    "title": "10  Variables & Parámetros",
+    "section": "",
+    "text": "10.1 Variables\nEl finalizar este módulo serás capaz de definir variables, diferenciar tipos de comillas y manejar parámetros posicionales y opciones.\n#!/bin/bash\nGENOME=\"Homo_sapiens\"\nREADS=1000000\npath_data=\"/home/user/data\"",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Variables & Parámetros</span>"
+    ]
+  },
+  {
+    "objectID": "S3_02_variables_parametros.html#variables",
+    "href": "S3_02_variables_parametros.html#variables",
+    "title": "10  Variables & Parámetros",
+    "section": "",
+    "text": "No hay tipado: todo es cadena.\nSe asigna sin espacios alrededor del =.",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Variables & Parámetros</span>"
+    ]
+  },
+  {
+    "objectID": "S3_02_variables_parametros.html#comillas",
+    "href": "S3_02_variables_parametros.html#comillas",
+    "title": "10  Variables & Parámetros",
+    "section": "10.2 Comillas",
+    "text": "10.2 Comillas\n\nDobles (\"): expanden variables y comandos.\nSimples ('): contenido literal.\nEscapado (\\): para literales.\n\n\nVAR=\"mundo\"\n\n# Dobles: expanden variables y comandos\necho \"Hola $VAR\"                    # Output: Hola mundo\necho \"Fecha: $(date)\"               # Output: Fecha: Wed May 28...\n\n# Simples: literales\necho 'Hola $VAR'                    # Output: Hola $VAR\necho 'Fecha: $(date)'               # Output: Fecha: $(date)\n\n# Sin comillas: pueden causar problemas\nFILE=\"archivo con espacios.txt\"\nls $FILE                            # Error: busca 3 archivos\nls \"$FILE\"                          # Correcto: un archivo",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Variables & Parámetros</span>"
+    ]
+  },
+  {
+    "objectID": "S3_02_variables_parametros.html#expansión-de-variables",
+    "href": "S3_02_variables_parametros.html#expansión-de-variables",
+    "title": "10  Variables & Parámetros",
+    "section": "10.3 Expansión de Variables",
+    "text": "10.3 Expansión de Variables\n\nFILE=\"sample.fastq\"\n\n# Expansión básica\necho \"${FILE}\"                      # sample.fastq\n\n# Manipulación de strings\necho \"${FILE%.fastq}\"               # sample (quita extensión)\necho \"${FILE%.*}\"                   # sample (quita última extensión)\necho \"${FILE##*/}\"                  # sample.fastq (solo nombre)\necho \"${FILE%/*}\"                   # directorio (sin nombre)\n\n# Longitud\necho \"${#FILE}\"                     # 12 (caracteres)\n\n# Valores por defecto\necho \"${OUTPUT_DIR:-./results}\"     # ./results si OUTPUT_DIR vacía\necho \"${THREADS:=4}\"                # asigna 4 si THREADS vacía",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Variables & Parámetros</span>"
+    ]
+  },
+  {
+    "objectID": "S3_02_variables_parametros.html#argumentos-posicionales",
+    "href": "S3_02_variables_parametros.html#argumentos-posicionales",
+    "title": "10  Variables & Parámetros",
+    "section": "10.4 Argumentos Posicionales",
+    "text": "10.4 Argumentos Posicionales\n\n$1, $2, … $N.\n$0 es el nombre del script.\n$@ o $*: todos los argumentos.\n$#: conteo de argumentos.\n\n\n#!/bin/bash\n# Uso: bash setup.sh input.fasta output.txt\nin=$1\nout=$2\nif [[ $# -ne 2 ]]; then\n  echo \"Uso: $0 &lt;in.fasta&gt; &lt;out.txt&gt;\"; exit 1\nfi\n# convertir FASTA a lista de secuencias\ngrep -v '&gt;' \"$in\" &gt; \"$out\"",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Variables & Parámetros</span>"
+    ]
+  },
+  {
+    "objectID": "S3_02_variables_parametros.html#verifica-el-número-de-argumentos",
+    "href": "S3_02_variables_parametros.html#verifica-el-número-de-argumentos",
+    "title": "10  Variables & Parámetros",
+    "section": "10.5 Verifica el número de argumentos",
+    "text": "10.5 Verifica el número de argumentos\n\nif [[ $# -ne 3 ]]; then\n    echo \"Error: Se requieren 3 argumentos\"\n    echo \"Uso: $0 &lt;referencia&gt; &lt;reads&gt; &lt;output&gt;\"\n    exit 1\nfi\n\n# Asignar a variables con nombres descriptivos\nREFERENCE=\"$1\"\nREADS=\"$2\"\nOUTPUT=\"$3\"",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Variables & Parámetros</span>"
+    ]
+  },
+  {
+    "objectID": "S3_02_variables_parametros.html#ejemplo-bioinformático",
+    "href": "S3_02_variables_parametros.html#ejemplo-bioinformático",
+    "title": "10  Variables & Parámetros",
+    "section": "10.6 Ejemplo Bioinformático",
+    "text": "10.6 Ejemplo Bioinformático\n\n10.6.1 Procesar de muestras múltiples\n\n#!/bin/bash\n# Procesar múltiples muestras de RNA-seq\n\n# Arrays de muestras\nSAMPLES=(control_1 control_2 treated_1 treated_2)\nCONDITIONS=(control control treated treated)\n\n# Procesar cada muestra\nfor i in \"${!SAMPLES[@]}\"; do\n    sample=\"${SAMPLES[$i]}\"\n    condition=\"${CONDITIONS[$i]}\"\n    \n    echo \"=== Procesando $sample ($condition) ===\"\n    \n    # Rutas de archivos\n    R1=\"data/${sample}_R1.fastq.gz\"\n    R2=\"data/${sample}_R2.fastq.gz\"\n    OUTPUT=\"results/${sample}\"\n    \n    # Verificar archivos\n    if [[ ! -f \"$R1\" || ! -f \"$R2\" ]]; then\n        echo \"Warning: Archivos no encontrados para $sample\"\n        continue\n    fi\n    \n    # Crear directorio de salida\n    mkdir -p \"$OUTPUT\"\n    \n    # Alineamiento (ejemplo)\n    echo \"Alineando $sample...\"\n    # hisat2 -x genome_index -1 \"$R1\" -2 \"$R2\" -S \"$OUTPUT/${sample}.sam\"\n    \n    echo \"$sample completado\"\ndone\n\n\n\n10.6.2 Configuración flexible con variables\n\n#!/bin/bash\n# Pipeline con configuración externa\n\n# Archivo de configuración\nCONFIG_FILE=\"${1:-config.txt}\"\n\n# Leer configuración\nsource \"$CONFIG_FILE\" 2&gt;/dev/null || {\n    echo \"Creando archivo de configuración: $CONFIG_FILE\"\n    cat &gt; \"$CONFIG_FILE\" &lt;&lt; 'EOF'\n# Configuración del pipeline\nTHREADS=8\nMEMORY=\"16G\"\nGENOME_INDEX=\"/path/to/genome_index\"\nADAPTER_SEQUENCE=\"AGATCGGAAGAGC\"\nMIN_LENGTH=50\nQUALITY_CUTOFF=20\nEOF\n    echo \"Edita $CONFIG_FILE y vuelve a ejecutar\"\n    exit 1\n}\n\necho \"Configuración cargada:\"\necho \"  Threads: $THREADS\"\necho \"  Memoria: $MEMORY\"\necho \"  Índice: $GENOME_INDEX\"\n\n# Usar variables en el pipeline\nrun_trimming() {\n    local input_r1=\"$1\"\n    local input_r2=\"$2\"\n    local output_prefix=\"$3\"\n    \n    cutadapt \\\n        -a \"$ADAPTER_SEQUENCE\" \\\n        -A \"$ADAPTER_SEQUENCE\" \\\n        -m \"$MIN_LENGTH\" \\\n        -q \"$QUALITY_CUTOFF\" \\\n        -j \"$THREADS\" \\\n        -o \"${output_prefix}_R1_trimmed.fastq.gz\" \\\n        -p \"${output_prefix}_R2_trimmed.fastq.gz\" \\\n        \"$input_r1\" \"$input_r2\"\n}\n\n\n\n10.6.3 Manejo robusto de parámetros\n\n#!/bin/bash\n# Script robusto para alineamiento\n\nset -euo pipefail\n\n# Función de validación\nvalidate_inputs() {\n    local ref=\"$1\"\n    local reads=\"$2\"\n    \n    # Verificar archivos\n    [[ ! -f \"$ref\" ]] && { echo \"Error: Referencia no encontrada: $ref\"; return 1; }\n    [[ ! -f \"$reads\" ]] && { echo \"Error: Reads no encontrados: $reads\"; return 1; }\n    \n    # Verificar formato\n    case \"${ref##*.}\" in\n        fa|fasta) echo \"Referencia FASTA: OK\" ;;\n        *) echo \"Warning: Extensión de referencia inusual\"; ;;\n    esac\n    \n    case \"${reads##*.}\" in\n        fastq|fq) echo \"Reads FASTQ: OK\" ;;\n        gz) [[ \"$reads\" =~ \\.(fastq|fq)\\.gz$ ]] && echo \"Reads FASTQ comprimidos: OK\" ;;\n        *) echo \"Error: Formato de reads no soportado\"; return 1 ;;\n    esac\n    \n    return 0\n}\n\n# Función principal\nmain() {\n    local reference=\"$1\"\n    local reads=\"$2\"\n    local output=\"${3:-alignment.sam}\"\n    local threads=\"${4:-4}\"\n    \n    echo \"=== Parámetros ===\"\n    echo \"Referencia: $reference\"\n    echo \"Reads: $reads\"\n    echo \"Output: $output\"\n    echo \"Threads: $threads\"\n    \n    # Validar inputs\n    validate_inputs \"$reference\" \"$reads\"\n    \n    # Ejecutar alineamiento\n    echo \"Iniciando alineamiento...\"\n    # bwa mem -t \"$threads\" \"$reference\" \"$reads\" &gt; \"$output\"\n    echo \"Completado: $output\"\n}\n\n# Verificar argumentos mínimos\nif [[ $# -lt 2 ]]; then\n    echo \"USO: $0 &lt;referencia&gt; &lt;reads&gt; [output] [threads]\"\n    echo \"Ejemplo: $0 genome.fa sample.fastq alignment.sam 8\"\n    exit 1\nfi\n\nmain \"$@\"",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Variables & Parámetros</span>"
+    ]
+  },
+  {
+    "objectID": "S3_02_variables_parametros.html#consejos-avanzados-y-buenas-prácticas",
+    "href": "S3_02_variables_parametros.html#consejos-avanzados-y-buenas-prácticas",
+    "title": "10  Variables & Parámetros",
+    "section": "10.7 Consejos Avanzados y Buenas Prácticas",
+    "text": "10.7 Consejos Avanzados y Buenas Prácticas\n\nValida siempre el número y tipo de argumentos.\nProvee flags -h o --help con usage().\nUsa patrones POSIX para compatibilidad con otros shells.\nEvita variables globales innecesarias; usa funciones.",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Variables & Parámetros</span>"
+    ]
+  },
+  {
+    "objectID": "S3_02_variables_parametros.html#resumen-de-comandos",
+    "href": "S3_02_variables_parametros.html#resumen-de-comandos",
+    "title": "10  Variables & Parámetros",
+    "section": "10.8 Resumen de Comandos",
+    "text": "10.8 Resumen de Comandos\n\n\n\nComando\nDescripción\n\n\n\n\nVAR=value\nDeclara variable\n\n\n\"$VAR\"\nUso seguro respectando espacios\n\n\n$@, $#\nLista y conteo de argumentos\n\n\ncase...esac\nManejo de opciones más complejo",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Variables & Parámetros</span>"
+    ]
+  },
+  {
+    "objectID": "S3_03_control_flujo.html",
+    "href": "S3_03_control_flujo.html",
+    "title": "11  Control de Flujo",
+    "section": "",
+    "text": "11.1 Estructuras de Decisión\nEste módulo cubre las estructuras de decisión y bucles para automatizar tareas bioinformáticas complejas.",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Control de Flujo</span>"
+    ]
+  },
+  {
+    "objectID": "S3_03_control_flujo.html#estructuras-de-decisión",
+    "href": "S3_03_control_flujo.html#estructuras-de-decisión",
+    "title": "11  Control de Flujo",
+    "section": "",
+    "text": "11.1.1 if...then...elif...else\nValidación robusta de archivos de entrada:\n\n#!/bin/bash\nref=\"genome.fa\"\nreads=\"sample_R1.fastq\"\n\n# Validación completa de archivos\nif [[ ! -f \"$ref\" ]]; then\n    echo \"ERROR: Referencia $ref no encontrada\" &gt;&2\n    exit 1\nelif [[ ! -s \"$ref\" ]]; then\n    echo \"ERROR: Referencia $ref está vacía\" &gt;&2\n    exit 1\nelif [[ ! -r \"$ref\" ]]; then\n    echo \"ERROR: Sin permisos de lectura en $ref\" &gt;&2\n    exit 1\nelse\n    echo \"✓ Usando referencia válida: $ref\"\nfi\n\n# Verificar calidad de reads\nif [[ -f \"$reads\" ]]; then\n    read_count=$(wc -l &lt; \"$reads\")\n    if (( read_count &lt; 1000 )); then\n        echo \"⚠️  Pocas lecturas detectadas: $((read_count/4)) reads\"\n    else\n        echo \"✓ Archivo de reads válido: $((read_count/4)) reads\"\n    fi\nfi\n\n\n\n11.1.2 Operadores de Comparación\n\n# Comparaciones numéricas\ncoverage=25\nif (( coverage &gt;= 30 )); then\n    echo \"Cobertura alta: ${coverage}x\"\nelif (( coverage &gt;= 10 )); then\n    echo \"Cobertura media: ${coverage}x\"\nelse\n    echo \"Cobertura baja: ${coverage}x - considerar re-secuenciación\"\nfi\n\n# Comparaciones de strings\nformato=\"fastq\"\nif [[ \"$formato\" == \"fastq\" || \"$formato\" == \"fq\" ]]; then\n    echo \"Formato de secuenciación detectado\"\nfi",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Control de Flujo</span>"
+    ]
+  },
+  {
+    "objectID": "S3_03_control_flujo.html#estructura-case",
+    "href": "S3_03_control_flujo.html#estructura-case",
+    "title": "11  Control de Flujo",
+    "section": "11.2 Estructura case",
+    "text": "11.2 Estructura case\nProcesamiento por tipo de archivo biológico:\n\n#!/bin/bash\nprocesar_archivo() {\n    local archivo=\"$1\"\n    local extension=\"${archivo##*.}\"\n    \n    case \"$extension\" in\n        fasta|fa|fas)\n            echo \"🧬 Procesando secuencia FASTA: $archivo\"\n            # Contar secuencias\n            grep -c \"^&gt;\" \"$archivo\" && echo \"secuencias encontradas\"\n            ;;\n        fastq|fq)\n            echo \"📊 Procesando reads FASTQ: $archivo\"\n            # QC rápido\n            total_reads=$(($(wc -l &lt; \"$archivo\") / 4))\n            echo \"Total de reads: $total_reads\"\n            ;;\n        bam)\n            echo \"🗂️  Procesando alineamiento BAM: $archivo\"\n            samtools flagstat \"$archivo\" 2&gt;/dev/null || echo \"Archivo BAM corrupto\"\n            ;;\n        vcf|vcf.gz)\n            echo \"🔬 Procesando variantes VCF: $archivo\"\n            if [[ \"$archivo\" == *.gz ]]; then\n                zcat \"$archivo\" | grep -v \"^#\" | wc -l\n            else\n                grep -v \"^#\" \"$archivo\" | wc -l\n            fi\n            echo \"variantes encontradas\"\n            ;;\n        bed)\n            echo \"📍 Procesando regiones BED: $archivo\"\n            wc -l &lt; \"$archivo\" && echo \"regiones definidas\"\n            ;;\n        *)\n            echo \"⚠️  Tipo de archivo desconocido: $archivo\"\n            echo \"Extensiones soportadas: fasta, fastq, bam, vcf, bed\"\n            return 1\n            ;;\n    esac\n}\n\n# Uso\nfor archivo in data/*; do\n    [[ -f \"$archivo\" ]] && procesar_archivo \"$archivo\"\ndone",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Control de Flujo</span>"
+    ]
+  },
+  {
+    "objectID": "S3_03_control_flujo.html#bucles",
+    "href": "S3_03_control_flujo.html#bucles",
+    "title": "11  Control de Flujo",
+    "section": "11.3 Bucles",
+    "text": "11.3 Bucles\n\n11.3.1 Bucle for - Procesamiento por lotes\n\n#!/bin/bash\n# Pipeline de QC para múltiples muestras\nsamples=(SRR001 SRR002 SRR003 SRR004)\nreference=\"hg38.fa\"\n\necho \"🚀 Iniciando pipeline de QC y alineamiento\"\n\nfor sample in \"${samples[@]}\"; do\n    echo \"\n=== Procesando muestra: $sample ===\"\n    \n    # 1. Control de calidad\n    if [[ -f \"raw_data/${sample}_R1.fastq.gz\" ]]; then\n        echo \"📊 Ejecutando FastQC...\"\n        fastqc \"raw_data/${sample}_R1.fastq.gz\" \"raw_data/${sample}_R2.fastq.gz\" \\\n               -o \"qc_reports/\" --quiet\n    fi\n    \n    # 2. Alineamiento\n    echo \"🎯 Alineando contra referencia...\"\n    bwa mem -t 4 \"$reference\" \\\n        \"raw_data/${sample}_R1.fastq.gz\" \\\n        \"raw_data/${sample}_R2.fastq.gz\" | \\\n    samtools sort -@ 4 -o \"alignments/${sample}.sorted.bam\"\n    \n    # 3. Indexado\n    echo \"📇 Indexando BAM...\"\n    samtools index \"alignments/${sample}.sorted.bam\"\n    \n    echo \"✅ $sample completado\"\ndone\n\necho \"🎉 Pipeline finalizado para ${#samples[@]} muestras\"\n\n\n\n11.3.2 Bucle while - Lectura de archivos\n\n#!/bin/bash\n# Procesar lista de muestras desde archivo\nsample_list=\"samples.txt\"\n\necho \"📋 Procesando muestras desde: $sample_list\"\n\nwhile IFS=$'\\t' read -r sample_id condition replicate; do\n    # Saltar líneas de comentario\n    [[ \"$sample_id\" =~ ^#.*$ ]] && continue\n    \n    echo \"Procesando: $sample_id (Condición: $condition, Rep: $replicate)\"\n    \n    # Crear directorio específico\n    mkdir -p \"results/${condition}/${sample_id}\"\n    \n    # Simular análisis\n    echo \"Análisis de expresión diferencial para $sample_id\" &gt; \\\n         \"results/${condition}/${sample_id}/analysis.log\"\n         \ndone &lt; \"$sample_list\"\n\n# Ejemplo de samples.txt:\n# sample_id    condition    replicate\n# CTRL_01      control      1\n# CTRL_02      control      2\n# TREAT_01     treatment    1\n# TREAT_02     treatment    2\n\n\n\n11.3.3 Bucle until - Monitoreo de procesos\n\n#!/bin/bash\n# Monitorear finalización de trabajo en cluster\njob_name=\"blast_search\"\n\necho \"⏳ Esperando finalización de trabajo: $job_name\"\n\nuntil ! pgrep -f \"$job_name\" &gt; /dev/null; do\n    # Mostrar progreso cada 30 segundos\n    echo \"$(date '+%H:%M:%S') - $job_name aún ejecutándose...\"\n    \n    # Verificar uso de memoria\n    memory_usage=$(ps -eo pid,comm,pmem | grep \"$job_name\" | awk '{sum+=$3} END {print sum}')\n    if [[ -n \"$memory_usage\" ]] && (( $(echo \"$memory_usage &gt; 80\" | bc -l) )); then\n        echo \"⚠️  Alto uso de memoria: ${memory_usage}%\"\n    fi\n    \n    sleep 30\ndone\n\necho \"✅ Trabajo $job_name finalizado en $(date)\"",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Control de Flujo</span>"
+    ]
+  },
+  {
+    "objectID": "S3_03_control_flujo.html#control-de-bucles",
+    "href": "S3_03_control_flujo.html#control-de-bucles",
+    "title": "11  Control de Flujo",
+    "section": "11.4 Control de Bucles",
+    "text": "11.4 Control de Bucles\n\n11.4.1 break y continue\n\n#!/bin/bash\n# Procesamiento con manejo de errores\nfastq_files=(*.fastq)\n\nfor file in \"${fastq_files[@]}\"; do\n    echo \"Verificando: $file\"\n    \n    # Saltar archivos vacíos\n    if [[ ! -s \"$file\" ]]; then\n        echo \"⚠️  Archivo vacío, saltando: $file\"\n        continue\n    fi\n    \n    # Verificar formato FASTQ básico\n    if ! head -n 4 \"$file\" | grep -q \"^@\"; then\n        echo \"❌ Formato FASTQ inválido: $file\"\n        continue\n    fi\n    \n    # Verificar si ya fue procesado\n    if [[ -f \"${file%.fastq}.processed\" ]]; then\n        echo \"✅ Ya procesado: $file\"\n        continue\n    fi\n    \n    # Simular error crítico\n    if [[ \"$file\" == *\"corrupted\"* ]]; then\n        echo \"💥 Error crítico en $file - deteniendo pipeline\"\n        break\n    fi\n    \n    # Procesar archivo\n    echo \"🔄 Procesando: $file\"\n    # Aquí iría el procesamiento real\n    touch \"${file%.fastq}.processed\"\ndone",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Control de Flujo</span>"
+    ]
+  },
+  {
+    "objectID": "S3_03_control_flujo.html#ejemplo-bioinformático-integrado",
+    "href": "S3_03_control_flujo.html#ejemplo-bioinformático-integrado",
+    "title": "11  Control de Flujo",
+    "section": "11.5 Ejemplo Bioinformático Integrado",
+    "text": "11.5 Ejemplo Bioinformático Integrado\nPipeline completo de análisis de variantes:\n\n#!/bin/bash\nset -euo pipefail\n\n# Configuración\nreference=\"data/reference/hg38.fa\"\nsamples_dir=\"data/samples\"\nresults_dir=\"results\"\nmin_coverage=10\n\n# Crear estructura de directorios\nmkdir -p \"$results_dir\"/{qc,alignments,variants,reports}\n\necho \"🧬 Pipeline de Análisis de Variantes Iniciado\"\necho \"==================================\"\n\n# Validar archivos de entrada\nif [[ ! -f \"$reference\" ]]; then\n    echo \"❌ Archivo de referencia no encontrado: $reference\"\n    exit 1\nfi\n\n# Procesar cada muestra\nfor sample_dir in \"$samples_dir\"/*/; do\n    sample_name=$(basename \"$sample_dir\")\n    \n    echo \"\n📊 Procesando muestra: $sample_name\"\n    \n    # Buscar archivos FASTQ\n    r1_file=$(find \"$sample_dir\" -name \"*R1*.fastq*\" | head -1)\n    r2_file=$(find \"$sample_dir\" -name \"*R2*.fastq*\" | head -1)\n    \n    if [[ -z \"$r1_file\" || -z \"$r2_file\" ]]; then\n        echo \"⚠️  Archivos FASTQ incompletos para $sample_name, saltando...\"\n        continue\n    fi\n    \n    # QC y alineamiento\n    case \"${r1_file##*.}\" in\n        gz)\n            echo \"🗜️  Archivos comprimidos detectados\"\n            reads_count=$(($(zcat \"$r1_file\" | wc -l) / 4))\n            ;;\n        fastq)\n            reads_count=$(($(wc -l &lt; \"$r1_file\") / 4))\n            ;;\n        *)\n            echo \"❌ Formato no soportado: $r1_file\"\n            continue\n            ;;\n    esac\n    \n    echo \"📈 Reads encontrados: $reads_count\"\n    \n    # Solo procesar si hay suficientes reads\n    if (( reads_count &lt; 10000 )); then\n        echo \"⚠️  Muy pocos reads ($reads_count), saltando $sample_name\"\n        continue\n    fi\n    \n    # Alineamiento y llamada de variantes (simulado)\n    bam_file=\"$results_dir/alignments/${sample_name}.bam\"\n    vcf_file=\"$results_dir/variants/${sample_name}.vcf\"\n    \n    echo \"🎯 Generando alineamiento...\"\n    echo \"Simulated BAM for $sample_name\" &gt; \"$bam_file\"\n    \n    echo \"🔬 Llamando variantes...\"\n    echo \"Simulated VCF for $sample_name\" &gt; \"$vcf_file\"\n    \n    echo \"✅ $sample_name procesado exitosamente\"\ndone\n\necho \"\n🎉 Pipeline completado. Resultados en: $results_dir\"",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Control de Flujo</span>"
+    ]
+  },
+  {
+    "objectID": "S3_03_control_flujo.html#buenas-prácticas",
+    "href": "S3_03_control_flujo.html#buenas-prácticas",
+    "title": "11  Control de Flujo",
+    "section": "11.6 Buenas Prácticas",
+    "text": "11.6 Buenas Prácticas\n\n11.6.1 Validación y Manejo de Errores\n\n#!/bin/bash\n# Función para validar herramientas\ncheck_dependencies() {\n    local tools=(\"samtools\" \"bwa\" \"fastqc\")\n    local missing=()\n    \n    for tool in \"${tools[@]}\"; do\n        if ! command -v \"$tool\" &&gt; /dev/null; then\n            missing+=(\"$tool\")\n        fi\n    done\n    \n    if (( ${#missing[@]} &gt; 0 )); then\n        echo \"❌ Herramientas faltantes: ${missing[*]}\"\n        echo \"Instala con: conda install ${missing[*]}\"\n        exit 1\n    fi\n    \n    echo \"✅ Todas las dependencias disponibles\"\n}\n\n# Función para progreso visual\nshow_progress() {\n    local current=$1\n    local total=$2\n    local percent=$((current * 100 / total))\n    local bar_length=20\n    local filled=$((percent * bar_length / 100))\n    \n    printf \"\\rProgreso: [\"\n    printf \"%*s\" $filled | tr ' ' '█'\n    printf \"%*s\" $((bar_length - filled)) | tr ' ' '░'\n    printf \"] %d%% (%d/%d)\" $percent $current $total\n}\n\n# Uso en bucle\nsamples=(sample1 sample2 sample3 sample4 sample5)\ntotal=${#samples[@]}\n\nfor i in \"${!samples[@]}\"; do\n    show_progress $((i + 1)) $total\n    # Simular procesamiento\n    sleep 1\ndone\necho -e \"\\n✅ Procesamiento completo\"",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Control de Flujo</span>"
+    ]
+  },
+  {
+    "objectID": "S3_03_control_flujo.html#resumen-de-comandos",
+    "href": "S3_03_control_flujo.html#resumen-de-comandos",
+    "title": "11  Control de Flujo",
+    "section": "11.7 Resumen de Comandos",
+    "text": "11.7 Resumen de Comandos\n\n\n\n\n\n\n\n\nEstructura\nSintaxis\nUso Principal\n\n\n\n\nif\nif [[ condition ]]; then ... fi\nDecisiones condicionales\n\n\ncase\ncase $var in pattern) ... ;; esac\nMúltiples opciones\n\n\nfor\nfor item in list; do ... done\nIteración sobre elementos\n\n\nwhile\nwhile condition; do ... done\nBucle con condición previa\n\n\nuntil\nuntil condition; do ... done\nBucle hasta condición\n\n\nbreak\nbreak\nSalir de bucle\n\n\ncontinue\ncontinue\nSiguiente iteración\n\n\n\nOperadores útiles: - (( )) para comparaciones numéricas - [[ ]] para comparaciones de strings y archivos - && y || para lógica booleana",
+    "crumbs": [
+      "Módulo 3: Fundamentos de Scripting Shell",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Control de Flujo</span>"
     ]
   },
   {
