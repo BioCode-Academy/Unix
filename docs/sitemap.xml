@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/BioCode-Academy/index.html</loc>
-    <lastmod>2025-06-03T03:01:38.403Z</lastmod>
+    <lastmod>2025-06-04T05:04:34.090Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/BioCode-Academy/S1_01_codigo_conducta.html</loc>
@@ -34,7 +34,19 @@
   </url>
   <url>
     <loc>https://github.com/BioCode-Academy/S2_04_busqueda_avanzada.html</loc>
-    <lastmod>2025-05-27T19:57:28.877Z</lastmod>
+    <lastmod>2025-06-04T04:49:47.540Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/BioCode-Academy/S3_01_introduccion_scripting.html</loc>
+    <lastmod>2025-06-04T04:33:58.352Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/BioCode-Academy/S3_02_variables_parametros.html</loc>
+    <lastmod>2025-06-04T04:48:58.661Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/BioCode-Academy/S3_03_control_flujo.html</loc>
+    <lastmod>2025-06-04T04:52:11.174Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/BioCode-Academy/references.html</loc>

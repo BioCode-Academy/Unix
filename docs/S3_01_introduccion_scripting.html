@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Filosofía Unix &amp; Bash – Introducción a Unix para Bioinformática</title>
+<title>9&nbsp; Introducción al scripting – Introducción a Unix para Bioinformática</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./S1_04_datos_biologicos.html" rel="next">
-<link href="./S1_02_instalacion_software.html" rel="prev">
+<link href="./S3_02_variables_parametros.html" rel="next">
+<link href="./S2_04_busqueda_avanzada.html" rel="prev">
 <link href="./images/LogoDavidAlberto.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S1_01_codigo_conducta.html">Módulo 1: Introducción &amp; Configuración</a></li><li class="breadcrumb-item"><a href="./S1_03_unix_bash.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Filosofía Unix &amp; Bash</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_introduccion_scripting.html">Módulo 3: Fundamentos de Scripting Shell</a></li><li class="breadcrumb-item"><a href="./S3_01_introduccion_scripting.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Introducción al scripting</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -199,7 +199,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./S1_03_unix_bash.html" class="sidebar-item-text sidebar-link active">
+  <a href="./S1_03_unix_bash.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Filosofía Unix &amp; Bash</span></span></a>
   </div>
 </li>
@@ -257,7 +257,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./S3_01_introduccion_scripting.html" class="sidebar-item-text sidebar-link">
+  <a href="./S3_01_introduccion_scripting.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Introducción al scripting</span></span></a>
   </div>
 </li>
@@ -291,43 +291,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#por-qué-unix" id="toc-por-qué-unix" class="nav-link active" data-scroll-target="#por-qué-unix"><span class="header-section-number">3.1</span> ¿Por qué Unix?</a>
-  <ul>
-  <li><a href="#origen-e-historia" id="toc-origen-e-historia" class="nav-link" data-scroll-target="#origen-e-historia"><span class="header-section-number">3.1.1</span> Origen e Historia</a></li>
-  <li><a href="#filosofía-unix" id="toc-filosofía-unix" class="nav-link" data-scroll-target="#filosofía-unix"><span class="header-section-number">3.1.2</span> Filosofía Unix</a></li>
-  </ul></li>
-  <li><a href="#por-qué-shell" id="toc-por-qué-shell" class="nav-link" data-scroll-target="#por-qué-shell"><span class="header-section-number">3.2</span> ¿Por qué Shell?</a>
-  <ul>
-  <li><a href="#el-shell-como-entorno-de-trabajo" id="toc-el-shell-como-entorno-de-trabajo" class="nav-link" data-scroll-target="#el-shell-como-entorno-de-trabajo"><span class="header-section-number">3.2.1</span> El shell como entorno de trabajo</a></li>
-  <li><a href="#ventajas-de-bash" id="toc-ventajas-de-bash" class="nav-link" data-scroll-target="#ventajas-de-bash"><span class="header-section-number">3.2.2</span> Ventajas de Bash</a></li>
-  </ul></li>
-  <li><a href="#principios-básicos-y-ventajas" id="toc-principios-básicos-y-ventajas" class="nav-link" data-scroll-target="#principios-básicos-y-ventajas"><span class="header-section-number">3.3</span> Principios básicos y ventajas</a>
-  <ul>
-  <li><a href="#principios-fundamentales" id="toc-principios-fundamentales" class="nav-link" data-scroll-target="#principios-fundamentales"><span class="header-section-number">3.3.1</span> Principios fundamentales</a></li>
-  <li><a href="#ventajas-clave" id="toc-ventajas-clave" class="nav-link" data-scroll-target="#ventajas-clave"><span class="header-section-number">3.3.2</span> Ventajas clave</a></li>
-  <li><a href="#referencias-rápidas-en-bash" id="toc-referencias-rápidas-en-bash" class="nav-link" data-scroll-target="#referencias-rápidas-en-bash"><span class="header-section-number">3.3.3</span> Referencias rápidas en bash</a></li>
-  </ul></li>
-  <li><a href="#casos-de-estudio" id="toc-casos-de-estudio" class="nav-link" data-scroll-target="#casos-de-estudio"><span class="header-section-number">3.4</span> Casos de estudio</a>
-  <ul>
-  <li><a href="#pipeline-clásico" id="toc-pipeline-clásico" class="nav-link" data-scroll-target="#pipeline-clásico"><span class="header-section-number">3.4.1</span> Pipeline clásico</a></li>
-  <li><a href="#one-liners" id="toc-one-liners" class="nav-link" data-scroll-target="#one-liners"><span class="header-section-number">3.4.2</span> One-liners</a></li>
-  </ul></li>
-  <li><a href="#buenas-prácticas" id="toc-buenas-prácticas" class="nav-link" data-scroll-target="#buenas-prácticas"><span class="header-section-number">3.5</span> Buenas Prácticas</a>
-  <ul>
-  <li><a href="#scripting-robusto" id="toc-scripting-robusto" class="nav-link" data-scroll-target="#scripting-robusto"><span class="header-section-number">3.5.1</span> Scripting robusto</a></li>
-  <li><a href="#versión-extendida-con-más-controles" id="toc-versión-extendida-con-más-controles" class="nav-link" data-scroll-target="#versión-extendida-con-más-controles"><span class="header-section-number">3.5.2</span> Versión extendida con más controles</a></li>
-  <li><a href="#consejos-para-usuarios" id="toc-consejos-para-usuarios" class="nav-link" data-scroll-target="#consejos-para-usuarios"><span class="header-section-number">3.5.3</span> Consejos para usuarios</a></li>
-  </ul></li>
-  <li><a href="#recursos-adicionales" id="toc-recursos-adicionales" class="nav-link" data-scroll-target="#recursos-adicionales"><span class="header-section-number">3.6</span> Recursos adicionales</a></li>
+  <li><a href="#shebang" id="toc-shebang" class="nav-link active" data-scroll-target="#shebang"><span class="header-section-number">9.1</span> Shebang</a></li>
+  <li><a href="#comentarios" id="toc-comentarios" class="nav-link" data-scroll-target="#comentarios"><span class="header-section-number">9.2</span> Comentarios</a></li>
+  <li><a href="#permisos-de-ejecución" id="toc-permisos-de-ejecución" class="nav-link" data-scroll-target="#permisos-de-ejecución"><span class="header-section-number">9.3</span> Permisos de Ejecución</a></li>
+  <li><a href="#estructura-básica" id="toc-estructura-básica" class="nav-link" data-scroll-target="#estructura-básica"><span class="header-section-number">9.4</span> Estructura Básica</a></li>
+  <li><a href="#ejemplo-bioinformático" id="toc-ejemplo-bioinformático" class="nav-link" data-scroll-target="#ejemplo-bioinformático"><span class="header-section-number">9.5</span> Ejemplo Bioinformático</a></li>
+  <li><a href="#consejos-avanzados-y-buenas-prácticas" id="toc-consejos-avanzados-y-buenas-prácticas" class="nav-link" data-scroll-target="#consejos-avanzados-y-buenas-prácticas"><span class="header-section-number">9.6</span> Consejos Avanzados y Buenas Prácticas</a></li>
+  <li><a href="#resumen-de-comandos" id="toc-resumen-de-comandos" class="nav-link" data-scroll-target="#resumen-de-comandos"><span class="header-section-number">9.7</span> Resumen de Comandos</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S1_01_codigo_conducta.html">Módulo 1: Introducción &amp; Configuración</a></li><li class="breadcrumb-item"><a href="./S1_03_unix_bash.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Filosofía Unix &amp; Bash</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./S3_01_introduccion_scripting.html">Módulo 3: Fundamentos de Scripting Shell</a></li><li class="breadcrumb-item"><a href="./S3_01_introduccion_scripting.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Introducción al scripting</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Filosofía Unix &amp; Bash</span></h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Introducción al scripting</span></h1>
 </div>
 
 
@@ -344,253 +323,142 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Este módulo abacara una introducción a lo que es <strong>Unix</strong>, <strong>Shell</strong> y <strong>Bash</strong>, así como, consejos para trabajar en línea de comandos.</p>
-<section id="por-qué-unix" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="por-qué-unix"><span class="header-section-number">3.1</span> ¿Por qué Unix?</h2>
-<section id="origen-e-historia" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="origen-e-historia"><span class="header-section-number">3.1.1</span> Origen e Historia</h3>
-<ul>
-<li><strong>1969</strong>: Sistema operativo desarrollodo inicialmente en AT&amp;T Bell Labs (Ken Thompson, Dennis Ritchie)</li>
-<li><strong>1973</strong>: Reescribido en C, permitiendo portabilidad</li>
-<li><strong>Evolución</strong>: BSD, System V, GNU/Linux, macOS</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/UNIX_logo.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-</section>
-<section id="filosofía-unix" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="filosofía-unix"><span class="header-section-number">3.1.2</span> Filosofía Unix</h3>
-<ol type="1">
-<li><strong>Principio de modularidad</strong>: Programas pequeños que hacen una cosa bien</li>
-<li><strong>Composición</strong>: Conectar programas mediante pipes (<code>|</code>)</li>
-<li><strong>Texto como interfaz universal</strong>: Formatos de texto plano para entrada/salida</li>
-<li><strong>Ocultar complejidad</strong>: Interfaces simples que ocultan implementaciones complejas</li>
-<li><strong>Principio KISS</strong>: “Keep It Simple, Stupid”</li>
-</ol>
+<p>En este módulo se mostrará lo que es un script de shell, cómo definir el intérprete, asignar permisos y ejecutar scripts.</p>
+<section id="shebang" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="shebang"><span class="header-section-number">9.1</span> Shebang</h2>
+<p>El <em>shebang</em> (<code>#!</code>) en la primera línea de un script indica al sistema qué intérprete utilizar.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ejemplo clásico de filosofía Unix</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="st">"^&gt;"</span> secuencias.fasta <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-nr</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash             # Bash específico</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env bash     # Más portable</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/sh               # Shell POSIX básico</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Sin él, tendrías que invocar explícitamente <code>bash script.sh</code>.</p>
+</section>
+<section id="comentarios" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="comentarios"><span class="header-section-number">9.2</span> Comentarios</h2>
+<ul>
+<li><strong><code>#</code></strong>: los comentarios comienzan con <code>#</code> y el sistema los ignora.</li>
+<li>Incluye metadatos, explicaciones, y ejemplos de uso.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Este script lista archivos FASTQ y cuenta sus líneas</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-</section>
-<section id="por-qué-shell" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="por-qué-shell"><span class="header-section-number">3.2</span> ¿Por qué Shell?</h2>
-<section id="el-shell-como-entorno-de-trabajo" class="level3" data-number="3.2.1">
-<h3 data-number="3.2.1" class="anchored" data-anchor-id="el-shell-como-entorno-de-trabajo"><span class="header-section-number">3.2.1</span> El shell como entorno de trabajo</h3>
+<section id="permisos-de-ejecución" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="permisos-de-ejecución"><span class="header-section-number">9.3</span> Permisos de Ejecución</h2>
+<p>Para convertir un archivo en ejecutable:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chmod</span> +x script.sh</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <ul>
-<li><strong>Interfaz fundamental</strong>: Acceso directo al sistema operativo</li>
-<li><strong>Automatización</strong>: Scripting para tareas repetitivas</li>
-<li><strong>Portabilidad</strong>: Disponible en prácticamente todos los sistemas Unix-like</li>
+<li><strong><code>rwx</code></strong>: permisos de lectura, escritura y ejecución.</li>
+<li>Ver permisos: <code>ls -l</code></li>
 </ul>
 </section>
-<section id="ventajas-de-bash" class="level3" data-number="3.2.2">
-<h3 data-number="3.2.2" class="anchored" data-anchor-id="ventajas-de-bash"><span class="header-section-number">3.2.2</span> Ventajas de Bash</h3>
+<section id="estructura-básica" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="estructura-básica"><span class="header-section-number">9.4</span> Estructura Básica</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> <span class="at">-euo</span> pipefail  <span class="co"># Configuración robusta</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Variables globales</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="va">SCRIPT_DIR</span><span class="op">=</span><span class="st">"</span><span class="va">$(</span><span class="fu">dirname</span> <span class="st">"</span><span class="va">$0</span><span class="st">"</span><span class="va">)</span><span class="st">"</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="va">OUTPUT_DIR</span><span class="op">=</span><span class="st">"./results"</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Función de ayuda</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="fu">usage()</span> <span class="kw">{</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"USO: </span><span class="va">$0</span><span class="st"> &lt;input.fastq&gt; [output_dir]"</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"Ejemplo: </span><span class="va">$0</span><span class="st"> sample.fastq /tmp/results"</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Función principal</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="fu">main()</span> <span class="kw">{</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    <span class="bu">local</span> <span class="va">input</span><span class="op">=</span><span class="st">"</span><span class="va">$1</span><span class="st">"</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">local</span> <span class="va">output</span><span class="op">=</span><span class="st">"</span><span class="va">${2</span><span class="op">:-</span><span class="va">$OUTPUT_DIR}</span><span class="st">"</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"Procesando: </span><span class="va">$input</span><span class="st">"</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mkdir</span> <span class="at">-p</span> <span class="st">"</span><span class="va">$output</span><span class="st">"</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Procesamiento aquí</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>    <span class="ex">process_file</span> <span class="st">"</span><span class="va">$input</span><span class="st">"</span> <span class="st">"</span><span class="va">$output</span><span class="st">"</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificar argumentos</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a><span class="kw">[[</span> <span class="va">$#</span> <span class="ot">-eq</span> 0 <span class="kw">]]</span> <span class="kw">&amp;&amp;</span> <span class="kw">{</span> <span class="ex">usage</span><span class="kw">;</span> <span class="bu">exit</span> 1<span class="kw">;</span> <span class="kw">}</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Ejecutar</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="ex">main</span> <span class="st">"</span><span class="va">$@</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="ejemplo-bioinformático" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="ejemplo-bioinformático"><span class="header-section-number">9.5</span> Ejemplo Bioinformático</h2>
+<p>Nivel: conteo de lecturas en varios archivos FASTQ:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Cuenta lecturas en archivos FASTQ/FASTA</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">count_reads()</span> <span class="kw">{</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">local</span> <span class="va">file</span><span class="op">=</span><span class="st">"</span><span class="va">$1</span><span class="st">"</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">"</span><span class="va">${file</span><span class="op">##</span><span class="pp">*</span>.<span class="va">}</span><span class="st">"</span> <span class="kw">in</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        <span class="ss">gz</span><span class="kw">)</span> <span class="va">lines</span><span class="op">=</span><span class="va">$(</span><span class="fu">zcat</span> <span class="st">"</span><span class="va">$file</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span><span class="va">)</span> <span class="cf">;;</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>        <span class="pp">*</span><span class="kw">)</span> <span class="va">lines</span><span class="op">=</span><span class="va">$(</span><span class="fu">wc</span> <span class="at">-l</span> <span class="op">&lt;</span> <span class="st">"</span><span class="va">$file</span><span class="st">"</span><span class="va">)</span> <span class="cf">;;</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">esac</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># FASTQ: 4 líneas por read, FASTA: contar headers</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">[[</span> <span class="st">"</span><span class="va">$file</span><span class="st">"</span> <span class="ot">==</span> <span class="pp">*</span>fastq<span class="pp">*</span> <span class="kw">]];</span> <span class="cf">then</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>        <span class="bu">echo</span> <span class="st">"</span><span class="va">$((lines</span> <span class="op">/</span> <span class="dv">4</span><span class="va">))</span><span class="st">"</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>        <span class="fu">grep</span> <span class="at">-c</span> <span class="st">'^&gt;'</span> <span class="st">"</span><span class="va">$file</span><span class="st">"</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">fi</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> file <span class="kw">in</span> data/<span class="pp">*</span>.<span class="dt">{fastq</span><span class="op">,</span><span class="dt">fasta}{</span><span class="op">,</span><span class="dt">.gz}</span><span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>    <span class="kw">[[</span> <span class="ot">-f</span> <span class="st">"</span><span class="va">$file</span><span class="st">"</span> <span class="kw">]]</span> <span class="kw">&amp;&amp;</span> <span class="bu">printf</span> <span class="st">"%-20s %'d reads\n"</span> <span class="st">"</span><span class="va">$(</span><span class="fu">basename</span> <span class="st">"</span><span class="va">$file</span><span class="st">"</span><span class="va">)</span><span class="st">"</span> <span class="st">"</span><span class="va">$(</span><span class="ex">count_reads</span> <span class="st">"</span><span class="va">$file</span><span class="st">"</span><span class="va">)</span><span class="st">"</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="consejos-avanzados-y-buenas-prácticas" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="consejos-avanzados-y-buenas-prácticas"><span class="header-section-number">9.6</span> Consejos Avanzados y Buenas Prácticas</h2>
 <ul>
-<li><strong>Ubicuidad</strong>: Shell por defecto en la mayoría de distribuciones Linux</li>
-<li><strong>Potencia</strong>: Completo lenguaje de scripting</li>
-<li><strong>Personalización</strong>: <code>.bashrc</code>, aliases, funciones</li>
-<li><strong>Compatibilidad</strong>: Mejorado sobre sh tradicional</li>
+<li>Incluye <code>set -euo pipefail</code> para fallar rápido ante errores y variables no definidas.</li>
+<li>Usa un encabezado con <code>usage()</code> que muestre sintaxis y ejemplos de uso.</li>
+<li>Almacena rutas en variables configurables al inicio.</li>
+<li>Versiona tus scripts con comments de changelog.</li>
 </ul>
-<p><img src="images/shells.png" class="img-fluid"></p>
 </section>
-</section>
-<section id="principios-básicos-y-ventajas" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="principios-básicos-y-ventajas"><span class="header-section-number">3.3</span> Principios básicos y ventajas</h2>
-<section id="principios-fundamentales" class="level3" data-number="3.3.1">
-<h3 data-number="3.3.1" class="anchored" data-anchor-id="principios-fundamentales"><span class="header-section-number">3.3.1</span> Principios fundamentales</h3>
+<section id="resumen-de-comandos" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="resumen-de-comandos"><span class="header-section-number">9.7</span> Resumen de Comandos</h2>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 32%">
-<col style="width: 38%">
-<col style="width: 28%">
-</colgroup>
 <thead>
 <tr class="header">
-<th><strong>Principio</strong></th>
-<th><strong>Descripción</strong></th>
-<th><strong>Ejemplo</strong></th>
+<th>Comando</th>
+<th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Everything is a file</strong></td>
-<td>Dispositivos, procesos, sockets como archivos</td>
-<td><code>/dev</code>, <code>/proc</code></td>
+<td><code>#!/bin/bash</code></td>
+<td>Define intérprete de Bash</td>
 </tr>
 <tr class="even">
-<td><strong>Small is beautiful</strong></td>
-<td>Programas pequeños y especializados</td>
-<td><code>grep</code>, <code>awk</code>, <code>sed</code></td>
+<td><code>chmod +x file</code></td>
+<td>Da permiso de ejecución al archivo</td>
 </tr>
 <tr class="odd">
-<td><strong>Filter pattern</strong></td>
-<td>Programas que procesan entrada y producen salida</td>
-<td><code>cat file | sort</code></td>
+<td><code>ls path/*.fastq</code></td>
+<td>Lista archivos FASTQ</td>
 </tr>
 <tr class="even">
-<td><strong>Preferir texto</strong></td>
-<td>Texto plano como formato universal</td>
-<td>logs, configs</td>
+<td><code>wc -l &lt; file</code></td>
+<td>Cuenta líneas</td>
 </tr>
 <tr class="odd">
-<td><strong>Rule of Silence</strong></td>
-<td>No generar output innecesario</td>
-<td><code>-q/--quiet</code></td>
+<td><code>exit 0</code></td>
+<td>Salida exitosa</td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="ventajas-clave" class="level3" data-number="3.3.2">
-<h3 data-number="3.3.2" class="anchored" data-anchor-id="ventajas-clave"><span class="header-section-number">3.3.2</span> Ventajas clave</h3>
-<p><strong>Eficiencia</strong></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Procesamiento eficiente de datos</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">awk</span> <span class="st">'NR % 4 == 1'</span> archivo.fastq <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">cut</span> <span class="at">-c2-</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-rn</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-20</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><strong>Automatización</strong></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Backup automatizado</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-czf</span> resultados_alineamiento_<span class="va">$(</span><span class="fu">date</span> +%Y%m%d<span class="va">)</span>.tar.gz resultados/<span class="pp">*</span>.sam <span class="kw">&amp;&amp;</span> <span class="fu">scp</span> resultados_<span class="pp">*</span>.tar.gz usuario@servidor:~</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><strong>Portabilidad</strong></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Script que funciona en múltiples sistemas</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env bash</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><strong>Extensibilidad</strong></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear comandos personalizados</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">alias</span> ll=<span class="st">'ls -alF'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="referencias-rápidas-en-bash" class="level3" data-number="3.3.3">
-<h3 data-number="3.3.3" class="anchored" data-anchor-id="referencias-rápidas-en-bash"><span class="header-section-number">3.3.3</span> Referencias rápidas en bash</h3>
-<ul>
-<li><strong>Ctrl+C</strong>: Interrumpir comando</li>
-<li><strong>Ctrl+L</strong>: Limpiar pantalla</li>
-<li><strong>Ctrl+A</strong>: Ir al inicio de línea</li>
-<li><strong>Ctrl+E</strong>: Ir al final de línea</li>
-<li><strong>Ctrl+U</strong>: Borrar hasta inicio de línea</li>
-<li><strong>Ctrl+K</strong>: Borrar hasta final de línea</li>
-</ul>
-</section>
-</section>
-<section id="casos-de-estudio" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="casos-de-estudio"><span class="header-section-number">3.4</span> Casos de estudio</h2>
-<section id="pipeline-clásico" class="level3" data-number="3.4.1">
-<h3 data-number="3.4.1" class="anchored" data-anchor-id="pipeline-clásico"><span class="header-section-number">3.4.1</span> Pipeline clásico</h3>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Analizar archivo FASTQ para obtener lecturas con baja calidad</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">seqkit</span> fx2tab <span class="at">-q</span> <span class="at">-n</span> <span class="at">-i</span> reads.fastq <span class="kw">|</span> <span class="fu">awk</span> <span class="st">'$2 &lt; 30'</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-nr</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="one-liners" class="level3" data-number="3.4.2">
-<h3 data-number="3.4.2" class="anchored" data-anchor-id="one-liners"><span class="header-section-number">3.4.2</span> One-liners</h3>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Buscar archivos FASTQ y comprimirlos</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> . <span class="at">-name</span> <span class="st">"*.fastq"</span> <span class="at">-exec</span> gzip {} <span class="dt">\;</span> <span class="kw">|</span> <span class="fu">xargs</span> <span class="at">-I{}</span> echo <span class="st">"Comprimido: {}"</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Monitorizar uso de memoria durante alineamiento</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="ex">watch</span> <span class="at">-n</span> 1 <span class="st">'ps -C bwa -o %mem,%cpu,cmd'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-</section>
-<section id="buenas-prácticas" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="buenas-prácticas"><span class="header-section-number">3.5</span> Buenas Prácticas</h2>
-<section id="scripting-robusto" class="level3" data-number="3.5.1">
-<h3 data-number="3.5.1" class="anchored" data-anchor-id="scripting-robusto"><span class="header-section-number">3.5.1</span> Scripting robusto</h3>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env bash</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> <span class="at">-euo</span> pipefail     <span class="co"># Falla ante cualquier error</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="va">IFS</span><span class="op">=</span><span class="st">$'</span><span class="dt">\n\t</span><span class="st">'</span>           <span class="co"># Maneja nombres con espacios</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Validar argumentos de entrada</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">[[</span> <span class="va">$#</span> <span class="ot">-ne</span> 2 <span class="kw">]];</span> <span class="cf">then</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="bu">echo</span> <span class="st">"Uso: </span><span class="va">${0</span><span class="op">##</span><span class="pp">*</span>/<span class="va">}</span><span class="st"> &lt;input.fastq&gt; &lt;genoma_referencia.fa&gt;"</span> <span class="op">&gt;&amp;</span><span class="dv">2</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="bu">exit</span> 1</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="cf">fi</span></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Procesamiento seguro de muestras</span></span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"&gt;&gt;&gt; Alineando </span><span class="va">${1}</span><span class="st"> contra </span><span class="va">${2}</span><span class="st">..."</span></span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="ex">bwa</span> mem <span class="at">-t</span> 4 <span class="st">"</span><span class="va">$2</span><span class="st">"</span> <span class="st">"</span><span class="va">$1</span><span class="st">"</span> <span class="kw">|</span> <span class="ex">samtools</span> view <span class="at">-bS</span> <span class="at">-</span> <span class="op">&gt;</span> aligned.bam</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Control de calidad del alineamiento</span></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="ex">samtools</span> flagstat aligned.bam <span class="op">&gt;</span> alignment_stats.txt</span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"&gt;&gt;&gt; Resultados guardados en alignment_stats.txt"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="versión-extendida-con-más-controles" class="level3" data-number="3.5.2">
-<h3 data-number="3.5.2" class="anchored" data-anchor-id="versión-extendida-con-más-controles"><span class="header-section-number">3.5.2</span> Versión extendida con más controles</h3>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env bash</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> <span class="at">-euo</span> pipefail</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="va">IFS</span><span class="op">=</span><span class="st">$'</span><span class="dt">\n\t</span><span class="st">'</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Configuración sensible para datos biológicos</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="va">REF_GENOME</span><span class="op">=</span><span class="st">"/data/genomes/hg38.fa"</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="va">THREADS</span><span class="op">=</span>8</span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="va">MIN_QUALITY</span><span class="op">=</span>20</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Validación de entradas</span></span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="va">required_tools</span><span class="op">=</span><span class="va">(</span><span class="st">"bwa"</span> <span class="st">"samtools"</span> <span class="st">"seqkit"</span><span class="va">)</span></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> tool <span class="kw">in</span> <span class="st">"</span><span class="va">${required_tools</span><span class="op">[@]</span><span class="va">}</span><span class="st">"</span><span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="ot">! </span><span class="bu">command</span> <span class="at">-v</span> <span class="st">"</span><span class="va">$tool</span><span class="st">"</span> <span class="op">&amp;&gt;</span> /dev/null<span class="kw">;</span> <span class="cf">then</span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"ERROR: </span><span class="va">$tool</span><span class="st"> no está instalado"</span> <span class="op">&gt;&amp;</span><span class="dv">2</span></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>    <span class="bu">exit</span> 1</span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>  <span class="cf">fi</span></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Procesamiento pipeline</span></span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a><span class="fu">process_sample()</span> <span class="kw">{</span></span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>  <span class="bu">local</span> <span class="va">input_fastq</span><span class="op">=</span><span class="st">"</span><span class="va">$1</span><span class="st">"</span></span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>  <span class="bu">local</span> <span class="va">sample_name</span><span class="op">=</span><span class="va">$(</span><span class="fu">basename</span> <span class="st">"</span><span class="va">$input_fastq</span><span class="st">"</span> .fastq<span class="va">)</span></span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>  <span class="bu">echo</span> <span class="st">"&gt;&gt;&gt; Procesando muestra: </span><span class="va">$sample_name</span><span class="st">"</span></span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>  <span class="ex">seqkit</span> stats <span class="st">"</span><span class="va">$input_fastq</span><span class="st">"</span> <span class="op">&gt;</span> <span class="st">"</span><span class="va">${sample_name}</span><span class="st">_qc.txt"</span></span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>  <span class="ex">bwa</span> mem <span class="at">-t</span> <span class="st">"</span><span class="va">$THREADS</span><span class="st">"</span> <span class="st">"</span><span class="va">$REF_GENOME</span><span class="st">"</span> <span class="st">"</span><span class="va">$input_fastq</span><span class="st">"</span> <span class="dt">\</span></span>
-<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>    <span class="kw">|</span> <span class="ex">samtools</span> view <span class="at">-b</span> <span class="at">-q</span> <span class="st">"</span><span class="va">$MIN_QUALITY</span><span class="st">"</span> <span class="at">-</span> <span class="dt">\</span></span>
-<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>    <span class="kw">|</span> <span class="ex">samtools</span> sort <span class="at">-o</span> <span class="st">"</span><span class="va">${sample_name}</span><span class="st">.sorted.bam"</span></span>
-<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>  <span class="ex">samtools</span> index <span class="st">"</span><span class="va">${sample_name}</span><span class="st">.sorted.bam"</span></span>
-<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
-<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Ejecución principal</span></span>
-<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a><span class="ex">process_sample</span> <span class="st">"</span><span class="va">$@</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="consejos-para-usuarios" class="level3" data-number="3.5.3">
-<h3 data-number="3.5.3" class="anchored" data-anchor-id="consejos-para-usuarios"><span class="header-section-number">3.5.3</span> Consejos para usuarios</h3>
-<ol type="1">
-<li><strong>Aprender expresiones regulares</strong>: <code>grep -E</code>, <code>sed -E</code></li>
-<li><strong>Dominar redirecciones</strong>: <code>&gt;</code>, <code>&gt;&gt;</code>, <code>2&gt;</code>, <code>&amp;&gt;</code></li>
-<li><strong>Usar <code>man</code></strong>: Documentación completa (<code>man bash</code>, <code>man grep</code>)</li>
-<li><strong>Explorar herramientas estándar</strong>: <code>awk</code>, <code>sed</code>, <code>cut</code>, <code>tr</code></li>
-<li><strong>Versionar scripts</strong>: Usar Git incluso para scripts pequeños</li>
-</ol>
-</section>
-</section>
-<section id="recursos-adicionales" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="recursos-adicionales"><span class="header-section-number">3.6</span> Recursos adicionales</h2>
-<ul>
-<li><strong>Libros</strong>:
-<ul>
-<li>“The Unix Programming Environment” (Kernighan &amp; Pike)</li>
-<li>“Bash Guide for Beginners” (Machtelt Garrels)</li>
-</ul></li>
-<li><strong>En línea</strong>:
-<ul>
-<li><a href="https://wiki.bash-hackers.org/">Bash Hackers Wiki</a></li>
-<li><a href="https://mywiki.wooledge.org/">Greg’s Wiki</a></li>
-</ul></li>
-<li><strong>Práctica</strong>:
-<ul>
-<li><a href="https://explainshell.com/">Explain Shell</a></li>
-<li><a href="https://www.shellcheck.net/">ShellCheck</a></li>
-</ul></li>
-</ul>
 
 
 </section>
@@ -1159,13 +1027,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./S1_02_instalacion_software.html" class="pagination-link" aria-label="Instalación de Software">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instalación de Software</span></span>
+      <a href="./S2_04_busqueda_avanzada.html" class="pagination-link" aria-label="Búsqueda Avanzada en Archivos y Directorios">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Búsqueda Avanzada en Archivos y Directorios</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./S1_04_datos_biologicos.html" class="pagination-link" aria-label="Datos biológicos">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Datos biológicos</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./S3_02_variables_parametros.html" class="pagination-link" aria-label="Variables &amp; Parámetros">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Variables &amp; Parámetros</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
